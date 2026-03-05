@@ -12,9 +12,14 @@ import '../models/ai_insight.dart';
 import '../models/patient_profile.dart';
 
 class BackendService {
-  // ── Private HTTP helpers ────────────────────────────────────────────────────
+  // ── Base URL (resolves dart-define or falls back to localhost:4000) ────────
+  static const _base = ApiEndpoints.baseUrl;
 
-  static Future<Map<String, dynamic>> _get(String url) async {
+  // ── Private HTTP helpers ─────────────────────────────────────────────────
+  // All helpers accept a *path* (e.g. '/api/vitals') and prepend _base.
+
+  static Future<Map<String, dynamic>> _get(String path) async {
+    final url = '$_base$path';
     final res = await http.get(Uri.parse(url))
         .timeout(const Duration(seconds: 10), onTimeout: () => throw TimeoutException('GET timed out: $url'));
     if (res.statusCode < 200 || res.statusCode >= 300) {
@@ -23,7 +28,8 @@ class BackendService {
     return json.decode(res.body) as Map<String, dynamic>;
   }
 
-  static Future<Map<String, dynamic>> _post(String url, Map<String, dynamic> body) async {
+  static Future<Map<String, dynamic>> _post(String path, Map<String, dynamic> body) async {
+    final url = '$_base$path';
     final res = await http.post(
       Uri.parse(url),
       headers: {'Content-Type': 'application/json'},
@@ -35,7 +41,8 @@ class BackendService {
     return json.decode(res.body) as Map<String, dynamic>;
   }
 
-  static Future<Map<String, dynamic>> _put(String url, Map<String, dynamic> body) async {
+  static Future<Map<String, dynamic>> _put(String path, Map<String, dynamic> body) async {
+    final url = '$_base$path';
     final res = await http.put(
       Uri.parse(url),
       headers: {'Content-Type': 'application/json'},
@@ -47,7 +54,8 @@ class BackendService {
     return json.decode(res.body) as Map<String, dynamic>;
   }
 
-  static Future<Map<String, dynamic>> _delete(String url) async {
+  static Future<Map<String, dynamic>> _delete(String path) async {
+    final url = '$_base$path';
     final res = await http.delete(Uri.parse(url))
         .timeout(const Duration(seconds: 10), onTimeout: () => throw TimeoutException('DELETE timed out: $url'));
     if (res.statusCode < 200 || res.statusCode >= 300) {
@@ -70,7 +78,8 @@ class BackendService {
 
   /// GET /api/vitals?limit=&offset=
   static Future<List<Map<String, dynamic>>> getVitalsHistory({int limit = 100, int offset = 0}) async {
-    final url = '${ApiEndpoints.vitals}?limit=$limit&offset=$offset';
+    final path = '${ApiEndpoints.vitals}?limit=$limit&offset=$offset';
+    final url = '$_base$path';
     final res = await http.get(Uri.parse(url))
         .timeout(const Duration(seconds: 10), onTimeout: () => throw TimeoutException('GET timed out: $url'));
     if (res.statusCode < 200 || res.statusCode >= 300) {
@@ -121,7 +130,7 @@ class BackendService {
 
   /// GET /api/alerts
   static Future<List<Alert>> getActiveAlerts() async {
-    const url = ApiEndpoints.alerts;
+    final url = '$_base${ApiEndpoints.alerts}';
     final res = await http.get(Uri.parse(url));
     if (res.statusCode < 200 || res.statusCode >= 300) return [];
     final body = json.decode(res.body);
