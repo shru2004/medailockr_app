@@ -8,14 +8,12 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+**/node_modules
 
 # Environment variables (contain secrets — never commit)
 .env
 **/.env
 backend/.env
-
-# Seed meta
-backend/data/.medicos_seed_version
 
 dist
 dist-ssr
