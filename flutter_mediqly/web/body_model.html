@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Twin - 3D Body Model</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; background: rgba(15, 23, 42, 0.4); overflow: hidden; }
+    #mount { width: 100%; height: 100%; cursor: pointer; outline: none; }
+    #legend {
+      position: absolute; top: 12px; left: 12px; z-index: 30;
+      background: rgba(15,23,42,0.5); border: 1px solid rgba(51,65,85,0.3);
+      border-radius: 8px; padding: 8px 10px; backdrop-filter: blur(4px);
+      pointer-events: none;
+    }
+    .legend-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .legend-label { font-family: monospace; font-size: 10px; color: #cbd5e1; }
+    #status-badge { margin-top: 6px; padding-top: 6px; border-top: 1px solid rgba(51,65,85,0.5); font-family: monospace; font-size: 10px; font-weight: bold; text-transform: uppercase; text-align: center; }
+    .hint { font-family: monospace; font-size: 9px; color: rgba(148,163,184,0.5); text-align: center; margin-top: 2px; }
+    @keyframes pulse { 0%,100%{ opacity:1;} 50%{ opacity:0.4;} }
+    .animated-dot { animation: pulse 1.5s ease-in-out infinite; }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="mount"></div>
+  <div id="legend">
+    <div class="legend-row"><div class="dot animated-dot" style="background:#ef4444"></div><span class="legend-label">Circulatory</span></div>
+    <div class="legend-row"><div class="dot" style="background:#f9a8d4"></div><span class="legend-label">Respiratory</span></div>
+    <div class="legend-row"><div class="dot" style="background:rgba(34,211,238,0.5); border:1px solid #22d3ee"></div><span class="legend-label">Somatic Skin</span></div>
+    <div class="legend-row"><div class="dot" style="background:#7f1d1d; border:1px solid #b91c1c"></div><span class="legend-label">Muscular</span></div>
+    <div class="legend-row"><div class="dot" style="background:rgba(254,252,232,0.5); border:1px solid #fef9c3"></div><span class="legend-label">Adipose Tissue</span></div>
+    <div class="legend-row"><div class="dot" style="background:#d1d5db; border:1px solid #9ca3af"></div><span class="legend-label">Skeletal</span></div>
+    <div class="legend-row"><div class="dot animated-dot" style="background:#22d3ee"></div><span class="legend-label">Nervous Network</span></div>
+    <div id="status-badge" style="color:#10b981">System: OPTIMAL</div>
+    <div class="hint">DRAG TO ROTATE</div>
+    <div class="hint" style="color:rgba(34,211,238,0.5)">CLICK TO SCAN</div>
+  </div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+    // --- State ---
+    let currentStatus = 'optimal';
+    let vitals = { heartRate: 72, oxygenSat: 98, temperature: 37.0, respRate: 16 };
+
+    // --- Refs (plain objects/variables) ---
+    const materialsRef = {};
+    const organsRef = {};
+    const rigRef = {};
+    let pulseLight = null;
+    let particleSystem = null;
+    let digestiveSystem = null;
+    const clickEffects = new Map();
+
+    // --- Haptics ---
+    const triggerHaptic = (pattern) => {
+      if (navigator.vibrate) try { navigator.vibrate(pattern); } catch(e) {}
+    };
+
+    // --- Status update ---
+    const updateStatusBadge = () => {
+      const badge = document.getElementById('status-badge');
+      if (currentStatus === 'critical') {
+        badge.style.color = '#ef4444';
+        badge.textContent = 'System: CRITICAL';
+      } else if (currentStatus === 'warning') {
+        badge.style.color = '#f59e0b';
+        badge.textContent = 'System: WARNING';
+      } else {
+        badge.style.color = '#10b981';
+        badge.textContent = 'System: OPTIMAL';
+      }
+    };
+
+    // --- updateOrganColors ---
+    const updateOrganColors = () => {
+      const s = currentStatus;
+      let targetEmissive = new THREE.Color(0x000000);
+      let emissiveIntensity = 0.3;
+      if (s === 'warning') { targetEmissive = new THREE.Color(0xffa500); emissiveIntensity = 0.8; }
+      else if (s === 'critical') { targetEmissive = new THREE.Color(0xff0000); emissiveIntensity = 1.2; }
+
+      const originalColors = {
+        brain:0xffaaff, heart:0xff0000, lungs:0xffaaaa, liver:0x8B4513,
+        stomach:0x44aa44, kidney:0x880000, intestine:0xffaa88, colon:0xcd853f,
+        pancreas:0xffd700, spleen:0x800080, gallbladder:0x228b22, bladder:0xffe4e1,
+        thyroid:0xff69b4, trachea:0xcccccc, esophagus:0xe9967a,
+        nerves:0x66ffff, ganglia:0x66ffff, vessels:0x880000, bone:0xe5e5e5
+      };
+
+      Object.keys(materialsRef).forEach(key => {
+        const mat = materialsRef[key];
+        if (key === 'skin' && 'emissive' in mat) {
+          if (s === 'critical') { mat.emissive.setHex(0xff0000); mat.emissiveIntensity=0.5; mat.opacity=0.45; mat.color.setHex(0x550000); }
+          else if (s === 'warning') { mat.emissive.setHex(0xff6600); mat.emissiveIntensity=0.3; mat.opacity=0.35; mat.color.setHex(0x331100); }
+          else { mat.emissive.setHex(0x06b6d4); mat.emissiveIntensity=0.05; mat.opacity=0.3; mat.color.setHex(0x0f172a); }
+          mat.userData.baseEmissiveIntensity = mat.emissiveIntensity; return;
+        }
+        if (key === 'fat' && 'color' in mat) {
+          if (s === 'critical') { mat.color.setHex(0xffaaaa); mat.opacity=0.4; }
+          else if (s === 'warning') { mat.color.setHex(0xffeebb); }
+          else { mat.color.setHex(0xfffdd0); mat.opacity=0.25; }
+          return;
+        }
+        if (key === 'neuralLayer' && 'emissive' in mat) {
+          if (s === 'critical') { mat.emissive.setHex(0xff0000); mat.color.setHex(0xff0000); }
+          else if (s === 'warning') { mat.emissive.setHex(0xffaa00); mat.color.setHex(0xffaa00); }
+          else { mat.emissive.setHex(0x00ffff); mat.color.setHex(0x00ffff); }
+          return;
+        }
+        if (key === 'heart' && 'emissive' in mat) {
+          mat.emissive.setHex(0xff0000);
+          if (s === 'critical') { mat.userData.baseEmissiveIntensity=0.5; mat.color.setHex(0xaa0000); }
+          else if (s === 'warning') { mat.userData.baseEmissiveIntensity=0.2; mat.color.setHex(0xff0000); }
+          else { mat.userData.baseEmissiveIntensity=0.1; mat.color.setHex(originalColors['heart']); }
+          mat.emissiveIntensity = mat.userData.baseEmissiveIntensity; return;
+        }
+        if (key === 'muscle' && 'color' in mat) {
+          if (s === 'critical') { mat.color.setHex(0x660000); mat.opacity=0.5; }
+          else { mat.color.setHex(0x8b0000); mat.opacity=0.25; }
+          return;
+        }
+        if (key === 'bone' && 'color' in mat) {
+          if (s === 'critical') mat.color.setHex(0xffcccc); else mat.color.setHex(originalColors['bone']); return;
+        }
+        if (key === 'nerves' && 'color' in mat) {
+          if (s === 'critical') mat.color.setHex(0xff0000); else if (s === 'warning') mat.color.setHex(0xffaa00); else mat.color.setHex(0x66ffff); return;
+        }
+        if (key === 'ganglia' && 'color' in mat) {
+          if (s === 'critical') mat.color.setHex(0xff0000); else if (s === 'warning') mat.color.setHex(0xffaa00); else mat.color.setHex(0x66ffff); return;
+        }
+        if (key === 'vessels' && 'emissive' in mat) {
+          if (s === 'critical') { mat.emissive.setHex(0xff0000); mat.emissiveIntensity=0.8; }
+          else { mat.emissive.setHex(0xaa0000); mat.emissiveIntensity=0.2; }
+          return;
+        }
+        if ('emissive' in mat) {
+          mat.emissive.copy(targetEmissive);
+          mat.emissiveIntensity = emissiveIntensity;
+          if (s === 'critical') { mat.color.setHex(0xff0000); }
+          else {
+            let baseColor = 0xffffff;
+            if (originalColors[key]) baseColor = originalColors[key];
+            else if (key.startsWith('lung')) baseColor = originalColors['lungs'];
+            else if (key.startsWith('kidney')) baseColor = originalColors['kidney'];
+            mat.color.setHex(baseColor);
+          }
+          mat.userData.baseEmissiveIntensity = emissiveIntensity;
+        }
+      });
+
+      if (particleSystem) {
+        const pMat = particleSystem.material;
+        if (s === 'critical') pMat.color.setHex(0xff0000);
+        else if (s === 'warning') pMat.color.setHex(0xff8800);
+        else pMat.color.setHex(0xff3333);
+      }
+      updateStatusBadge();
+    };
+
+    // =========================================================
+    // MAIN INIT
+    // =========================================================
+    const mountEl = document.getElementById('mount');
+
+    const W = window.innerWidth;
+    const H = window.innerHeight;
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x020617, 0.02);
+
+    const camera = new THREE.PerspectiveCamera(45, W / H, 0.1, 100);
+    camera.position.set(0, 2, 14);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(W, H);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.2;
+    mountEl.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.enableZoom = true;
+    controls.minDistance = 5;
+    controls.maxDistance = 20;
+    controls.maxPolarAngle = Math.PI / 1.5;
+
+    // --- Interaction ---
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+
+    const onMouseClick = (event) => {
+      const rect = mountEl.getBoundingClientRect();
+      mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(Object.values(organsRef), false);
+      if (intersects.length > 0) {
+        const hit = intersects[0].object;
+        triggerHaptic(15);
+        clickEffects.set(hit.uuid, { mesh: hit, startTime: performance.now() / 1000 });
+      }
+    };
+    renderer.domElement.addEventListener('click', onMouseClick);
+
+    // --- Lighting ---
+    const ambientLight = new THREE.AmbientLight(0x404040, 2);
+    scene.add(ambientLight);
+
+    const mainLight = new THREE.DirectionalLight(0xffffff, 1.5);
+    mainLight.position.set(5, 10, 7);
+    scene.add(mainLight);
+
+    const rimLight = new THREE.SpotLight(0xffffff, 12);
+    rimLight.position.set(0, 10, -10);
+    rimLight.lookAt(0, 3, 0);
+    rimLight.angle = Math.PI / 3;
+    rimLight.penumbra = 1;
+    scene.add(rimLight);
+
+    const blueLight = new THREE.PointLight(0x06b6d4, 1.5, 20);
+    blueLight.position.set(-6, 2, -2);
+    scene.add(blueLight);
+
+    const redLight = new THREE.PointLight(0xef4444, 0.5, 20);
+    redLight.position.set(6, 2, -2);
+    scene.add(redLight);
+
+    pulseLight = new THREE.PointLight(0x22d3ee, 0, 25);
+    pulseLight.position.set(0, 3.5, 1.5);
+    scene.add(pulseLight);
+
+    const bodyGroup = new THREE.Group();
+    scene.add(bodyGroup);
+
+    // --- Rig ---
+    const rigGroup = new THREE.Group();
+    bodyGroup.add(rigGroup);
+
+    const hipBone = new THREE.Bone(); hipBone.position.set(0,0.2,0); hipBone.name='Hip'; rigGroup.add(hipBone); rigRef['hip']=hipBone;
+    const spine1 = new THREE.Bone(); spine1.position.set(0,1.3,0); spine1.name='Spine1'; hipBone.add(spine1); rigRef['spine1']=spine1;
+    const spine2 = new THREE.Bone(); spine2.position.set(0,2.0,0); spine2.name='Spine2'; spine1.add(spine2); rigRef['spine2']=spine2;
+    const spine3 = new THREE.Bone(); spine3.position.set(0,1.5,0); spine3.name='Spine3'; spine2.add(spine3); rigRef['spine3']=spine3;
+    const neckBone = new THREE.Bone(); neckBone.position.set(0,0.8,0); neckBone.name='Neck'; spine3.add(neckBone); rigRef['neck']=neckBone;
+    const headBone = new THREE.Bone(); headBone.position.set(0,0.7,0); headBone.name='Head'; neckBone.add(headBone); rigRef['head']=headBone;
+
+    const skeletonHelper = new THREE.SkeletonHelper(rigGroup);
+    skeletonHelper.material = new THREE.LineBasicMaterial({ color:0x444444, transparent:true, opacity:0.3 });
+    scene.add(skeletonHelper);
+
+    const attachToRig = (object) => {
+      const worldPos = new THREE.Vector3();
+      object.getWorldPosition(worldPos);
+      const y = worldPos.y;
+      let targetBone = hipBone;
+      if (y > 6.0) targetBone = headBone;
+      else if (y > 5.2) targetBone = neckBone;
+      else if (y > 4.0) targetBone = spine3;
+      else if (y > 2.5) targetBone = spine2;
+      else if (y > 0.8) targetBone = spine1;
+      targetBone.attach(object);
+    };
+
+    // --- Procedural Textures ---
+    const generateSkinTexture = () => {
+      const size = 2048;
+      const canvas = document.createElement('canvas');
+      canvas.width = size; canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#0f172a'; ctx.fillRect(0,0,size,size);
+      for (let i=0;i<800;i++) {
+        const x=Math.random()*size, y=Math.random()*size, radius=40+Math.random()*120, alpha=0.02+Math.random()*0.04;
+        const grad=ctx.createRadialGradient(x,y,0,x,y,radius);
+        const color=Math.random()>0.5?'#1e293b':'#164e63';
+        grad.addColorStop(0,color); grad.addColorStop(1,'transparent');
+        ctx.globalAlpha=alpha; ctx.fillStyle=grad;
+        ctx.beginPath(); ctx.arc(x,y,radius,0,Math.PI*2); ctx.fill();
+      }
+      const imageData=ctx.getImageData(0,0,size,size); const data=imageData.data;
+      for(let i=0;i<data.length;i+=4){const n=(Math.random()-0.5)*12;data[i]=Math.max(0,Math.min(255,data[i]+n));data[i+1]=Math.max(0,Math.min(255,data[i+1]+n));data[i+2]=Math.max(0,Math.min(255,data[i+2]+n));}
+      ctx.putImageData(imageData,0,0);
+      ctx.globalAlpha=0.05; ctx.strokeStyle='#334155'; ctx.lineWidth=1;
+      for(let i=0;i<3000;i++){const x=Math.random()*size,y=Math.random()*size,r=2+Math.random()*6;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.stroke();}
+      ctx.globalAlpha=0.15; ctx.strokeStyle='#475569'; ctx.lineWidth=1.2; ctx.lineCap='round';
+      const drawRidgeWhorl=(cx,cy,radius)=>{const rings=Math.floor(radius/4);for(let r=1;r<rings;r++){const cr=r*4;ctx.beginPath();for(let a=0;a<=Math.PI*2;a+=0.2){const noise=Math.sin(a*5+r)*2+Math.cos(a*12)*1;const rad=cr+noise;const x=cx+Math.cos(a)*rad,y=cy+Math.sin(a)*rad;if(a===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);}ctx.stroke();}};
+      for(let i=0;i<80;i++){const x=Math.random()*size,y=Math.random()*size,r=30+Math.random()*60;drawRidgeWhorl(x,y,r);}
+      ctx.globalAlpha=0.1;
+      for(let i=0;i<150;i++){const cx=Math.random()*size,cy=Math.random()*size,w=100+Math.random()*200,h=100+Math.random()*200,angle=Math.random()*Math.PI;ctx.save();ctx.translate(cx,cy);ctx.rotate(angle);for(let l=-h/2;l<h/2;l+=5){ctx.beginPath();ctx.moveTo(-w/2,l);ctx.quadraticCurveTo(0,l+Math.sin(l*0.05)*20,w/2,l);ctx.stroke();}ctx.restore();}
+      ctx.globalAlpha=0.12; ctx.strokeStyle='#1e293b'; ctx.lineWidth=1.5;
+      for(let i=0;i<400;i++){const cx=Math.random()*size,cy=Math.random()*size,angle=Math.random()*Math.PI*2;ctx.save();ctx.translate(cx,cy);ctx.rotate(angle);const count=3+Math.floor(Math.random()*3),pw=30+Math.random()*40;for(let j=0;j<count;j++){const yOff=(j-count/2)*6;ctx.beginPath();ctx.moveTo(-pw/2,yOff);ctx.quadraticCurveTo(0,yOff+(Math.random()-0.5)*5,pw/2,yOff);ctx.stroke();}ctx.restore();}
+      const texture=new THREE.CanvasTexture(canvas);
+      texture.wrapS=THREE.RepeatWrapping; texture.wrapT=THREE.RepeatWrapping; texture.repeat.set(4,4);
+      return texture;
+    };
+
+    const generateNeuralTexture = () => {
+      const size=1024; const canvas=document.createElement('canvas'); canvas.width=size; canvas.height=size;
+      const ctx=canvas.getContext('2d');
+      ctx.fillStyle='#000000'; ctx.fillRect(0,0,size,size);
+      ctx.strokeStyle='#00ffff'; ctx.shadowColor='#00ffff'; ctx.shadowBlur=4; ctx.lineCap='round'; ctx.lineJoin='round';
+      const drawBranch=(x,y,len,angle,width)=>{if(len<10)return;ctx.beginPath();ctx.lineWidth=width;ctx.moveTo(x,y);const ex=x+Math.cos(angle)*len,ey=y+Math.sin(angle)*len;ctx.lineTo(ex,ey);ctx.stroke();const sl=len*0.7,sw=width*0.7;if(Math.random()>0.2)drawBranch(ex,ey,sl,angle+0.3+(Math.random()-0.5)*0.5,sw);if(Math.random()>0.2)drawBranch(ex,ey,sl,angle-0.3+(Math.random()-0.5)*0.5,sw);};
+      for(let i=0;i<40;i++){const sx=Math.random()*size,sy=Math.random()*size;drawBranch(sx,sy,80+Math.random()*40,Math.random()*Math.PI*2,3);}
+      ctx.globalAlpha=0.2; ctx.lineWidth=1;
+      for(let i=0;i<60;i++){ctx.beginPath();ctx.moveTo(Math.random()*size,Math.random()*size);ctx.lineTo(Math.random()*size,Math.random()*size);ctx.stroke();}
+      const texture=new THREE.CanvasTexture(canvas);
+      texture.wrapS=THREE.RepeatWrapping; texture.wrapT=THREE.RepeatWrapping; texture.repeat.set(3,3);
+      return texture;
+    };
+
+    const generateBoneTexture = () => {
+      const size=1024; const canvas=document.createElement('canvas'); canvas.width=size; canvas.height=size;
+      const ctx=canvas.getContext('2d');
+      ctx.fillStyle='#e0e0e0'; ctx.fillRect(0,0,size,size);
+      const imageData=ctx.getImageData(0,0,size,size); const data=imageData.data;
+      for(let i=0;i<data.length;i+=4){const val=200+Math.random()*55,noise=(Math.random()-0.5)*20;data[i]=val+noise;data[i+1]=val+noise-5;data[i+2]=val+noise-10;}
+      ctx.putImageData(imageData,0,0);
+      ctx.strokeStyle='#8b7d6b'; ctx.lineWidth=2; ctx.lineJoin='round'; ctx.lineCap='round';
+      const drawFractalLine=(x1,y1,x2,y2,disp)=>{if(disp<1){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke();return;}const mx=(x1+x2)/2,my=(y1+y2)/2,px=-(y2-y1),py=x2-x1,len=Math.sqrt(px*px+py*py),nx=px/len,ny=py/len,jt=(Math.random()-0.5)*disp;drawFractalLine(x1,y1,mx+nx*jt,my+ny*jt,disp/1.8);drawFractalLine(mx+nx*jt,my+ny*jt,x2,y2,disp/1.8);};
+      drawFractalLine(size*0.1,size*0.4,size*0.9,size*0.4,40);
+      drawFractalLine(size*0.5,size*0.4,size*0.5,size*0.9,30);
+      drawFractalLine(size*0.2,size*0.8,size*0.5,size*0.9,30);
+      drawFractalLine(size*0.8,size*0.8,size*0.5,size*0.9,30);
+      return new THREE.CanvasTexture(canvas);
+    };
+
+    const generateMuscleTexture = () => {
+      const size=512; const canvas=document.createElement('canvas'); canvas.width=size; canvas.height=size;
+      const ctx=canvas.getContext('2d');
+      ctx.fillStyle='#4a0404'; ctx.fillRect(0,0,size,size);
+      ctx.strokeStyle='#8b0000'; ctx.lineWidth=1; ctx.globalAlpha=0.3;
+      for(let x=0;x<size;x+=2){const off=(Math.random()-0.5)*10;ctx.beginPath();ctx.moveTo(x+off,0);ctx.lineTo(x-off,size);ctx.stroke();}
+      const imageData=ctx.getImageData(0,0,size,size); const data=imageData.data;
+      for(let i=0;i<data.length;i+=4){const n=(Math.random()-0.5)*10;data[i]+=n;data[i+1]+=n;data[i+2]+=n;}
+      ctx.putImageData(imageData,0,0);
+      const texture=new THREE.CanvasTexture(canvas);
+      texture.wrapS=THREE.RepeatWrapping; texture.wrapT=THREE.RepeatWrapping; texture.repeat.set(4,2);
+      return texture;
+    };
+
+    const skinTexture=generateSkinTexture();
+    const boneTexture=generateBoneTexture();
+    const muscleTexture=generateMuscleTexture();
+    const neuralTexture=generateNeuralTexture();
+
+    // --- Materials ---
+    const wireframeMaterial = new THREE.LineBasicMaterial({color:0x22d3ee,transparent:true,opacity:0.1,depthWrite:false,blending:THREE.AdditiveBlending});
+
+    const skinMaterial = new THREE.MeshPhysicalMaterial({color:0x0f172a,map:skinTexture,emissive:0x06b6d4,emissiveIntensity:0.05,metalness:0.1,roughness:0.6,roughnessMap:skinTexture,bumpMap:skinTexture,bumpScale:0.015,transparent:true,opacity:0.3,transmission:0.2,clearcoat:0.8,clearcoatRoughness:0.4,side:THREE.DoubleSide,depthWrite:false});
+    materialsRef['skin']=skinMaterial;
+
+    const muscleMaterial = new THREE.MeshPhysicalMaterial({color:0x8b0000,emissive:0x330000,emissiveIntensity:0.2,metalness:0.1,roughness:0.8,bumpMap:muscleTexture,bumpScale:0.05,transparent:true,opacity:0.25,side:THREE.DoubleSide,depthWrite:false});
+    materialsRef['muscle']=muscleMaterial;
+
+    const fatMaterial = new THREE.MeshPhysicalMaterial({color:0xfffdd0,emissive:0x222200,emissiveIntensity:0.1,metalness:0.0,roughness:0.4,transparent:true,opacity:0.25,transmission:0.1,side:THREE.DoubleSide,depthWrite:false});
+    materialsRef['fat']=fatMaterial;
+
+    const neuralLayerMaterial = new THREE.MeshPhysicalMaterial({map:neuralTexture,emissive:0x00ffff,emissiveMap:neuralTexture,emissiveIntensity:1.0,color:0x000000,transparent:true,opacity:0.0,blending:THREE.AdditiveBlending,side:THREE.DoubleSide,depthWrite:false});
+    materialsRef['neuralLayer']=neuralLayerMaterial;
+
+    const boneMaterial = new THREE.MeshPhysicalMaterial({color:0xe8e8e8,roughness:0.6,metalness:0.05,map:boneTexture,bumpMap:boneTexture,bumpScale:0.15,transparent:true,opacity:0.95,side:THREE.FrontSide});
+    materialsRef['bone']=boneMaterial;
+
+    const cartilageMaterial = new THREE.MeshPhysicalMaterial({color:0xaaccff,roughness:0.4,metalness:0.1,transmission:0.4,transparent:true,opacity:0.7,thickness:0.5});
+
+    const sutureMaterial = new THREE.LineBasicMaterial({color:0x554433,transparent:true,opacity:0.5,linewidth:1});
+
+    const createOrganMaterial = (name, color, opacity=0.8) => {
+      const mat = new THREE.MeshPhysicalMaterial({color,emissive:0x000000,emissiveIntensity:0.3,metalness:0.3,roughness:0.2,transmission:0.2,transparent:true,opacity,side:THREE.DoubleSide});
+      materialsRef[name]=mat;
+      mat.userData.baseEmissiveIntensity=0.3;
+      return mat;
+    };
+
+    const createLayeredMesh = (geometry) => {
+      const group = new THREE.Group();
+      const muscleMesh = new THREE.Mesh(geometry, muscleMaterial); muscleMesh.scale.set(0.92,0.92,0.92); group.add(muscleMesh);
+      const neuralMesh = new THREE.Mesh(geometry, neuralLayerMaterial); neuralMesh.scale.set(0.94,0.94,0.94); group.add(neuralMesh);
+      const fatMesh = new THREE.Mesh(geometry, fatMaterial); fatMesh.scale.set(0.96,0.96,0.96); group.add(fatMesh);
+      const skinMesh = new THREE.Mesh(geometry, skinMaterial); group.add(skinMesh);
+      const wireframe = new THREE.WireframeGeometry(geometry);
+      const line = new THREE.LineSegments(wireframe, wireframeMaterial); line.scale.set(1.01,1.01,1.01); group.add(line);
+      return group;
+    };
+
+    // --- Body Shell ---
+    const createBodyPart = (geometry, pos, rot=[0,0,0], scale=[1,1,1]) => {
+      const group = createLayeredMesh(geometry);
+      group.position.set(...pos); group.rotation.set(...rot); group.scale.set(...scale);
+      bodyGroup.add(group); attachToRig(group); return group;
+    };
+
+    createBodyPart(new THREE.IcosahedronGeometry(1.0,1),[0,6.5,0]);
+    createBodyPart(new THREE.CylinderGeometry(0.5,0.7,1,8),[0,5.5,0]);
+    createBodyPart(new THREE.CylinderGeometry(1.6,1.2,3,10),[0,3.5,0]);
+    createBodyPart(new THREE.CylinderGeometry(1.2,1.3,2.5,10),[0,0.8,0]);
+
+    const shoulderL=createBodyPart(new THREE.SphereGeometry(0.9,8,8),[1.8,4.2,0]); spine3.attach(shoulderL);
+    const shoulderR=createBodyPart(new THREE.SphereGeometry(0.9,8,8),[-1.8,4.2,0]); spine3.attach(shoulderR);
+    const armL=createBodyPart(new THREE.CylinderGeometry(0.4,0.3,3.5,8),[2.1,2,0],[0,0,0.1]); spine3.attach(armL);
+    const armR=createBodyPart(new THREE.CylinderGeometry(0.4,0.3,3.5,8),[-2.1,2,0],[0,0,-0.1]); spine3.attach(armR);
+    const forearmL=createBodyPart(new THREE.CylinderGeometry(0.3,0.25,3.5,8),[2.3,-1.5,0],[0,0,0.1]); spine3.attach(forearmL);
+    const forearmR=createBodyPart(new THREE.CylinderGeometry(0.3,0.25,3.5,8),[-2.3,-1.5,0],[0,0,-0.1]); spine3.attach(forearmR);
+    const thighL=createBodyPart(new THREE.CylinderGeometry(0.6,0.45,4,8),[0.9,-2.5,0],[0,0,-0.05]); hipBone.attach(thighL);
+    const thighR=createBodyPart(new THREE.CylinderGeometry(0.6,0.45,4,8),[-0.9,-2.5,0],[0,0,0.05]); hipBone.attach(thighR);
+    const shinL=createBodyPart(new THREE.CylinderGeometry(0.4,0.3,4.5,8),[1.0,-6.5,0],[0,0,-0.05]); hipBone.attach(shinL);
+    const shinR=createBodyPart(new THREE.CylinderGeometry(0.4,0.3,4.5,8),[-1.0,-6.5,0],[0,0,0.05]); hipBone.attach(shinR);
+
+    // Hands & Feet
+    const createHand=(pos,isLeft)=>{const g=new THREE.Group();g.position.set(...pos);g.rotation.z=isLeft?0.1:-0.1;const palm=createLayeredMesh(new THREE.BoxGeometry(0.25,0.3,0.1));g.add(palm);const fGeo=new THREE.CylinderGeometry(0.035,0.03,0.25,8);const px=[-0.1,-0.04,0.04,0.1];const ln=[0.9,1.0,0.95,0.8];px.forEach((xo,i)=>{const f=createLayeredMesh(fGeo);const xp=isLeft?xo:-xo;f.position.set(xp,-0.28,0);f.scale.set(1,ln[i],1);g.add(f);});const th=createLayeredMesh(fGeo);th.position.set(isLeft?0.16:-0.16,-0.1,0);th.rotation.z=isLeft?-0.6:0.6;g.add(th);bodyGroup.add(g);spine3.attach(g);return g;};
+    const createFoot=(pos,isLeft)=>{const g=new THREE.Group();g.position.set(...pos);const foot=createLayeredMesh(new THREE.BoxGeometry(0.35,0.15,0.6));foot.position.z=0.15;g.add(foot);const tGeo=new THREE.CylinderGeometry(0.035,0.035,0.12,8);tGeo.rotateX(Math.PI/2);for(let i=0;i<5;i++){const t=createLayeredMesh(tGeo);const xo=(i-2)*0.06;const xp=isLeft?xo:-xo;t.position.set(xp,-0.05,0.5);t.scale.set(1,1,1-i*0.1);g.add(t);}bodyGroup.add(g);hipBone.attach(g);return g;};
+
+    createHand([2.35,-3.4,0],true); createHand([-2.35,-3.4,0],false);
+    createFoot([1.0,-8.9,0.1],true); createFoot([-1.0,-8.9,0.1],false);
+
+    // --- Skeleton ---
+    const skeletonGroup = new THREE.Group(); bodyGroup.add(skeletonGroup);
+
+    // Skull
+    const skullGroup=new THREE.Group(); skullGroup.position.set(0,6.5,0); skeletonGroup.add(skullGroup); attachToRig(skullGroup);
+    const cranium=new THREE.Mesh(new THREE.IcosahedronGeometry(0.65,2),boneMaterial); cranium.scale.set(0.82,0.95,1.05); cranium.position.y=0.2; skullGroup.add(cranium);
+
+    const generateSuturePoints=(start,end,steps,radius,scaleVec)=>{const points=[];for(let i=0;i<=steps;i++){const t=i/steps;const pos=new THREE.Vector3().lerpVectors(start,end,t);pos.normalize().multiplyScalar(radius*1.005);pos.x*=scaleVec.x;pos.y*=scaleVec.y;pos.z*=scaleVec.z;if(i>0&&i<steps){pos.x+=(Math.random()-0.5)*0.02;pos.y+=(Math.random()-0.5)*0.02;pos.z+=(Math.random()-0.5)*0.02;}points.push(pos);}return points;};
+    const skullScale=new THREE.Vector3(0.82,0.95,1.05),skullRadius=0.65;
+    const sagPoints=generateSuturePoints(new THREE.Vector3(0,1,0.8),new THREE.Vector3(0,0.8,-1),40,skullRadius,skullScale);
+    skullGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(sagPoints),sutureMaterial));
+    const corPoints=generateSuturePoints(new THREE.Vector3(-1,0.2,0),new THREE.Vector3(1,0.2,0),50,skullRadius,skullScale);
+    skullGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(corPoints),sutureMaterial));
+    const lamLPoints=generateSuturePoints(new THREE.Vector3(0,0.5,-1),new THREE.Vector3(-0.8,-0.5,-0.5),30,skullRadius,skullScale);
+    skullGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(lamLPoints),sutureMaterial));
+    const lamRPoints=generateSuturePoints(new THREE.Vector3(0,0.5,-1),new THREE.Vector3(0.8,-0.5,-0.5),30,skullRadius,skullScale);
+    skullGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(lamRPoints),sutureMaterial));
+
+    const browGeo=new THREE.TorusGeometry(0.35,0.06,6,12,Math.PI);
+    const brow=new THREE.Mesh(browGeo,boneMaterial); brow.rotation.x=Math.PI/2+0.2; brow.rotation.z=Math.PI/2; brow.position.set(0,0.2,0.55); brow.scale.set(1,0.5,1); skullGroup.add(brow);
+
+    const zygoGeo=new THREE.TubeGeometry(new THREE.CatmullRomCurve3([new THREE.Vector3(0.4,0,0.4),new THREE.Vector3(0.55,0,0.2),new THREE.Vector3(0.5,0,-0.1)]),8,0.04,6,false);
+    const zygoL=new THREE.Mesh(zygoGeo,boneMaterial); skullGroup.add(zygoL);
+    const zygoR=new THREE.Mesh(zygoGeo,boneMaterial); zygoR.scale.set(-1,1,1); skullGroup.add(zygoR);
+
+    const nasal=new THREE.Mesh(new THREE.ConeGeometry(0.08,0.25,4),boneMaterial); nasal.position.set(0,0.1,0.65); nasal.rotation.x=0.5; nasal.scale.set(1,1,0.5); skullGroup.add(nasal);
+
+    const jawGroup=new THREE.Group(); jawGroup.position.set(0,-0.3,0.1); skullGroup.add(jawGroup);
+    const jawBoneGeo=new THREE.BoxGeometry(0.1,0.4,0.15);
+    const jawRamusL=new THREE.Mesh(jawBoneGeo,boneMaterial); jawRamusL.position.set(0.38,0.1,-0.15); jawRamusL.rotation.z=-0.1; jawGroup.add(jawRamusL);
+    const jawRamusR=new THREE.Mesh(jawBoneGeo,boneMaterial); jawRamusR.position.set(-0.38,0.1,-0.15); jawRamusR.rotation.z=0.1; jawGroup.add(jawRamusR);
+    const jawBodyCurve=new THREE.CatmullRomCurve3([new THREE.Vector3(0.38,-0.1,-0.15),new THREE.Vector3(0.25,-0.2,0.3),new THREE.Vector3(0,-0.2,0.35),new THREE.Vector3(-0.25,-0.2,0.3),new THREE.Vector3(-0.38,-0.1,-0.15)]);
+    jawGroup.add(new THREE.Mesh(new THREE.TubeGeometry(jawBodyCurve,16,0.06,6,false),boneMaterial));
+
+    // Eyes
+    const eyeGeo=new THREE.SphereGeometry(0.11,16,16);
+    const eyeMat=new THREE.MeshBasicMaterial({color:0xffffff}); const irisMat=new THREE.MeshBasicMaterial({color:0x22d3ee});
+    const eyeL=new THREE.Mesh(eyeGeo,eyeMat); eyeL.position.set(0.35,0.15,0.5); eyeL.scale.set(1,1,0.6); skullGroup.add(eyeL);
+    const irisL=new THREE.Mesh(new THREE.SphereGeometry(0.06,8,8),irisMat); irisL.position.set(0,0,0.09); eyeL.add(irisL);
+    const eyeR=eyeL.clone(); eyeR.position.set(-0.35,0.15,0.5); skullGroup.add(eyeR);
+    const irisR=new THREE.Mesh(new THREE.SphereGeometry(0.06,8,8),irisMat); irisR.position.set(0,0,0.09); eyeR.add(irisR);
+
+    const eyelidGeo=new THREE.SphereGeometry(0.12,16,16,0,Math.PI*2,0,Math.PI*0.5);
+    const eyelidMat=new THREE.MeshPhysicalMaterial({color:0x0f172a,roughness:0.5,metalness:0.2,emissive:0x06b6d4,emissiveIntensity:0.1,clearcoat:0.5,side:THREE.FrontSide});
+    const lidL=new THREE.Mesh(eyelidGeo,eyelidMat); lidL.position.copy(eyeL.position); lidL.rotation.x=-2.0; skullGroup.add(lidL);
+    const lidR=new THREE.Mesh(eyelidGeo,eyelidMat); lidR.position.copy(eyeR.position); lidR.rotation.x=-2.0; skullGroup.add(lidR);
+
+    const nose=createLayeredMesh(new THREE.ConeGeometry(0.18,0.45,4)); nose.position.set(0,-0.12,0.72); nose.rotation.x=Math.PI/2+0.1; nose.rotation.z=Math.PI/4; nose.scale.set(0.8,1,0.6); skullGroup.add(nose);
+
+    const blinkState={isBlinking:false,blinkStartTime:0,nextBlinkTime:0,duration:0.15,isDouble:false};
+
+    // Spine
+    const spineCurve=new THREE.CatmullRomCurve3([new THREE.Vector3(0,5.8,-0.1),new THREE.Vector3(0,5.0,0),new THREE.Vector3(0,3.5,0.2),new THREE.Vector3(0,1.5,0),new THREE.Vector3(0,0.5,0)]);
+    const numVertebrae=24;
+    for(let i=0;i<numVertebrae;i++){
+      const t=i/(numVertebrae-1); const pos=spineCurve.getPoint(t); const tangent=spineCurve.getTangent(t); const scale=0.8+(t*0.5);
+      const up=tangent.clone(); const forward=new THREE.Vector3(0,0,1); const right=new THREE.Vector3().crossVectors(up,forward).normalize(); forward.crossVectors(right,up).normalize();
+      const m=new THREE.Matrix4(); m.makeBasis(right,up,forward);
+      if(i<numVertebrae-1){const disc=new THREE.Mesh(new THREE.CylinderGeometry(0.14*scale,0.14*scale,0.04,12),cartilageMaterial);const discPos=pos.clone().add(tangent.clone().multiplyScalar(0.08*scale));disc.position.copy(discPos);disc.quaternion.setFromRotationMatrix(m);disc.rotateX(Math.PI/2);skeletonGroup.add(disc);attachToRig(disc);}
+      const vg=new THREE.Group(); vg.position.copy(pos); vg.quaternion.setFromRotationMatrix(m);
+      const body=new THREE.Mesh(new THREE.CylinderGeometry(0.13*scale,0.13*scale,0.1*scale,10),boneMaterial); body.rotateX(Math.PI/2); vg.add(body);
+      const arch=new THREE.Mesh(new THREE.TorusGeometry(0.08*scale,0.03*scale,4,8,Math.PI),boneMaterial); arch.position.set(0,0,-0.12*scale); arch.rotateZ(Math.PI/2); vg.add(arch);
+      const spinous=new THREE.Mesh(new THREE.ConeGeometry(0.04*scale,0.15*scale,4),boneMaterial); spinous.position.set(0,0,-0.22*scale); spinous.rotateX(-Math.PI/2+0.3); vg.add(spinous);
+      const transL=new THREE.Mesh(new THREE.BoxGeometry(0.25*scale,0.04*scale,0.06*scale),boneMaterial); transL.position.set(0.12*scale,0,-0.08*scale); transL.rotateZ(0.2); transL.rotateY(-0.3); vg.add(transL);
+      const transR=new THREE.Mesh(new THREE.BoxGeometry(0.25*scale,0.04*scale,0.06*scale),boneMaterial); transR.position.set(-0.12*scale,0,-0.08*scale); transR.rotateZ(-0.2); transR.rotateY(0.3); vg.add(transR);
+      skeletonGroup.add(vg); attachToRig(vg);
+      if(i>=5&&i<=16){const ribSize=0.6+Math.sin((i-5)*0.3)*0.6; const ribGeo=new THREE.TorusGeometry(ribSize,0.025,6,16,Math.PI*0.75); const axis=new THREE.Vector3(0,1,0);
+        const ribL=new THREE.Mesh(ribGeo,boneMaterial); ribL.position.copy(pos); ribL.quaternion.setFromUnitVectors(axis,tangent); ribL.rotateY(-0.2); ribL.rotateZ(Math.PI/2+0.3); ribL.position.x+=0.1; skeletonGroup.add(ribL); attachToRig(ribL);
+        const ribR=new THREE.Mesh(ribGeo,boneMaterial); ribR.position.copy(pos); ribR.quaternion.setFromUnitVectors(axis,tangent); ribR.rotateY(Math.PI+0.2); ribR.rotateZ(Math.PI/2+0.3); ribR.position.x-=0.1; skeletonGroup.add(ribR); attachToRig(ribR);}
+    }
+
+    // Pelvis
+    const pelvisGroup=new THREE.Group(); pelvisGroup.position.set(0,0.2,0); skeletonGroup.add(pelvisGroup); attachToRig(pelvisGroup);
+    const sacrum=new THREE.Mesh(new THREE.ConeGeometry(0.3,0.5,4),boneMaterial); sacrum.position.set(0,0.3,-0.15); sacrum.rotation.x=Math.PI; pelvisGroup.add(sacrum);
+    const iliumGeo=new THREE.CylinderGeometry(0.5,0.3,0.6,6,1,true,0,Math.PI);
+    const ilium=new THREE.Mesh(iliumGeo,boneMaterial); ilium.position.set(0,0.4,0); ilium.scale.set(1.2,1,0.6); ilium.rotation.z=Math.PI; pelvisGroup.add(ilium);
+
+    // --- Nervous System ---
+    const nervousGroup=new THREE.Group(); bodyGroup.add(nervousGroup);
+    const nerveMaterial=new THREE.LineBasicMaterial({color:0x66ffff,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending,linewidth:1});
+    materialsRef['nerves']=nerveMaterial;
+
+    const brainNerveGeo=new THREE.BufferGeometry(); const brainPts=[]; const r=0.6; const brainNodes=[];
+    for(let i=0;i<80;i++){const theta=Math.random()*Math.PI*2,phi=Math.acos(2*Math.random()-1),rad=r*Math.cbrt(Math.random()),x=rad*Math.sin(phi)*Math.cos(theta),y=rad*Math.sin(phi)*Math.sin(theta)+6.6,z=rad*Math.cos(phi);brainNodes.push(new THREE.Vector3(x,y,z));}
+    brainNodes.forEach((node,i)=>{brainNodes.forEach((other,j)=>{if(i!==j&&node.distanceTo(other)<0.35){brainPts.push(node.x,node.y,node.z);brainPts.push(other.x,other.y,other.z);}});});
+    brainNerveGeo.setAttribute('position',new THREE.Float32BufferAttribute(brainPts,3));
+    nervousGroup.add(new THREE.LineSegments(brainNerveGeo,nerveMaterial)); attachToRig(nervousGroup.children[nervousGroup.children.length-1]);
+
+    const cordCurve=new THREE.CatmullRomCurve3([new THREE.Vector3(0,6.5,0),new THREE.Vector3(0,5.0,-0.1),new THREE.Vector3(0,3.0,0.1),new THREE.Vector3(0,0.5,0)]);
+    const cordGeo=new THREE.TubeGeometry(cordCurve,20,0.04,8,false);
+    const cordMesh=new THREE.Mesh(cordGeo,new THREE.MeshBasicMaterial({color:0x66ffff,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending}));
+    nervousGroup.add(cordMesh); materialsRef['spinal_cord']=cordMesh.material; attachToRig(cordMesh);
+
+    const createBranchedNerve=(pathPoints,branchCount=4,branchLength=0.35,complexity=2)=>{
+      const group=new THREE.Group(); const curve=new THREE.CatmullRomCurve3(pathPoints); const pts=curve.getPoints(60);
+      const geo=new THREE.BufferGeometry().setFromPoints(pts); group.add(new THREE.Line(geo,nerveMaterial));
+      const branchVerts=[];
+      const addSubBranch=(start,direction,length,depth)=>{if(depth<=0)return;for(let i=0;i<2;i++){const dev=new THREE.Vector3((Math.random()-0.5),(Math.random()-0.5),(Math.random()-0.5)).normalize().multiplyScalar(0.7);const newDir=new THREE.Vector3().addVectors(direction,dev).normalize();const bLen=length*(0.6+Math.random()*0.4);const end=start.clone().add(newDir.multiplyScalar(bLen));branchVerts.push(start.x,start.y,start.z,end.x,end.y,end.z);addSubBranch(end,newDir,bLen,depth-1);}};
+      for(let i=0;i<pts.length;i+=Math.floor(pts.length/branchCount)){if(i<5||i>=pts.length-5)continue;const sp=pts[i],tangent=curve.getTangent(i/pts.length);const rv=new THREE.Vector3(Math.random()-0.5,Math.random()-0.5,Math.random()-0.5).normalize();const normal=new THREE.Vector3().crossVectors(tangent,rv).normalize();addSubBranch(sp,normal,branchLength,complexity);}
+      if(branchVerts.length>0){const bg=new THREE.BufferGeometry();bg.setAttribute('position',new THREE.Float32BufferAttribute(branchVerts,3));group.add(new THREE.LineSegments(bg,nerveMaterial));}
+      attachToRig(group); return group;
+    };
+
+    nervousGroup.add(createBranchedNerve([new THREE.Vector3(0,5.2,0),new THREE.Vector3(0.5,5.0,0),new THREE.Vector3(1.8,4.2,0),new THREE.Vector3(2.1,2.0,0.1),new THREE.Vector3(2.2,0.5,0.1),new THREE.Vector3(2.3,-1.0,0.1)],5,0.35,3));
+    nervousGroup.add(createBranchedNerve([new THREE.Vector3(0,5.2,0),new THREE.Vector3(-0.5,5.0,0),new THREE.Vector3(-1.8,4.2,0),new THREE.Vector3(-2.1,2.0,0.1),new THREE.Vector3(-2.2,0.5,0.1),new THREE.Vector3(-2.3,-1.0,0.1)],5,0.35,3));
+    nervousGroup.add(createBranchedNerve([new THREE.Vector3(0,0.8,0),new THREE.Vector3(0.5,0.5,0),new THREE.Vector3(0.9,-2.5,-0.05),new THREE.Vector3(0.95,-4.5,-0.05),new THREE.Vector3(1.0,-6.5,-0.05)],6,0.45,3));
+    nervousGroup.add(createBranchedNerve([new THREE.Vector3(0,0.8,0),new THREE.Vector3(-0.5,0.5,0),new THREE.Vector3(-0.9,-2.5,-0.05),new THREE.Vector3(-0.95,-4.5,-0.05),new THREE.Vector3(-1.0,-6.5,-0.05)],6,0.45,3));
+    nervousGroup.add(createBranchedNerve([new THREE.Vector3(0.2,5.0,0),new THREE.Vector3(0.8,3.5,0.3),new THREE.Vector3(0.6,1.5,0.4)],5,0.3,2));
+    nervousGroup.add(createBranchedNerve([new THREE.Vector3(-0.2,5.0,0),new THREE.Vector3(-0.8,3.5,0.3),new THREE.Vector3(-0.6,1.5,0.4)],5,0.3,2));
+
+    const nerveCurves=[cordCurve,new THREE.CatmullRomCurve3([new THREE.Vector3(0,5.2,0),new THREE.Vector3(1.8,4.2,0),new THREE.Vector3(2.3,-1.0,0.1)]),new THREE.CatmullRomCurve3([new THREE.Vector3(0,5.2,0),new THREE.Vector3(-1.8,4.2,0),new THREE.Vector3(-2.3,-1.0,0.1)]),new THREE.CatmullRomCurve3([new THREE.Vector3(0,0.8,0),new THREE.Vector3(0.9,-2.5,-0.05),new THREE.Vector3(1.0,-6.5,-0.05)]),new THREE.CatmullRomCurve3([new THREE.Vector3(0,0.8,0),new THREE.Vector3(-0.9,-2.5,-0.05),new THREE.Vector3(-1.0,-6.5,-0.05)])];
+
+    const gangliaGeo=new THREE.BufferGeometry(); const gangliaArr=[];
+    nerveCurves.forEach(c=>{c.getPoints(8).forEach(p=>gangliaArr.push(p.x,p.y,p.z));});
+    gangliaGeo.setAttribute('position',new THREE.Float32BufferAttribute(gangliaArr,3));
+    const gangliaMat=new THREE.PointsMaterial({color:0x66ffff,size:0.12,transparent:true,opacity:0.8,blending:THREE.AdditiveBlending,depthWrite:false});
+    nervousGroup.add(new THREE.Points(gangliaGeo,gangliaMat)); materialsRef['ganglia']=gangliaMat;
+
+    const signalCount=120; const signalGeo=new THREE.BufferGeometry(); const signalPos=new Float32Array(signalCount*3); const signalData=[];
+    for(let i=0;i<signalCount;i++){signalData.push({curveIdx:Math.floor(Math.random()*nerveCurves.length),t:Math.random(),speed:0.005+Math.random()*0.01});signalPos[i*3]=0;}
+    signalGeo.setAttribute('position',new THREE.BufferAttribute(signalPos,3));
+    const signalMat=new THREE.PointsMaterial({color:0xffffff,size:0.15,transparent:true,opacity:0.9,blending:THREE.AdditiveBlending,depthWrite:false});
+    const signalSystem=new THREE.Points(signalGeo,signalMat); nervousGroup.add(signalSystem);
+
+    // --- Circulatory System ---
+    const vascularGroup=new THREE.Group(); bodyGroup.add(vascularGroup);
+    const vesselMaterial=new THREE.MeshPhysicalMaterial({color:0x880000,emissive:0xaa0000,emissiveIntensity:0.2,metalness:0.1,roughness:0.2,transparent:true,opacity:0.5,side:THREE.DoubleSide,depthWrite:false});
+    materialsRef['vessels']=vesselMaterial;
+    const capillaryMaterial=new THREE.LineBasicMaterial({color:0xff4444,transparent:true,opacity:0.3,blending:THREE.AdditiveBlending});
+    materialsRef['capillaries']=capillaryMaterial;
+
+    const createVessel=(points,radius,name)=>{const curve=new THREE.CatmullRomCurve3(points);const geo=new THREE.TubeGeometry(curve,16,radius,8,false);const mesh=new THREE.Mesh(geo,vesselMaterial);vascularGroup.add(mesh);organsRef[name]=mesh;attachToRig(mesh);return{mesh,curve};};
+
+    const{curve:aortaCurve}=createVessel([new THREE.Vector3(0.1,3.7,0.1),new THREE.Vector3(0,4.2,0),new THREE.Vector3(-0.1,3.8,-0.1),new THREE.Vector3(-0.1,1.0,-0.1),new THREE.Vector3(0,0.2,0)],0.1,'aorta');
+    const{curve:venaCavaCurve}=createVessel([new THREE.Vector3(0.15,0.2,0),new THREE.Vector3(0.2,3.6,0.1)],0.12,'vena_cava');
+    const{curve:vesselLegLCurve}=createVessel([new THREE.Vector3(0,0.2,0),new THREE.Vector3(0.6,-2.0,0.1),new THREE.Vector3(0.7,-6.0,0.1)],0.06,'femoral_L');
+    const{curve:vesselLegRCurve}=createVessel([new THREE.Vector3(0,0.2,0),new THREE.Vector3(-0.6,-2.0,0.1),new THREE.Vector3(-0.7,-6.0,0.1)],0.06,'femoral_R');
+    const{curve:vesselArmLCurve}=createVessel([new THREE.Vector3(-0.1,3.8,-0.1),new THREE.Vector3(1.5,3.8,0),new THREE.Vector3(2.2,0,0)],0.05,'brachial_L');
+    const{curve:vesselArmRCurve}=createVessel([new THREE.Vector3(-0.1,3.8,-0.1),new THREE.Vector3(-1.5,3.8,0),new THREE.Vector3(-2.2,0,0)],0.05,'brachial_R');
+    const{curve:neckCurve}=createVessel([new THREE.Vector3(0,4.2,0),new THREE.Vector3(0.2,5.5,0.1)],0.05,'carotid_L');
+    createVessel([new THREE.Vector3(0,4.2,0),new THREE.Vector3(-0.2,5.5,0.1)],0.05,'carotid_R');
+
+    const generateCapillaries=(curves)=>{
+      const points=[];
+      curves.forEach(curve=>{const cpts=curve.getPoints(15);cpts.forEach((p,i)=>{if(i%2!==0)return;const branch=(origin,depth,scale)=>{if(depth===0)return;for(let k=0;k<2;k++){const dir=new THREE.Vector3(Math.random()-0.5,Math.random()-0.5,Math.random()-0.5).normalize();const end=origin.clone().add(dir.multiplyScalar(scale));points.push(origin.x,origin.y,origin.z,end.x,end.y,end.z);branch(end,depth-1,scale*0.7);}};branch(p,2,0.25);});});
+      const geo=new THREE.BufferGeometry(); geo.setAttribute('position',new THREE.Float32BufferAttribute(points,3));
+      const mesh=new THREE.LineSegments(geo,capillaryMaterial); vascularGroup.add(mesh); attachToRig(mesh);
+    };
+    generateCapillaries([aortaCurve,venaCavaCurve,vesselLegLCurve,vesselLegRCurve,vesselArmLCurve,vesselArmRCurve,neckCurve]);
+
+    const createVascularBed=(center,size,count)=>{
+      const points=[];
+      for(let i=0;i<count;i++){const theta=Math.random()*Math.PI*2,phi=Math.acos(2*Math.random()-1),r=Math.cbrt(Math.random()),x=center.x+r*size.x*Math.sin(phi)*Math.cos(theta),y=center.y+r*size.y*Math.sin(phi)*Math.sin(theta),z=center.z+r*size.z*Math.cos(phi);const origin=new THREE.Vector3(x,y,z);const buildBranch=(start,depth,len)=>{if(depth<=0)return;for(let b=0;b<2;b++){const dir=new THREE.Vector3(Math.random()-0.5,Math.random()-0.5,Math.random()-0.5).normalize();const end=start.clone().add(dir.multiplyScalar(len));points.push(start.x,start.y,start.z,end.x,end.y,end.z);buildBranch(end,depth-1,len*0.6);}};buildBranch(origin,3,0.1);}
+      const geo=new THREE.BufferGeometry(); geo.setAttribute('position',new THREE.Float32BufferAttribute(points,3));
+      const mesh=new THREE.LineSegments(geo,capillaryMaterial); vascularGroup.add(mesh); attachToRig(mesh);
+    };
+    createVascularBed(new THREE.Vector3(0,6.6,0),new THREE.Vector3(0.6,0.5,0.6),40);
+    createVascularBed(new THREE.Vector3(0.2,3.6,0.2),new THREE.Vector3(0.4,0.4,0.4),30);
+    createVascularBed(new THREE.Vector3(0.8,3.8,0),new THREE.Vector3(0.5,0.8,0.5),30);
+    createVascularBed(new THREE.Vector3(-0.8,3.8,0),new THREE.Vector3(0.5,0.8,0.5),30);
+    createVascularBed(new THREE.Vector3(2.35,-3.4,0),new THREE.Vector3(0.2,0.3,0.1),20);
+    createVascularBed(new THREE.Vector3(-2.35,-3.4,0),new THREE.Vector3(0.2,0.3,0.1),20);
+    createVascularBed(new THREE.Vector3(1.0,-8.9,0.1),new THREE.Vector3(0.25,0.1,0.4),20);
+    createVascularBed(new THREE.Vector3(-1.0,-8.9,0.1),new THREE.Vector3(0.25,0.1,0.4),20);
+
+    // --- Internal Organs ---
+    const organsGroup=new THREE.Group(); bodyGroup.add(organsGroup);
+    const addOrgan=(name,geo,mat,pos,scale=[1,1,1],rot=[0,0,0])=>{const mesh=new THREE.Mesh(geo,mat);mesh.position.set(...pos);mesh.scale.set(...scale);mesh.rotation.set(...rot);organsGroup.add(mesh);organsRef[name]=mesh;attachToRig(mesh);return mesh;};
+
+    addOrgan('brain',new THREE.IcosahedronGeometry(0.65,1),createOrganMaterial('brain',0xffaaff,0.6),[0,6.6,0],[1,0.8,1.1]);
+    addOrgan('thyroid',new THREE.SphereGeometry(0.15,8,8),createOrganMaterial('thyroid',0xff69b4,0.8),[0,5.2,0.2],[1.5,0.8,0.8]);
+    addOrgan('trachea',new THREE.CylinderGeometry(0.12,0.12,1.2,12),createOrganMaterial('trachea',0xcccccc,0.7),[0,5.0,0.1]);
+    addOrgan('esophagus',new THREE.CylinderGeometry(0.08,0.08,1.2,8),createOrganMaterial('esophagus',0xe9967a,0.7),[0,5.0,-0.05]);
+    addOrgan('heart',new THREE.SphereGeometry(0.35,16,16),createOrganMaterial('heart',0xff0000,0.9),[0.2,3.6,0.2]);
+    const lungGeo=new THREE.SphereGeometry(0.7,16,16); const lungMat=createOrganMaterial('lungs',0xffaaaa,0.5);
+    addOrgan('lungL',lungGeo,lungMat,[0.8,3.8,-0.1],[0.8,1.4,0.8],[0,0,-0.1]);
+    addOrgan('lungR',lungGeo,lungMat,[-0.8,3.8,-0.1],[0.8,1.4,0.8],[0,0,0.1]);
+    addOrgan('liver',new THREE.DodecahedronGeometry(0.7),createOrganMaterial('liver',0x8B4513,0.8),[-0.5,2.7,0.3],[1.2,0.6,0.8],[0,0,0.3]);
+    addOrgan('gallbladder',new THREE.SphereGeometry(0.12,8,8),createOrganMaterial('gallbladder',0x228b22,0.9),[-0.3,2.4,0.5]);
+    addOrgan('stomach',new THREE.SphereGeometry(0.5,16,16),createOrganMaterial('stomach',0x44aa44,0.7),[0.4,2.6,0.2],[1,0.8,0.7]);
+    addOrgan('spleen',new THREE.SphereGeometry(0.2,12,12),createOrganMaterial('spleen',0x800080,0.85),[0.8,2.8,0],[1,1.5,0.8],[0,0,0.2]);
+    addOrgan('pancreas',new THREE.CylinderGeometry(0.1,0.1,0.8,8),createOrganMaterial('pancreas',0xffd700,0.85),[0,2.5,-0.2],[1,1,0.5],[0,0,1.57]);
+    const kidneyGeo=new THREE.SphereGeometry(0.3,12,12); const kidneyMat=createOrganMaterial('kidney',0x880000,0.8);
+    addOrgan('kidneyL',kidneyGeo,kidneyMat,[0.4,2.2,-0.5],[0.8,1.2,0.6],[0.2,0,0]);
+    addOrgan('kidneyR',kidneyGeo,kidneyMat,[-0.4,2.2,-0.5],[0.8,1.2,0.6],[0.2,0,0]);
+    addOrgan('intestine',new THREE.TorusKnotGeometry(0.4,0.15,64,8,2,3),createOrganMaterial('intestine',0xffaa88,0.6),[0,1.5,0.1],[1,0.8,0.8],[1.5,0,0]);
+    const colonCurve=new THREE.CatmullRomCurve3([new THREE.Vector3(-0.6,0.8,0.2),new THREE.Vector3(-0.6,2.0,0.2),new THREE.Vector3(0.6,2.0,0.2),new THREE.Vector3(0.6,0.8,0.2),new THREE.Vector3(0,0.5,0.2)]);
+    addOrgan('colon',new THREE.TubeGeometry(colonCurve,20,0.15,8,false),createOrganMaterial('colon',0xcd853f,0.75),[0,0,0]);
+    addOrgan('bladder',new THREE.SphereGeometry(0.25,12,12),createOrganMaterial('bladder',0xffe4e1,0.8),[0,0.5,0.3],[1,0.8,1]);
+
+    // --- Blood Flow ---
+    const paths=[
+      new THREE.CatmullRomCurve3([new THREE.Vector3(0.2,3.6,0),new THREE.Vector3(0,5.0,0),new THREE.Vector3(0,6.6,0),new THREE.Vector3(0,5.0,-0.2),new THREE.Vector3(0.2,3.6,0)],true),
+      new THREE.CatmullRomCurve3([new THREE.Vector3(0.2,3.6,0),new THREE.Vector3(2.0,4.0,0),new THREE.Vector3(2.5,-0.5,0),new THREE.Vector3(2.8,-3.0,0),new THREE.Vector3(2.2,-0.5,0),new THREE.Vector3(0.2,3.6,0)],true),
+      new THREE.CatmullRomCurve3([new THREE.Vector3(0.2,3.6,0),new THREE.Vector3(-2.0,4.0,0),new THREE.Vector3(-2.5,-0.5,0),new THREE.Vector3(-2.8,-3.0,0),new THREE.Vector3(-2.2,-0.5,0),new THREE.Vector3(0.2,3.6,0)],true),
+      new THREE.CatmullRomCurve3([new THREE.Vector3(0.2,3.6,0),new THREE.Vector3(0,0,0.2),new THREE.Vector3(1.0,-3.0,0),new THREE.Vector3(1.2,-8.0,0),new THREE.Vector3(0,-3.0,-0.2),new THREE.Vector3(0.2,3.6,0)],true),
+      new THREE.CatmullRomCurve3([new THREE.Vector3(0.2,3.6,0),new THREE.Vector3(0,0,0.2),new THREE.Vector3(-1.0,-3.0,0),new THREE.Vector3(-1.2,-8.0,0),new THREE.Vector3(0,-3.0,-0.2),new THREE.Vector3(0.2,3.6,0)],true)
+    ];
+
+    const particleCount=600; const particleGeo=new THREE.BufferGeometry(); const positions=new Float32Array(particleCount*3); const particleData=[];
+    for(let i=0;i<particleCount;i++){particleData.push({pathIndex:Math.floor(Math.random()*paths.length),t:Math.random(),speed:0.002+Math.random()*0.003});positions[i*3]=0;positions[i*3+1]=0;positions[i*3+2]=0;}
+    particleGeo.setAttribute('position',new THREE.BufferAttribute(positions,3));
+    const particleMat=new THREE.PointsMaterial({color:0xff3333,size:0.15,transparent:true,opacity:0.8,blending:THREE.AdditiveBlending,depthWrite:false});
+    particleSystem=new THREE.Points(particleGeo,particleMat); bodyGroup.add(particleSystem);
+
+    // Digestive System
+    const digestivePath=new THREE.CatmullRomCurve3([new THREE.Vector3(0,5.8,0.05),new THREE.Vector3(0,5.0,-0.05),new THREE.Vector3(0,4.0,-0.05),new THREE.Vector3(0.3,2.8,0.1),new THREE.Vector3(0.4,2.5,0.2),new THREE.Vector3(0,1.5,0.1)]);
+    const digCount=200; const digGeo=new THREE.BufferGeometry(); const digPos=new Float32Array(digCount*3);
+    for(let i=0;i<digCount*3;i++)digPos[i]=999;
+    digGeo.setAttribute('position',new THREE.BufferAttribute(digPos,3));
+    const digMat=new THREE.PointsMaterial({color:0x60a5fa,size:0.18,transparent:true,opacity:0.9,blending:THREE.AdditiveBlending});
+    const digSystem=new THREE.Points(digGeo,digMat); bodyGroup.add(digSystem);
+    digestiveSystem={particles:digSystem,path:digestivePath,data:Array.from({length:digCount},()=>({t:0,speed:0,offset:new THREE.Vector3((Math.random()-0.5)*0.2,(Math.random()-0.5)*0.2,(Math.random()-0.5)*0.2),active:false})),activeCount:0};
+
+    // Scan Ring
+    const ringGeo=new THREE.TorusGeometry(3,0.05,16,100);
+    const ringMat=new THREE.MeshBasicMaterial({color:0x22d3ee,transparent:true,opacity:0.5});
+    const scanRing=new THREE.Mesh(ringGeo,ringMat); scanRing.rotation.x=Math.PI/2; scene.add(scanRing);
+
+    // Initial color update
+    updateOrganColors();
+
+    // === ANIMATION LOOP ===
+    let time=0;
+    const animate=()=>{
+      requestAnimationFrame(animate);
+      time+=0.015;
+      controls.update();
+      const{heartRate,respRate}=vitals;
+      const now=performance.now()/1000;
+
+      // Pulse Light
+      if(pulseLight){
+        const s=currentStatus;
+        let colorHex=0x22d3ee,pulseSpeed=2.0,baseIntensity=1.0,pulseAmp=0.5;
+        if(s==='warning'){colorHex=0xf59e0b;pulseSpeed=4.0;baseIntensity=2.0;pulseAmp=1.0;}
+        else if(s==='critical'){colorHex=0xef4444;pulseSpeed=8.0;baseIntensity=3.0;pulseAmp=2.0;}
+        pulseLight.color.setHex(colorHex);
+        const pulse=Math.sin(now*pulseSpeed)*0.5+0.5;
+        pulseLight.intensity=baseIntensity+(pulse*pulseAmp);
+        pulseLight.position.y=3.5+Math.sin(now*0.5)*0.2;
+      }
+
+      // Body slow rotation
+      bodyGroup.rotation.y=Math.sin(time*0.2)*0.1;
+
+      // Skeletal sway
+      if(rigRef.spine1){const sway=Math.sin(time*0.5)*0.02;rigRef.spine1.rotation.z=sway;rigRef.spine1.rotation.x=Math.sin(time*0.3)*0.01;}
+      if(rigRef.spine2&&rigRef.spine3){const bf=((respRate||16)/60)*Math.PI*2;const breath=Math.sin(time*bf*5)*0.02;rigRef.spine2.rotation.x=-breath;rigRef.spine3.rotation.x=-breath*0.5;rigRef.spine2.scale.set(1+breath,1+breath*0.2,1+breath);}
+      if(rigRef.head){rigRef.head.rotation.y=Math.sin(time*0.4)*0.03;}
+
+      // Heart pulse
+      const bps=heartRate/60; const beatCycle=(now*bps)%1; const beatPulse=Math.pow(Math.sin(beatCycle*Math.PI),10);
+      if(organsRef.heart&&materialsRef.heart){const mesh=organsRef.heart;const mat=materialsRef.heart;const scale=1+beatPulse*0.15;mesh.scale.set(scale,scale,scale);const base=mat.userData.baseEmissiveIntensity||0.1;const boost=currentStatus==='critical'?2.0:1.2;mat.emissiveIntensity=base+(beatPulse*boost);}
+
+      // Liver metabolic pulse
+      if(organsRef.liver){const rr=vitals.respRate||16;const period=60/rr;const t=(now%period)/period;const sc=1.0+Math.sin(t*Math.PI*2-0.5)*0.025;organsRef.liver.scale.set(sc,sc,sc);const mat=organsRef.liver.material;if(mat&&mat.userData.baseEmissiveIntensity){mat.emissiveIntensity=mat.userData.baseEmissiveIntensity+(Math.sin(t*Math.PI*2-0.5)*0.5+0.5)*0.15;}}
+
+      // Vessel pulse
+      if(materialsRef.vessels){const vcycle=((now-0.1)*bps)%1;const vp=Math.pow(Math.sin(vcycle*Math.PI),4);materialsRef.vessels.emissiveIntensity=0.2+vp*0.3;}
+
+      // Nerve pulse
+      const s=currentStatus; let pFreq=3.0,minOp=0.3,maxOp=0.6,jitter=0.05;
+      if(s==='warning'){pFreq=8.0;minOp=0.4;maxOp=0.8;jitter=0.15;}
+      else if(s==='critical'){pFreq=18.0;minOp=0.5;maxOp=1.0;jitter=0.3;}
+      if(materialsRef.nerves){const bp=Math.sin(now*pFreq);const range=maxOp-minOp;let val=minOp+(bp+1)*0.5*range+((Math.random()-0.5)*jitter);materialsRef.nerves.opacity=Math.max(0.1,Math.min(1.0,val));}
+      if(materialsRef.neuralLayer){const pulse=Math.sin(now*8.0)*0.5+0.5;const sb=s==='critical'?0.8:s==='warning'?0.5:0.2;materialsRef.neuralLayer.opacity=0.1+(pulse*sb*0.4);materialsRef.neuralLayer.emissiveIntensity=0.5+pulse;}
+      if(materialsRef.spinal_cord){const bp=Math.sin(now*pFreq);const range=maxOp-minOp;let val=minOp+(bp+1)*0.5*range;materialsRef.spinal_cord.opacity=Math.max(0.2,Math.min(1.0,val));}
+      if(materialsRef.ganglia){materialsRef.ganglia.opacity=Math.sin(time*15)*0.2+0.8;}
+
+      // Neural signals
+      const sigPositions=signalSystem.geometry.attributes.position.array;
+      const speedMult=s==='critical'?4.0:s==='warning'?2.5:1.0;
+      for(let i=0;i<signalCount;i++){const d=signalData[i];d.t+=d.speed*speedMult;if(d.t>1){d.t=0;d.curveIdx=Math.floor(Math.random()*nerveCurves.length);}const point=nerveCurves[d.curveIdx].getPoint(d.t);sigPositions[i*3]=point.x;sigPositions[i*3+1]=point.y;sigPositions[i*3+2]=point.z;}
+      signalSystem.geometry.attributes.position.needsUpdate=true;
+
+      // Blink
+      const respFreqHz=(respRate||16)/60; const breathCycle=(now*respFreqHz)%1;
+      if(blinkState.nextBlinkTime===0)blinkState.nextBlinkTime=now+2+Math.random()*4;
+      const isBreathSync=breathCycle>0.4&&breathCycle<0.6;
+      const forceBlink=(now-blinkState.nextBlinkTime)>3.0;
+      const isImmediate=blinkState.nextBlinkTime<=now&&(now-blinkState.nextBlinkTime)<1.0&&blinkState.isDouble;
+      if(!blinkState.isBlinking&&now>blinkState.nextBlinkTime){if(isBreathSync||forceBlink||isImmediate){blinkState.isBlinking=true;blinkState.blinkStartTime=now;blinkState.duration=0.12+Math.random()*0.1;if(!blinkState.isDouble&&Math.random()>0.85){blinkState.isDouble=true;blinkState.nextBlinkTime=now+blinkState.duration+0.05+Math.random()*0.1;}else{blinkState.isDouble=false;blinkState.nextBlinkTime=now+3+Math.random()*5;}}}
+      if(blinkState.isBlinking){const t=(now-blinkState.blinkStartTime)/blinkState.duration;if(t>=1){blinkState.isBlinking=false;lidL.rotation.x=-2.0;lidR.rotation.x=-2.0;}else{const closure=Math.sin(t*Math.PI);const targetRot=-2.0+(closure*1.8);lidL.rotation.x=targetRot;lidR.rotation.x=targetRot;}}
+
+      // Click glow
+      clickEffects.forEach((data,uuid)=>{const age=now-data.startTime;const mat=data.mesh.material;const duration=2.0;if(age>duration){if(mat.userData.baseEmissiveIntensity!==undefined)mat.emissiveIntensity=mat.userData.baseEmissiveIntensity;clickEffects.delete(uuid);}else{const decay=Math.exp(-age*3.0);const highlight=Math.sin(age*10)*0.5+0.5;const boost=1.5*decay*highlight;if(mat.userData.baseEmissiveIntensity!==undefined)mat.emissiveIntensity=mat.userData.baseEmissiveIntensity+boost;}});
+
+      // Scan ring
+      scanRing.position.y=Math.sin(time*0.5)*6;
+      const rscale=1+Math.abs(Math.sin(time*0.5))*0.2; scanRing.scale.set(rscale,rscale,1);
+
+      // Blood particles
+      const bPos=particleSystem.geometry.attributes.position.array;
+      for(let i=0;i<particleCount;i++){const data=particleData[i];const fm=heartRate/70;data.t+=data.speed*fm;if(data.t>1)data.t=0;const path=paths[data.pathIndex];const point=path.getPoint(data.t);const nx=Math.sin(data.t*50+i)*0.15,ny=Math.cos(data.t*30+i)*0.15,nz=Math.sin(data.t*40+i)*0.15;bPos[i*3]=point.x+nx;bPos[i*3+1]=point.y+ny;bPos[i*3+2]=point.z+nz;}
+      particleSystem.geometry.attributes.position.needsUpdate=true;
+
+      // Digestive particles
+      if(digestiveSystem&&digestiveSystem.activeCount>0){const sys=digestiveSystem;const dp=sys.particles.geometry.attributes.position.array;let stillActive=0;for(let i=0;i<sys.data.length;i++){const d=sys.data[i];if(d.active){if(d.t<0){d.t+=0.01;}else{d.t+=d.speed;if(d.t>1){d.active=false;dp[i*3]=999;}else{const point=sys.path.getPoint(d.t);let swirl=0.1;if(d.t>0.6&&d.t<0.8)swirl=0.3;dp[i*3]=point.x+d.offset.x*swirl*2;dp[i*3+1]=point.y+d.offset.y*swirl*2;dp[i*3+2]=point.z+d.offset.z*swirl*2;stillActive++;}}}}sys.activeCount=stillActive;sys.particles.geometry.attributes.position.needsUpdate=true;}
+
+      renderer.render(scene,camera);
+    };
+    animate();
+
+    // Resize
+    window.addEventListener('resize', () => {
+      const w=window.innerWidth,h=window.innerHeight;
+      renderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix();
+    });
+
+    // postMessage API
+    window.addEventListener('message', (e) => {
+      if (!e.data) return;
+      if (e.data.status && ['optimal','warning','critical'].includes(e.data.status)) {
+        currentStatus = e.data.status;
+        updateOrganColors();
+      }
+      if (e.data.heartRate) vitals.heartRate = e.data.heartRate;
+      if (e.data.oxygenSat) vitals.oxygenSat = e.data.oxygenSat;
+      if (e.data.temperature) vitals.temperature = e.data.temperature;
+      if (e.data.respRate) vitals.respRate = e.data.respRate;
+
+      // Ingestion events
+      if (e.data.ingestion && digestiveSystem) {
+        const sys = digestiveSystem;
+        const color = e.data.ingestion === 'water' ? 0x60a5fa : 0xd97706;
+        sys.particles.material.color.setHex(color);
+        sys.activeCount = sys.data.length;
+        sys.data.forEach(d => {
+          d.t = -0.1 * Math.random();
+          d.active = true;
+          d.speed = e.data.ingestion === 'water' ? 0.008 + Math.random() * 0.004 : 0.003 + Math.random() * 0.002;
+        });
+        triggerHaptic(e.data.ingestion === 'water' ? [30,30,30] : [50,100]);
+      }
+    });
+
+  </script>
+</body>
+</html>

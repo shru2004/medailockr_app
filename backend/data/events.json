@@ -1,0 +1,2888 @@
+[
+  {
+    "id": "63b95cb3-d371-4369-bc15-acff66cbf0bc",
+    "type": "bluetooth_connected",
+    "metadata": {
+      "deviceName": "Polar H10"
+    },
+    "recorded_at": "2026-02-24T10:19:11.273Z"
+  },
+  {
+    "id": "fa7b91a9-e85e-4b0b-81f9-bfc61bb09f41",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:06:39.445Z"
+  },
+  {
+    "id": "a7026fc6-1680-453f-890b-5facd640f231",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-24T16:07:10.528Z"
+  },
+  {
+    "id": "a6d04a4f-9862-4939-a223-cb739ff97024",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-24T16:07:12.215Z"
+  },
+  {
+    "id": "b3c5c986-7cb2-45b2-af33-e2dd6f32893a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:07:39.083Z"
+  },
+  {
+    "id": "18c6796a-1bd3-443e-a6a1-bcd90edf403e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:08:10.246Z"
+  },
+  {
+    "id": "cef73aff-cbd0-4c33-b40c-2060636a434c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:08:41.058Z"
+  },
+  {
+    "id": "1d048474-bc83-4f98-bda2-200103a1b27d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:09:12.057Z"
+  },
+  {
+    "id": "cc57072a-6ce5-4f8d-9e05-4718d96398a5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:09:43.052Z"
+  },
+  {
+    "id": "2473e320-35b8-4695-b9d3-a04b009bcfc0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:10:14.219Z"
+  },
+  {
+    "id": "c1280b3a-76ce-41ce-8c2c-aea267dc8cb5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:10:45.074Z"
+  },
+  {
+    "id": "e94cdff6-9ed6-4dca-9f3b-ee23e59f7f75",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:11:16.048Z"
+  },
+  {
+    "id": "8c26f99b-7168-46b3-a91e-7b4c9a80eef6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:11:47.064Z"
+  },
+  {
+    "id": "1d2fa3c0-f4d6-4112-94a0-b02a57c0948c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:12:18.169Z"
+  },
+  {
+    "id": "118d5a91-2129-4b4e-a8d8-f66259b12f97",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:12:49.227Z"
+  },
+  {
+    "id": "e6c33084-2938-47ba-ac72-565c46ee26fd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:13:20.255Z"
+  },
+  {
+    "id": "bb18ce4e-58a4-4f60-9322-841aab2241eb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:13:51.068Z"
+  },
+  {
+    "id": "107cd5a3-348e-43b7-8750-f7cddd6bbd92",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:14:22.058Z"
+  },
+  {
+    "id": "44b2d84b-6131-4526-8e41-b4e0a04592f0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:14:53.055Z"
+  },
+  {
+    "id": "4b6f6b97-e89d-4cae-9f0e-8249092ac725",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:15:24.045Z"
+  },
+  {
+    "id": "1d8e2e84-c638-4a20-a899-96c12d098ceb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:15:55.445Z"
+  },
+  {
+    "id": "326392ed-8252-4e9a-b1c0-6fbc7288a646",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:16:26.230Z"
+  },
+  {
+    "id": "604bb9ef-7667-42bb-8f92-ad639ac6c809",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:16:57.250Z"
+  },
+  {
+    "id": "637baf75-543f-4ccd-a67b-1f187f64d13c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:17:28.134Z"
+  },
+  {
+    "id": "2d97c9ed-f335-4bbd-b132-a9e348679aaf",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:17:59.137Z"
+  },
+  {
+    "id": "aa4787e3-57ae-4612-aa57-f7c307a83abb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:18:30.073Z"
+  },
+  {
+    "id": "f69c4966-68cc-4484-a2ca-64fe0022a554",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:19:01.057Z"
+  },
+  {
+    "id": "3a3a8d39-ccbd-45e1-9719-b6e9d4708f7a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:19:32.065Z"
+  },
+  {
+    "id": "d55845b9-7e06-4bab-a6fc-009c888aba32",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:20:03.061Z"
+  },
+  {
+    "id": "1d49f4a3-a892-438c-9213-8de33116e238",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:20:34.080Z"
+  },
+  {
+    "id": "564efc11-11b6-4a37-b766-fe7ffd85c783",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:21:05.058Z"
+  },
+  {
+    "id": "47fe54b2-de00-49a0-8f35-5db132c71300",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:21:36.049Z"
+  },
+  {
+    "id": "7fdff446-dfc9-4203-91e8-637e0133f2a6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:22:07.036Z"
+  },
+  {
+    "id": "dabdd69c-149f-4b3f-8aee-2f17ddac0b30",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:22:38.061Z"
+  },
+  {
+    "id": "22240269-32ac-4e26-b7e6-04f1797bd095",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:23:09.053Z"
+  },
+  {
+    "id": "e5caecd0-f151-4390-a21e-4829f0b2c1e3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:23:40.055Z"
+  },
+  {
+    "id": "c9f87915-325a-47cf-bb13-fbc38fe54c6c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:24:11.036Z"
+  },
+  {
+    "id": "b37104d7-a8ae-4627-a5d4-b08c5079cf4e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:24:42.043Z"
+  },
+  {
+    "id": "a8122778-2ebe-418b-b020-37f88eabeecf",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:25:13.237Z"
+  },
+  {
+    "id": "6756b3a4-c287-4cb7-9125-c6103fdb1fdc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:25:44.072Z"
+  },
+  {
+    "id": "7cfba08e-9b67-4e41-ae05-02bb4b4a989f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:26:15.052Z"
+  },
+  {
+    "id": "d7827a42-9df8-4bea-a62e-890e30c6160e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:26:46.059Z"
+  },
+  {
+    "id": "1dc85574-0557-4c16-9668-103b897a5283",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:27:17.040Z"
+  },
+  {
+    "id": "1d12d222-7370-46a6-b4a7-f530fc6f02da",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:27:48.042Z"
+  },
+  {
+    "id": "9f64d75c-1179-48d9-b851-df7c225f5614",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:28:19.034Z"
+  },
+  {
+    "id": "69f8c545-3a5e-4e4d-8c80-97cf6f7d03a1",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:28:50.051Z"
+  },
+  {
+    "id": "4bb15bd8-4a8e-4a6d-932c-796bfb86514a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:29:21.033Z"
+  },
+  {
+    "id": "2e112848-996b-44f2-9f87-a04bc1b55dbf",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:29:52.065Z"
+  },
+  {
+    "id": "58002947-a287-4715-a53c-ca48525c6a8e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:30:23.062Z"
+  },
+  {
+    "id": "8a624431-647d-4b54-bc6e-b82b5b070652",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:30:54.057Z"
+  },
+  {
+    "id": "bd3bff00-99e4-49d6-88e3-ea14d08905f6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:31:25.211Z"
+  },
+  {
+    "id": "8962126a-7a6d-4365-a8fa-ab3383f72aa3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:31:56.058Z"
+  },
+  {
+    "id": "d4228fc9-f3c2-4da8-af14-cc9d1d9c8c2f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:32:27.057Z"
+  },
+  {
+    "id": "f8e3b348-c773-4b8d-acac-cc1fd72b6d49",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:32:58.087Z"
+  },
+  {
+    "id": "327f9adc-b070-4105-a71d-e4305902416d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:33:32.741Z"
+  },
+  {
+    "id": "415b9309-cfb4-4cdc-966e-bf785404a2f7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:34:03.084Z"
+  },
+  {
+    "id": "64ded835-2dfe-4b7f-8cb2-2ba62c84ec40",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:35:52.896Z"
+  },
+  {
+    "id": "b9983024-8fba-4851-8998-4c3fe9c4a4fb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:36:22.080Z"
+  },
+  {
+    "id": "a89e3052-3164-44c5-9233-2deca20967dd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:36:53.177Z"
+  },
+  {
+    "id": "2c9783a2-7519-46fd-bc7a-2a6b7b1d068f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:37:24.360Z"
+  },
+  {
+    "id": "12dde617-a75f-4982-b940-d7f966b888b8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:37:55.083Z"
+  },
+  {
+    "id": "42d8fd82-903c-4d95-ac79-3c22c2378f2a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:38:26.265Z"
+  },
+  {
+    "id": "afcfc571-2582-4b07-bbea-f0454dec3b6f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:38:57.750Z"
+  },
+  {
+    "id": "67e4b156-cc9e-461b-a9b7-c4a26414fc14",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:39:28.114Z"
+  },
+  {
+    "id": "94090430-177a-4280-837e-f352109c6ef9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:39:59.082Z"
+  },
+  {
+    "id": "bf9bc643-fcfa-45da-a7cf-8cfc7c2640be",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:40:30.061Z"
+  },
+  {
+    "id": "4ea8cf6f-24a0-4aaa-b9a3-8fbc66d16692",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:41:01.254Z"
+  },
+  {
+    "id": "b153ec50-5ff4-4045-94d5-1f6441ac373a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:41:32.070Z"
+  },
+  {
+    "id": "af732df3-42ed-41e7-9944-8bbb8793966b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:42:03.057Z"
+  },
+  {
+    "id": "b98e793c-697c-4c91-a5d1-c3b2efc7526e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:42:34.047Z"
+  },
+  {
+    "id": "91def922-2610-45ff-b597-2ac592f32865",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:43:05.099Z"
+  },
+  {
+    "id": "2d3d98f7-baa5-4f7b-abf2-707aa9c98b24",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:43:36.066Z"
+  },
+  {
+    "id": "27ae96f5-6d2d-43c2-a504-1e0ff4adc2d0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:44:07.043Z"
+  },
+  {
+    "id": "75e8f022-fdab-4bcd-a8a6-b970e6975dc4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:44:38.071Z"
+  },
+  {
+    "id": "59a91f42-94c6-43cf-96d6-b6f04f63c1ef",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:45:09.050Z"
+  },
+  {
+    "id": "c1c32d0e-d53a-4859-87eb-f2ae07b9ccc8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:45:40.059Z"
+  },
+  {
+    "id": "ea13f8db-977c-4ab2-af78-980a6f8897ef",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:46:11.046Z"
+  },
+  {
+    "id": "f2b9ba6b-aeb5-4fd0-b8e4-083b00cf88c1",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:46:42.137Z"
+  },
+  {
+    "id": "f3a55794-fe27-4a42-9888-f2555f1f4a42",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:47:13.044Z"
+  },
+  {
+    "id": "856099f7-4264-4338-a09c-bfc63f7bcd9d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:47:44.046Z"
+  },
+  {
+    "id": "8e217ce0-87d3-4ae1-8888-590e5f88640a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:48:15.064Z"
+  },
+  {
+    "id": "a921d952-1f4f-4400-b418-9228a65407fc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:48:46.164Z"
+  },
+  {
+    "id": "09d6b95e-72b4-4cc0-b7e8-6dcad8a7473e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:49:17.628Z"
+  },
+  {
+    "id": "16070151-c4ad-4887-a67f-48c3b7124af4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:49:48.209Z"
+  },
+  {
+    "id": "aaf5a58e-d3a7-4d9a-98bc-a803e8b9725a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:50:20.357Z"
+  },
+  {
+    "id": "12d35a99-caaf-45e3-a1c8-500b27ab113e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:50:51.190Z"
+  },
+  {
+    "id": "7d7c3c71-01f2-4a5c-8e48-960dcde52023",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:51:22.409Z"
+  },
+  {
+    "id": "ff920c8d-9117-40c9-9098-c1b37654e4b4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:51:53.410Z"
+  },
+  {
+    "id": "bca4e093-a950-43f6-9201-15303ad7c62f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:52:24.374Z"
+  },
+  {
+    "id": "f36a5c1e-9138-499b-83c3-7de5e420953d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:52:56.389Z"
+  },
+  {
+    "id": "bf8eefc9-2b5e-44b6-a7c6-f80fe9c86629",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:53:27.429Z"
+  },
+  {
+    "id": "c1432d12-a3d9-4541-bf97-1a9482031ceb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:53:58.489Z"
+  },
+  {
+    "id": "63e78dae-e554-4843-970c-45485cfc73bc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:54:29.642Z"
+  },
+  {
+    "id": "204ce5d6-73a0-49ff-8fcf-aa6a85efec19",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:55:00.377Z"
+  },
+  {
+    "id": "1f5cf6b0-846d-4669-93c3-d42c663444fa",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:55:31.419Z"
+  },
+  {
+    "id": "a102d9d7-4e17-4010-b48d-a31cd4e1a6dc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:56:02.288Z"
+  },
+  {
+    "id": "c6f273bc-474c-42ad-ba33-7d983b7891fb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:56:33.351Z"
+  },
+  {
+    "id": "28228023-95a8-4294-a35e-bab6685cc022",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:57:04.411Z"
+  },
+  {
+    "id": "64d7bb7b-c8cf-4feb-bcff-a8cdb3da773b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:57:35.333Z"
+  },
+  {
+    "id": "1fdb7288-94a1-480e-b8a0-7065cf0b886d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:58:09.551Z"
+  },
+  {
+    "id": "628f9069-fdb4-4e25-bb21-9ebaa2bd5900",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:58:40.980Z"
+  },
+  {
+    "id": "5128e040-4746-4cf6-b234-a78cf0965afd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:59:15.563Z"
+  },
+  {
+    "id": "213fbf5e-e245-42f3-aa38-c5fc071f8686",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T16:59:47.368Z"
+  },
+  {
+    "id": "4e816b4a-d097-430c-97aa-7f0a4b4e2ee3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:00:18.689Z"
+  },
+  {
+    "id": "a656db2d-7b55-4421-ba16-1792f9ec9c23",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:00:49.529Z"
+  },
+  {
+    "id": "b22073ed-0a77-456f-9e3c-2399a8f906f3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:01:20.404Z"
+  },
+  {
+    "id": "12149ad6-f5d0-4f04-abd3-e9c0ba4f1917",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:01:51.277Z"
+  },
+  {
+    "id": "fc77264f-b226-44dd-ae99-8a5631220de8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:02:22.348Z"
+  },
+  {
+    "id": "6e668be8-56ef-4528-a3cb-c4abe07b0ce6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:02:53.403Z"
+  },
+  {
+    "id": "af677de9-b7c1-41de-80ef-250f7b6dd66c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:03:29.887Z"
+  },
+  {
+    "id": "a694cb18-6755-48c3-aa5b-5d5e515d41d9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:04:01.289Z"
+  },
+  {
+    "id": "a4eb0c53-6681-4c0a-9720-f22192a93676",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:04:32.909Z"
+  },
+  {
+    "id": "6fc70ad2-a677-479d-80a7-53940632549c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:05:04.531Z"
+  },
+  {
+    "id": "9e5a6e9d-19aa-4919-a362-b905776d8def",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:05:36.765Z"
+  },
+  {
+    "id": "71e6b15d-0e08-426c-aec9-b9cbc2bcca6b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:06:07.267Z"
+  },
+  {
+    "id": "013f50ee-937e-49c5-995c-b883be30e373",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:06:38.335Z"
+  },
+  {
+    "id": "8e50c014-9e8f-4205-be0d-159b4fe05b40",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:07:09.607Z"
+  },
+  {
+    "id": "9738f7df-99e8-4706-b477-a9f706cd0aa3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:07:40.673Z"
+  },
+  {
+    "id": "a0e54ce6-304c-40db-a4cb-f4add09c8ffa",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:08:11.267Z"
+  },
+  {
+    "id": "35cedc43-ac83-4a7a-9af6-d4805b5e03a8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:08:45.459Z"
+  },
+  {
+    "id": "7c201c34-f1d1-4915-ab13-ab86ab5268ce",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:09:16.213Z"
+  },
+  {
+    "id": "544167da-b87a-4953-a5b7-dd6242ee34fd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:09:50.408Z"
+  },
+  {
+    "id": "8678a955-86df-4093-acba-0bc79cf15183",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:10:21.152Z"
+  },
+  {
+    "id": "1e752ea8-7f13-449a-a58c-6ef0ddf82a80",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:10:52.151Z"
+  },
+  {
+    "id": "4e888006-8fbc-42cb-8afe-3df53c4e82b7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:11:23.384Z"
+  },
+  {
+    "id": "8fbc9b50-c296-4200-9a38-ec3deccb8db5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:11:54.675Z"
+  },
+  {
+    "id": "1963c837-421f-4e4b-a39c-f2eeaa5a217f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:12:25.473Z"
+  },
+  {
+    "id": "67c52d5d-9279-4f9c-bbad-38c436ddefc5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:12:56.664Z"
+  },
+  {
+    "id": "f5294efb-3ad7-44a7-a5be-04e156cc5a1a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:13:27.376Z"
+  },
+  {
+    "id": "7d1a0bc1-d0af-443a-ba79-16af42357205",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:14:01.389Z"
+  },
+  {
+    "id": "1d4e3c76-7215-498f-8050-0952f56b3d7d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:14:32.310Z"
+  },
+  {
+    "id": "fc7aebc8-3174-475f-b8ea-626169b856dc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:15:03.669Z"
+  },
+  {
+    "id": "ff95632d-15f0-4080-b289-75f2e7e8ddfd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:15:34.298Z"
+  },
+  {
+    "id": "dc40b1d8-1af4-4d44-80b6-5755620d4c9e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:16:05.699Z"
+  },
+  {
+    "id": "3c5d63cf-b773-4980-bc7d-946eb261d284",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:16:36.588Z"
+  },
+  {
+    "id": "e851e743-7daa-4c81-80c5-1048396ed329",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:17:07.604Z"
+  },
+  {
+    "id": "160619f2-4e10-4a9e-b1d8-85208454280b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:17:38.318Z"
+  },
+  {
+    "id": "3a7c21f4-18be-44a6-884c-86ded3645987",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:18:12.276Z"
+  },
+  {
+    "id": "e255e5ce-bb7f-4b65-9d49-b7574946d47e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:18:49.446Z"
+  },
+  {
+    "id": "a0d1aa60-bda9-4154-b449-d50802619b68",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:19:20.162Z"
+  },
+  {
+    "id": "eba17357-12fe-4bc2-bec4-3114fe385906",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:19:51.408Z"
+  },
+  {
+    "id": "0d578bd5-be74-46b7-9b12-867a0a725699",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:20:24.140Z"
+  },
+  {
+    "id": "ee4b2705-ff73-4b68-91b6-13d1e02c56c4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:20:55.860Z"
+  },
+  {
+    "id": "bf13849b-8282-4a1d-ae64-786c0ddacdb7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:21:26.207Z"
+  },
+  {
+    "id": "62e80472-082e-441d-88c7-7f0534a39ac7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:21:57.409Z"
+  },
+  {
+    "id": "caa339af-94a3-4df2-bb77-0159186ff939",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:22:28.349Z"
+  },
+  {
+    "id": "cee173df-eeed-43ed-a77d-dac0883077e8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:22:59.891Z"
+  },
+  {
+    "id": "0a04588b-39b1-47cc-98bb-776b745b6ba1",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:23:31.291Z"
+  },
+  {
+    "id": "3df88112-b32b-4e64-b056-8b514d3de856",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:24:08.529Z"
+  },
+  {
+    "id": "9dc14d3c-3a70-418f-968d-29bff2d898d7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:24:39.965Z"
+  },
+  {
+    "id": "c3e7cf69-f427-4f52-a2cd-6ac8aea783cd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:25:11.687Z"
+  },
+  {
+    "id": "1c7c6e4e-8c58-42ef-b28c-bef6023d2fcf",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:25:42.174Z"
+  },
+  {
+    "id": "a59525e2-b531-45c8-ae18-7786dbd7fb3c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:26:13.254Z"
+  },
+  {
+    "id": "311cbb2a-72f9-46b3-91d0-e29a7c8ea194",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:26:44.196Z"
+  },
+  {
+    "id": "03b0f537-d232-49d5-82fb-156f08173de2",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:27:17.272Z"
+  },
+  {
+    "id": "b783764e-034d-4ba7-874e-239968a427bf",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:27:48.250Z"
+  },
+  {
+    "id": "cd76f1f9-36b5-4ed5-a7fa-f3199efca055",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:28:22.746Z"
+  },
+  {
+    "id": "712de916-be05-4028-84d6-3f6f1e15a38c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:28:53.296Z"
+  },
+  {
+    "id": "03d4d995-2d20-45ea-9a02-98112f75c329",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:29:24.194Z"
+  },
+  {
+    "id": "745294e3-5a23-46f5-b0d6-f30df74c03e7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:30:00.144Z"
+  },
+  {
+    "id": "237040d9-d24e-4a35-aaa1-0a17721a697d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:30:31.451Z"
+  },
+  {
+    "id": "003cbbfe-7266-493e-a0ad-3667492249c5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:31:02.621Z"
+  },
+  {
+    "id": "938afe0f-b304-4f88-aa73-a049c86e1157",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:31:33.611Z"
+  },
+  {
+    "id": "f627db67-d36c-49ce-8535-4b70f5cf001c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:32:04.340Z"
+  },
+  {
+    "id": "5d4ce27c-f227-49e5-962a-8627e862c7bf",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:32:43.491Z"
+  },
+  {
+    "id": "a70da4ea-a693-48f8-ad05-4f6b34afa0c3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:33:14.284Z"
+  },
+  {
+    "id": "6e607468-d076-4011-9f35-375f721f5d86",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:33:45.543Z"
+  },
+  {
+    "id": "ad10c8b5-5228-4a0c-96a4-b92ec09ac412",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:34:16.344Z"
+  },
+  {
+    "id": "95dd76cb-1396-4d74-9394-795f2684b94c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:34:47.249Z"
+  },
+  {
+    "id": "f21637fb-9ed4-4650-93f6-a4ebb1d5224a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:35:18.245Z"
+  },
+  {
+    "id": "d3337b43-4bb7-4d69-a650-69c89397b159",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-24T17:35:49.325Z"
+  },
+  {
+    "id": "8ed6d210-9b14-42df-8af8-92e97933827e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:55:35.340Z"
+  },
+  {
+    "id": "718f6748-6900-4194-ba1d-8782dfd675fc",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T03:56:04.602Z"
+  },
+  {
+    "id": "2002ea45-8ee7-401d-9fda-0d7a465da4f3",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-25T03:56:05.942Z"
+  },
+  {
+    "id": "c2ac5d22-7cb4-403b-9fbd-394120338b23",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:56:20.525Z"
+  },
+  {
+    "id": "a6213731-db27-48e7-9a86-4147502e1b97",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:57:18.648Z"
+  },
+  {
+    "id": "9886fced-d779-4c41-93ff-6383085df012",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:57:24.079Z"
+  },
+  {
+    "id": "a11d672a-6cf1-40f2-b950-43d0bef28ae9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:57:37.948Z"
+  },
+  {
+    "id": "fb4aa484-2794-4b97-872f-d5117d54eae7",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T03:57:52.652Z"
+  },
+  {
+    "id": "83e9bcdb-0be5-4e1b-a883-3fbfc7c5c041",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:57:54.501Z"
+  },
+  {
+    "id": "8d6bad90-d1b2-41fc-9c87-63351dec12ea",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T03:58:04.566Z"
+  },
+  {
+    "id": "3f374c59-85eb-4f9d-8414-504c6db215cc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:58:24.917Z"
+  },
+  {
+    "id": "76d02219-e51a-4890-9410-7d99136b9359",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:58:33.476Z"
+  },
+  {
+    "id": "7c97dcf9-d7d4-4f3e-88a2-0e050507056f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:58:55.174Z"
+  },
+  {
+    "id": "673dc2bc-89f9-4dba-8bd1-8a4b82d6e1df",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:59:25.648Z"
+  },
+  {
+    "id": "6dce7da6-9b2c-40b6-a300-9fe1320f9b6a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T03:59:56.097Z"
+  },
+  {
+    "id": "582ab7e3-21b8-4ab5-b896-5d2b97d78ce1",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:00:04.492Z"
+  },
+  {
+    "id": "eb276ec2-224c-4259-876a-57c101447adc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:00:26.484Z"
+  },
+  {
+    "id": "a471afdf-4fca-44a8-86e9-b282a5048e9e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:00:56.745Z"
+  },
+  {
+    "id": "7f20327e-9d50-47df-8af9-571972f6ac89",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:01:05.308Z"
+  },
+  {
+    "id": "ab9d438b-e952-4c78-8e6d-d9baf7c8a5e6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:01:27.021Z"
+  },
+  {
+    "id": "b09e1497-ca1a-4e1b-b055-bdb157400c6a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:02:06.525Z"
+  },
+  {
+    "id": "455af720-6a97-4c3f-a753-7ce90f1a4183",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:02:20.523Z"
+  },
+  {
+    "id": "a4cb6f6b-3cc1-41c8-bcd2-c5971e94d399",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:09:18.262Z"
+  },
+  {
+    "id": "7a3ff626-0d12-4dc3-a797-34cc8db183ef",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:09:19.044Z"
+  },
+  {
+    "id": "aa2d079a-317d-4216-9658-e0499bac0fed",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:09:23.926Z"
+  },
+  {
+    "id": "1c6aea22-005f-4723-8ccd-9b5135c44fa5",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:09:51.758Z"
+  },
+  {
+    "id": "bdde7d4e-c352-4d9c-9e0d-7f51eb4cdd35",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:10:26.006Z"
+  },
+  {
+    "id": "e16c8538-4fe3-46a6-aadb-0ff6d022af9e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:10:56.545Z"
+  },
+  {
+    "id": "4a4d6294-765a-4063-a4fb-7971da038020",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:11:27.010Z"
+  },
+  {
+    "id": "8e508878-d223-4db7-9764-d621602680b4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:11:57.223Z"
+  },
+  {
+    "id": "6b2a6417-b7fe-4a90-8383-cc621691dfa8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:12:27.473Z"
+  },
+  {
+    "id": "b6a4c157-ca67-4c6e-872b-3338e8c280a1",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:13:14.462Z"
+  },
+  {
+    "id": "90caa90a-c801-4364-a028-45b0d342a689",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:13:44.891Z"
+  },
+  {
+    "id": "c52bde06-9840-447a-8001-2dfa8ada43b7",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:13:55.339Z"
+  },
+  {
+    "id": "41c4727d-9e7e-4d54-b120-19dbd7507dbb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:14:15.275Z"
+  },
+  {
+    "id": "d49b49eb-2630-499f-8cef-861fbc770d63",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:14:46.476Z"
+  },
+  {
+    "id": "72fde80e-4e8d-47cc-a38c-54b1e23c3fd5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:15:17.285Z"
+  },
+  {
+    "id": "bf2c21ba-7a29-4c00-bc72-73ec6d02b2aa",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:15:48.372Z"
+  },
+  {
+    "id": "f7bd6e2c-6063-4077-a7fb-1f8f25b319a6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:16:19.503Z"
+  },
+  {
+    "id": "808945c0-33eb-45ef-9e67-14a28cefdb08",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:16:50.308Z"
+  },
+  {
+    "id": "b5069595-1894-463a-9795-8fc552a1c0d0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:17:21.279Z"
+  },
+  {
+    "id": "984c9436-e3d5-4572-a5b1-f67e948da930",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:17:52.311Z"
+  },
+  {
+    "id": "99a98a52-04dd-4760-a2fd-63167abc3acb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:18:23.338Z"
+  },
+  {
+    "id": "2e5a234a-7a8d-4df2-9bec-53d2b6bbac90",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:18:54.273Z"
+  },
+  {
+    "id": "b422dc86-9b78-4f59-819f-6e9977292a2f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:19:25.314Z"
+  },
+  {
+    "id": "d49cc9e7-d071-4166-9c88-dd6d4c6ccf37",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:19:56.448Z"
+  },
+  {
+    "id": "2de12b2d-37af-4cd5-a30d-042e1e3fdfc5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:20:27.321Z"
+  },
+  {
+    "id": "b4c196b9-e836-475c-bc69-abe70e264ef8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:20:58.350Z"
+  },
+  {
+    "id": "b2a5acb3-f598-4cfa-bf1e-37a2125a6ec3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:21:29.295Z"
+  },
+  {
+    "id": "f1f4e326-5b50-4738-92b8-888ba3114f20",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:22:00.434Z"
+  },
+  {
+    "id": "334aee0c-0e9d-4048-aef5-dc7cc4b8fce6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:22:31.336Z"
+  },
+  {
+    "id": "69e5c38f-3f2b-49a2-93a5-202e7d086298",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:23:02.468Z"
+  },
+  {
+    "id": "142e20eb-c971-44af-a764-68c2fb7b86ee",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:23:33.328Z"
+  },
+  {
+    "id": "e29bdb5e-23a1-4f00-9969-cc17d456089c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:24:04.439Z"
+  },
+  {
+    "id": "45ed573e-d9ec-46bb-b65d-ed9f832770f6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:24:35.303Z"
+  },
+  {
+    "id": "187cd524-54e1-4a9c-a322-2383f4337796",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:25:06.303Z"
+  },
+  {
+    "id": "6991266a-a83d-4ca4-8711-0ae36459a27b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:25:37.441Z"
+  },
+  {
+    "id": "0aefc65d-0443-49ac-85f9-4bb752cf7b84",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:26:08.337Z"
+  },
+  {
+    "id": "ee66f76e-0c3a-4fbc-a788-5fbb3f26c695",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:26:39.283Z"
+  },
+  {
+    "id": "56a42ae6-a6cc-408e-b8f6-77b8a1a699d4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:27:10.332Z"
+  },
+  {
+    "id": "fb4f8dfe-fa60-4d70-9eaf-c89fc8cb972f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:27:41.282Z"
+  },
+  {
+    "id": "389c13c3-839b-4e71-8430-aaf9259453cb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:28:12.472Z"
+  },
+  {
+    "id": "4f2db4b3-251d-46c1-bae0-a58cd9d55685",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:28:43.310Z"
+  },
+  {
+    "id": "ea88c275-4d02-4802-a272-b26ed2fa69d9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:29:14.449Z"
+  },
+  {
+    "id": "8414268b-7847-44d0-9e94-54bc2722e288",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:29:45.301Z"
+  },
+  {
+    "id": "a7211606-da4a-4ebd-ad04-3ec0b91f4093",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:30:16.303Z"
+  },
+  {
+    "id": "2b23c4b7-8c83-4fea-9977-54c16ccb201f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:31:18.355Z"
+  },
+  {
+    "id": "6165c97e-a4bf-4968-953b-cf4b0f0138d5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:31:49.280Z"
+  },
+  {
+    "id": "59ed6c31-4723-4ee7-a72d-cd7adc20cd7a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:32:20.342Z"
+  },
+  {
+    "id": "7d305bbe-8118-4197-8ccd-ef4655311c39",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:32:51.457Z"
+  },
+  {
+    "id": "4077b8e4-35df-41b2-9e4c-6e456df6fd84",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:33:22.335Z"
+  },
+  {
+    "id": "9588ec7b-07b3-4b58-b19d-6b9c886bd64b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:33:53.292Z"
+  },
+  {
+    "id": "8a9161c5-7260-4d97-8d87-8bde4fd34f95",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:34:55.380Z"
+  },
+  {
+    "id": "8101a17e-2f94-4532-891f-82ba4461d5b6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:35:26.369Z"
+  },
+  {
+    "id": "f79f9c0b-9bad-4f59-9daf-e37743346a31",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:35:57.481Z"
+  },
+  {
+    "id": "30d55fed-7adf-4526-9871-571ae8a00436",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:36:28.335Z"
+  },
+  {
+    "id": "36c52e8d-ade3-4ed3-aeba-49fdd67127af",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:36:52.539Z"
+  },
+  {
+    "id": "8c13a712-1220-4ad4-9ccc-b1d01fcf38a6",
+    "type": "sound_toggle",
+    "metadata": {
+      "enabled": true
+    },
+    "recorded_at": "2026-02-25T04:36:55.688Z"
+  },
+  {
+    "id": "09ab5cba-2bd6-4a1f-877f-b8e82c7db466",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:01.782Z"
+  },
+  {
+    "id": "2ea218fd-3ca6-4e26-80ae-942e0662f40b",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:09.324Z"
+  },
+  {
+    "id": "06f6558b-b4ee-4c6b-8138-0a0415ee9775",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:10.323Z"
+  },
+  {
+    "id": "e0d45826-3c10-4700-9ceb-88981d648857",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:12.171Z"
+  },
+  {
+    "id": "e9ee90ce-96b8-468b-a4df-070de93638e3",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:13.260Z"
+  },
+  {
+    "id": "a436fd93-df6b-4fda-a2a1-ee4d0f73bfb6",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:13.983Z"
+  },
+  {
+    "id": "50d04f91-5140-4b7c-b858-54e37af10837",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:16.128Z"
+  },
+  {
+    "id": "4c4490ae-81ea-413e-b0b4-50738fbcc10c",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T04:37:16.339Z"
+  },
+  {
+    "id": "e891b561-1c37-4469-b113-4e51ce1693da",
+    "type": "sound_toggle",
+    "metadata": {
+      "enabled": false
+    },
+    "recorded_at": "2026-02-25T04:37:18.083Z"
+  },
+  {
+    "id": "135dae45-dece-47ff-9048-2e81855ce57c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:37:57.083Z"
+  },
+  {
+    "id": "97d3f6fa-5318-422a-a101-0c488732452a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:38:27.481Z"
+  },
+  {
+    "id": "2da70e54-f527-4a9d-8b6b-00952d0f5f3c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:38:57.950Z"
+  },
+  {
+    "id": "7e5a4661-4b55-4a96-9385-6fdbf1982ea2",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:39:24.855Z"
+  },
+  {
+    "id": "0cb4a29d-ed6c-430f-abcb-ea08b4cde8eb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:40:08.696Z"
+  },
+  {
+    "id": "7ffd07f8-6938-42ec-ad0e-138bb40fffa5",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:40:38.930Z"
+  },
+  {
+    "id": "0cb78f34-6c8a-453a-a5e6-8ab5d698c8fc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:41:09.378Z"
+  },
+  {
+    "id": "b3fcbac8-2224-4650-a847-096d0e56cca0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:41:39.597Z"
+  },
+  {
+    "id": "0c7ffe61-fd8b-4b04-bb00-182e20ea7541",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:42:09.961Z"
+  },
+  {
+    "id": "fb7706bd-bb04-4084-8c2c-44b409800840",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:44:53.571Z"
+  },
+  {
+    "id": "32e76392-86a6-4c19-bad0-54ed2f9c5541",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T04:45:53.661Z"
+  },
+  {
+    "id": "d07ed60d-fc5b-4a10-93a3-fb27e8cacfdd",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:06:16.409Z"
+  },
+  {
+    "id": "09e3d10c-a4d3-466b-bae0-342093130964",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:06:59.752Z"
+  },
+  {
+    "id": "c1679a5a-35b1-4935-806b-3c9c868139df",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:07:30.001Z"
+  },
+  {
+    "id": "f897b7f3-6106-426b-bbe8-fa022ed64c01",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:08:00.301Z"
+  },
+  {
+    "id": "37caef74-1f69-44b8-823c-7e773c3cc277",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:08:30.758Z"
+  },
+  {
+    "id": "148f805a-419b-4f95-8023-67409728b270",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:09:01.110Z"
+  },
+  {
+    "id": "ca87a8f2-87e2-49d1-9f22-287d319eccc6",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T05:09:11.278Z"
+  },
+  {
+    "id": "d189e156-a1ce-4a65-a31f-a4cbb5c19a28",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:09:31.436Z"
+  },
+  {
+    "id": "945ebaa3-7531-4965-999c-fec623a3e9b3",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:10:01.682Z"
+  },
+  {
+    "id": "278f2850-c37c-46f4-9c3c-1f434fa4d172",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:10:32.168Z"
+  },
+  {
+    "id": "7a458be8-2073-41d3-87a6-2c5205ab7662",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:11:02.414Z"
+  },
+  {
+    "id": "6526d537-0e30-40c4-b9fd-6b19daa27672",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T05:11:10.926Z"
+  },
+  {
+    "id": "cb62ef10-cd6b-4e9d-bdc7-52bddc4c9cfa",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:11:32.727Z"
+  },
+  {
+    "id": "205d21df-237d-47e8-9a99-d96c745864a9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:12:02.939Z"
+  },
+  {
+    "id": "54dfddaa-ecfe-4a10-891c-ea3057720103",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T05:12:25.380Z"
+  },
+  {
+    "id": "31e66e42-0137-43ab-81de-b1f8bb07f56e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:12:33.212Z"
+  },
+  {
+    "id": "17d4def7-7c3b-4d3d-b19b-91e75b66e3b4",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:13:03.413Z"
+  },
+  {
+    "id": "66575e1f-b553-461c-9fd4-ccf103c57093",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:23:07.037Z"
+  },
+  {
+    "id": "17a4baea-7d8b-4906-a23f-2719e7436301",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:24:20.553Z"
+  },
+  {
+    "id": "04cca6b8-22c3-4cbd-a662-46f9588e2e2f",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:24:51.284Z"
+  },
+  {
+    "id": "a74bf744-a581-418f-ac33-d2d26d38d5da",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:25:22.342Z"
+  },
+  {
+    "id": "16e50146-4f91-4885-adc2-a9ef03198f4b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:25:27.379Z"
+  },
+  {
+    "id": "cef53186-0326-4618-bd89-d88892c17446",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:25:57.547Z"
+  },
+  {
+    "id": "b2c76c4c-9854-4f1d-b503-7ec6b1bc4616",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:26:44.376Z"
+  },
+  {
+    "id": "614daccd-2f5b-467c-b881-535c8d3a1efa",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:27:15.307Z"
+  },
+  {
+    "id": "d1fa592a-a7e7-4097-8055-91364e3acf1d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:27:46.285Z"
+  },
+  {
+    "id": "fcbbfb3d-1ab5-4a3d-bbba-bdb0f44051ce",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:28:17.338Z"
+  },
+  {
+    "id": "ee0c1f17-0f6c-4dd3-b36b-a5ff20cbeeab",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:28:48.284Z"
+  },
+  {
+    "id": "b2f05e74-f591-4b6a-8ce0-2acbd982bb42",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:29:19.468Z"
+  },
+  {
+    "id": "85735fdf-a6c2-4897-984a-2c16b1d026fa",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:29:50.302Z"
+  },
+  {
+    "id": "ebd16e5d-fdd6-413f-8e61-196ed24e5d78",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:30:21.288Z"
+  },
+  {
+    "id": "10297d88-b410-465d-b676-4f355f9768e9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:30:51.555Z"
+  },
+  {
+    "id": "dc5a9ea6-99f7-4fb9-bb07-3ba07c54d9f1",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T05:30:59.875Z"
+  },
+  {
+    "id": "cc38b2fc-3eb1-487c-8c0d-6056dc0e7d31",
+    "type": "bluetooth_connected",
+    "metadata": {
+      "deviceName": "Unknown"
+    },
+    "recorded_at": "2026-02-25T05:30:59.922Z"
+  },
+  {
+    "id": "37da6075-deb9-44d7-997e-3bc367587b4e",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:30:59.965Z"
+  },
+  {
+    "id": "bab66eef-37e1-4857-afdd-6cfe1811b114",
+    "type": "bluetooth_connected",
+    "metadata": {
+      "deviceName": "Unknown"
+    },
+    "recorded_at": "2026-02-25T05:31:28.432Z"
+  },
+  {
+    "id": "3cf119da-4f77-4b36-ac6d-5de02ac513a8",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:32:00.456Z"
+  },
+  {
+    "id": "d89bbce0-2277-46c3-8c1e-c14fb0541b0d",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:32:30.849Z"
+  },
+  {
+    "id": "d92b13c7-0a43-4409-bc4f-e9a95595b3e0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:33:34.946Z"
+  },
+  {
+    "id": "7e1446a3-d67e-47c6-b5a6-875a1320478c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:34:05.147Z"
+  },
+  {
+    "id": "2909f08a-e4ac-4978-b7be-c5b2892869d6",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:35:52.444Z"
+  },
+  {
+    "id": "12db3b56-8e8e-4fa5-bf08-1a85374d34dd",
+    "type": "bluetooth_connected",
+    "metadata": {
+      "deviceName": "Unknown"
+    },
+    "recorded_at": "2026-02-25T05:36:19.107Z"
+  },
+  {
+    "id": "663da2e8-443e-4c56-b9ee-f4433a97b6d0",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:36:50.917Z"
+  },
+  {
+    "id": "c3d04629-0391-4ada-b955-d7ab73337054",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-25T05:37:17.983Z"
+  },
+  {
+    "id": "4835906e-2763-4b40-8c05-b85e38447c0b",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:37:21.139Z"
+  },
+  {
+    "id": "02df5f2a-d91b-4d4c-8145-3f631536a722",
+    "type": "voice_session_start",
+    "metadata": {},
+    "recorded_at": "2026-02-25T05:37:24.449Z"
+  },
+  {
+    "id": "40a96e96-3be7-4ffb-8cc7-e7ee9659c2fc",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:37:51.397Z"
+  },
+  {
+    "id": "7cd38291-45cd-43f3-9b7d-e60162fd4ca7",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T05:38:21.797Z"
+  },
+  {
+    "id": "145372ab-8395-43f6-8559-878c0af3d9e9",
+    "type": "bluetooth_disconnected",
+    "metadata": {},
+    "recorded_at": "2026-02-25T06:04:37.901Z"
+  },
+  {
+    "id": "c0920fc1-8e65-4a10-99c9-cee7299ac8db",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T07:05:50.900Z"
+  },
+  {
+    "id": "9923da6e-74bb-4e19-aacb-0f1d1450c682",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T07:06:45.057Z"
+  },
+  {
+    "id": "99e19141-8ad3-49e6-9d24-0a773aeca6c9",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T07:38:12.247Z"
+  },
+  {
+    "id": "574e3675-1568-4641-a46e-00c7fc8c05ee",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T07:40:49.046Z"
+  },
+  {
+    "id": "11bd3581-50bd-4aa0-95ea-86d1991c5fc2",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T07:48:37.037Z"
+  },
+  {
+    "id": "b1851896-5c9a-44af-88d4-c0a4f69eb16a",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T09:31:18.050Z"
+  },
+  {
+    "id": "281bb0bd-d0ae-4f03-9db8-d0d850765c89",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-25T10:11:18.607Z"
+  },
+  {
+    "id": "0d65233b-8159-401a-a4f7-7ec171721dfb",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-27T04:12:38.053Z"
+  },
+  {
+    "id": "6ded6663-c178-4b5f-8ce1-be068c49966c",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-27T04:25:36.195Z"
+  },
+  {
+    "id": "aebde50a-9fba-4a76-9aaa-19254feba176",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-27T04:54:45.887Z"
+  },
+  {
+    "id": "cd99edf2-248b-467e-b592-3e74578e4827",
+    "type": "diagnostic_run",
+    "metadata": {
+      "status": "warning",
+      "confidence": 15
+    },
+    "recorded_at": "2026-02-27T05:06:00.848Z"
+  }
+]

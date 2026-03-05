@@ -1,0 +1,2538 @@
+[
+  {
+    "id": "03a9e9d4-c2fe-43bd-a0b8-59bbf906e548",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:01:12.208Z"
+  },
+  {
+    "id": "c54cccf3-5bfc-4cad-a049-3bb583f76abe",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:02:05.607Z"
+  },
+  {
+    "id": "8c83e0d8-586f-4257-9d83-28c7e58b5bb1",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:02:35.870Z"
+  },
+  {
+    "id": "b85d6c97-f40f-4b32-ab1b-c5c2e7c89118",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:03:10.900Z"
+  },
+  {
+    "id": "0cb55551-37e3-4e82-8b49-fb95131d74e0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:03:41.137Z"
+  },
+  {
+    "id": "9e6293b9-da77-462f-ac2a-55f04effd5a3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:04:11.344Z"
+  },
+  {
+    "id": "ddc334fc-7cf4-465f-83e5-a9dde67fd523",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:04:41.584Z"
+  },
+  {
+    "id": "9c0cbc4f-998e-41c4-b088-783a5d608c4f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:05:11.923Z"
+  },
+  {
+    "id": "baf30a86-a7ee-45c9-b44f-cd69b085b2dc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:05:42.588Z"
+  },
+  {
+    "id": "cbef33b1-104b-45df-adb9-c479cdbccc2d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:06:12.799Z"
+  },
+  {
+    "id": "3c535b6e-d58d-433b-b6be-11b6006da4f2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:06:43.042Z"
+  },
+  {
+    "id": "14a1715f-3c50-44e6-9063-0f6dfce87bc7",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:07:13.452Z"
+  },
+  {
+    "id": "0c0c1f5b-a6bf-4ffb-91cf-e8138038cf7b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:07:43.732Z"
+  },
+  {
+    "id": "ec29c5c8-0027-4ff6-a401-918a92034b8d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:08:14.075Z"
+  },
+  {
+    "id": "b1304d2c-d96f-4f44-b54c-4a360d7f83a3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:08:19.444Z"
+  },
+  {
+    "id": "07c9f0c5-4994-404d-a35c-2f566cfb5832",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:08:52.428Z"
+  },
+  {
+    "id": "a40acdf9-8f5a-419c-a8f4-3ce4655e3f4d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T10:08:57.540Z"
+  },
+  {
+    "id": "73840539-9ec9-4347-afd7-f9e9ad5066a2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:06:39.459Z"
+  },
+  {
+    "id": "f5b9dbfe-cc60-4f2f-ba19-7ea2376a09e3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:07:39.087Z"
+  },
+  {
+    "id": "c850ed09-8f8c-4751-be5c-deca0fffbed3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:08:10.249Z"
+  },
+  {
+    "id": "c8350c3e-fcf3-45b2-b3e5-a977db1a97c7",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:08:41.062Z"
+  },
+  {
+    "id": "1b3ec04c-8a1d-4ca1-b38e-599a28cb61e5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:09:12.060Z"
+  },
+  {
+    "id": "75a40ab0-9fb0-4edb-9698-b401a65d59ae",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:09:43.056Z"
+  },
+  {
+    "id": "29583458-7c82-43d6-9bf7-677831847f3f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:10:14.222Z"
+  },
+  {
+    "id": "12c724af-719b-4d53-a7ba-ee093173cd31",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:10:45.077Z"
+  },
+  {
+    "id": "890a7486-259d-4477-8f61-c69ed7eb25ba",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:11:16.052Z"
+  },
+  {
+    "id": "20aa5752-f41e-4e13-9224-0375707a1394",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:11:47.067Z"
+  },
+  {
+    "id": "b3d65a09-8214-4848-82ae-c761b1b5556a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:12:18.173Z"
+  },
+  {
+    "id": "541938c9-17f1-43e8-b9a0-73f29c639e9c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:12:49.231Z"
+  },
+  {
+    "id": "59b598c5-67aa-472e-a1e7-c4e16c4ca143",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:13:20.258Z"
+  },
+  {
+    "id": "a75cdaa7-5a6f-42da-804f-8a36fa52b584",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:13:51.071Z"
+  },
+  {
+    "id": "89fa2f4d-e4a0-4ee4-9cb7-198b883c1ef0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:14:22.061Z"
+  },
+  {
+    "id": "20880a78-80ad-4382-9693-592743e200df",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:14:53.058Z"
+  },
+  {
+    "id": "f027f913-cdf9-4e60-9959-9fa223edab6b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:15:24.048Z"
+  },
+  {
+    "id": "ac5f8104-b303-4e23-8e8b-f10b20df0b84",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:15:55.448Z"
+  },
+  {
+    "id": "fdfb01e5-242e-43d3-b4dd-c54f8eb44223",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:16:26.233Z"
+  },
+  {
+    "id": "3fc0e572-11f9-4ac1-9b63-939b98b97dae",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:16:57.253Z"
+  },
+  {
+    "id": "4fc72e50-ea00-44cc-ac8b-d438c7c89d04",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:17:28.137Z"
+  },
+  {
+    "id": "2d63624d-2086-44d7-bad4-564f55b5cb7d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:17:59.141Z"
+  },
+  {
+    "id": "cad1ec51-e5c1-4768-8550-03a31d9d2dea",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:18:30.076Z"
+  },
+  {
+    "id": "23c1b631-271d-40d0-ad8b-b7c38d1189e9",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:19:01.060Z"
+  },
+  {
+    "id": "f37c83e1-572e-4bd4-b9a2-4ebcfacf8e53",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:19:32.068Z"
+  },
+  {
+    "id": "cf54bc83-df49-4d8c-8768-8b721bfb50e7",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:20:03.065Z"
+  },
+  {
+    "id": "6ee26b75-20c3-4553-84ff-750f146464d6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:20:34.084Z"
+  },
+  {
+    "id": "229acf9b-25d8-4a2f-9950-0f236e7941c2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:21:05.061Z"
+  },
+  {
+    "id": "dfafba0d-dfb5-4614-b89f-49ce1aaf7641",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:21:36.052Z"
+  },
+  {
+    "id": "6c32ce7d-6fd6-4a45-9a6e-875851c1e177",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:22:07.039Z"
+  },
+  {
+    "id": "385f4962-df5d-45a8-bbc7-3341459c1aa7",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:22:38.065Z"
+  },
+  {
+    "id": "014f35c5-0394-47be-abe3-433dbb357a09",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:23:09.056Z"
+  },
+  {
+    "id": "b870d8e2-ae82-4bcd-ac9b-d70ec7bce199",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:23:40.058Z"
+  },
+  {
+    "id": "3eb731f7-c739-47f6-8bc2-fff8f7384519",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:24:11.039Z"
+  },
+  {
+    "id": "a2640e22-054f-4b42-9a9a-fb0deff67761",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:24:42.046Z"
+  },
+  {
+    "id": "e7a297cc-5320-4b81-85f6-6d45eb17d052",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:25:13.240Z"
+  },
+  {
+    "id": "c62035ae-b1c4-4352-912b-a472071877f2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:25:44.076Z"
+  },
+  {
+    "id": "e676e1a4-302e-4b22-9a5d-053ad15e63e2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:26:15.056Z"
+  },
+  {
+    "id": "97822155-6439-48ac-82e9-02d88b04bfc2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:26:46.063Z"
+  },
+  {
+    "id": "a6c1656f-3d90-4e77-863c-c0ff6335adf9",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:27:17.044Z"
+  },
+  {
+    "id": "2cafb731-e7a0-49a3-83a0-7a9b8af7d74c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:27:48.045Z"
+  },
+  {
+    "id": "29d0e04a-8e49-4929-9807-29b52ed07760",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:28:19.037Z"
+  },
+  {
+    "id": "b8cc0472-b8d3-4b29-8b3a-cbda32a0ecf1",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:28:50.054Z"
+  },
+  {
+    "id": "4ea15f0e-89d6-4e53-868b-b6efa282c30c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:29:21.035Z"
+  },
+  {
+    "id": "2c79b456-a02a-41b2-a7e8-43c6c0479d45",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:29:52.069Z"
+  },
+  {
+    "id": "c3590057-1542-4133-8ad2-5f765fce5cf0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:30:23.065Z"
+  },
+  {
+    "id": "da6f0be4-7f8f-460d-804e-c49c477c1646",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:30:54.060Z"
+  },
+  {
+    "id": "c097dc5a-722a-415c-a93f-0f9a022ab9e5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:31:25.215Z"
+  },
+  {
+    "id": "af9c7799-a68d-4be8-b9bb-e696f228f91f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:31:56.061Z"
+  },
+  {
+    "id": "728f5471-a8ff-4e10-95b5-d538d3ef8f54",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:32:27.061Z"
+  },
+  {
+    "id": "e6ca5e47-2a9e-44cf-b574-66e157abf215",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:32:58.091Z"
+  },
+  {
+    "id": "eddaabf7-00f0-41a6-a5e6-70916b8db2db",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:33:32.745Z"
+  },
+  {
+    "id": "d7822434-a777-42c7-9817-3ea1ec02f79e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:34:03.087Z"
+  },
+  {
+    "id": "5341ce32-c071-41c3-be25-ee0216978279",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:35:52.895Z"
+  },
+  {
+    "id": "98994d82-f7c5-415c-beba-6d3add290813",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:36:22.084Z"
+  },
+  {
+    "id": "6df734fd-1a4b-4444-b1be-9054d8f08aa5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:36:53.180Z"
+  },
+  {
+    "id": "87f467bb-45ed-45b9-8541-b5516fe80e06",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:37:24.363Z"
+  },
+  {
+    "id": "e7431212-ad0b-4f88-9a3a-3ae00c1004b5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:37:55.087Z"
+  },
+  {
+    "id": "46bb870c-3c25-4f18-950f-c421686bdf6d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:38:26.268Z"
+  },
+  {
+    "id": "13312aa0-a7e8-4551-9c62-6f030cbe9c77",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:38:57.752Z"
+  },
+  {
+    "id": "7a2edda5-f0b6-49bb-b034-db27db4ed79a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:39:28.117Z"
+  },
+  {
+    "id": "4c950e7d-0821-4095-acbe-36ee7a7dc8ac",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:39:59.085Z"
+  },
+  {
+    "id": "a248f6b6-260b-45d6-ad34-81a19420c6eb",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:40:30.064Z"
+  },
+  {
+    "id": "9f98668b-93b9-41df-962b-9a0d80220eeb",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:41:01.257Z"
+  },
+  {
+    "id": "23b19a06-18b5-42ef-af5e-4fdd512b5ef5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:41:32.073Z"
+  },
+  {
+    "id": "24f681c8-df4d-4033-b662-daee52ee9da1",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:42:03.060Z"
+  },
+  {
+    "id": "2354fab3-1a45-45c5-8175-071c6c682644",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:42:34.051Z"
+  },
+  {
+    "id": "71ee2dbf-0ca5-4fe8-b6cc-13d81c7c5f60",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:43:05.103Z"
+  },
+  {
+    "id": "3f0d22ed-f422-4b59-912f-8d05e78fe989",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:43:36.069Z"
+  },
+  {
+    "id": "d75a4908-0a97-4568-8c5c-003432e1c0ec",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:44:07.047Z"
+  },
+  {
+    "id": "7db1c511-4bd1-4ee9-a583-608808e24961",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:44:38.075Z"
+  },
+  {
+    "id": "b817b8bf-94fc-4254-8533-8a81e5ef1938",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:45:09.053Z"
+  },
+  {
+    "id": "285d8793-35bf-4018-88d8-0acf06d09fc4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:45:40.062Z"
+  },
+  {
+    "id": "b50a15ef-e536-4517-bb70-e0e941bf1c69",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:46:11.049Z"
+  },
+  {
+    "id": "59a72444-d667-4ae3-b267-ecd3f34ea5f4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:46:42.140Z"
+  },
+  {
+    "id": "8bde78c8-cd1a-4887-bbc2-c5b6dd18a5f4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:47:13.047Z"
+  },
+  {
+    "id": "f797a8a9-1f83-4015-89fc-2f468fe7d30b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:47:44.050Z"
+  },
+  {
+    "id": "2ca5ce4f-9391-49f8-ba1a-87b9f7a25c84",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:48:15.067Z"
+  },
+  {
+    "id": "7ba8901d-92a7-4479-a66f-6109c5fc096f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:48:46.167Z"
+  },
+  {
+    "id": "b60867fa-92dc-4042-a8d7-6d9a8cbd196a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:49:17.631Z"
+  },
+  {
+    "id": "c1561ee8-6121-460f-972e-c2bc0ad96704",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:49:48.212Z"
+  },
+  {
+    "id": "1cce077d-c320-4071-92a9-ccb5a72517ca",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:50:20.360Z"
+  },
+  {
+    "id": "7bf69114-aab8-4fea-b161-23372b08fe5c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:50:51.193Z"
+  },
+  {
+    "id": "1f0b32b2-65ce-4c45-a2c8-c7546e2d11bc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:51:22.412Z"
+  },
+  {
+    "id": "e2efe13a-06b3-4c71-89b1-16890fd787c8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:51:53.413Z"
+  },
+  {
+    "id": "1b676caf-8731-433c-9a81-dd5213f069db",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:52:24.378Z"
+  },
+  {
+    "id": "c7aaa0d1-bfcf-4c25-a249-43461be02387",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:52:56.393Z"
+  },
+  {
+    "id": "4818f000-5370-4857-a369-7208bd791c9c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:53:27.432Z"
+  },
+  {
+    "id": "24d64d2e-4ae6-4d61-8e1c-560e6aca9088",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:53:58.492Z"
+  },
+  {
+    "id": "d8fe4fb8-69e0-440b-be9f-747c3e124926",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:54:29.645Z"
+  },
+  {
+    "id": "9f44af0f-ed7e-485f-9c97-14fdd31841a1",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:55:00.380Z"
+  },
+  {
+    "id": "ab512251-e816-4f4f-af3b-a386da1606f0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:55:31.423Z"
+  },
+  {
+    "id": "bd5d4368-7111-4cb1-b3a9-b8d0ba604dee",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:56:02.291Z"
+  },
+  {
+    "id": "1efde2ea-0429-4ebc-a5a1-5f27cf3c7c25",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:56:33.354Z"
+  },
+  {
+    "id": "734f6894-c065-4a30-857a-7a941fdb949f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:57:04.414Z"
+  },
+  {
+    "id": "3f9d7107-5ac7-4008-9685-23c8d7b6bc6d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:57:35.337Z"
+  },
+  {
+    "id": "a7b52b5c-f139-4e1e-823a-2c346e02cd78",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:58:09.554Z"
+  },
+  {
+    "id": "79ce673e-9b95-4d7f-8294-2cb4b6ef28c4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:58:40.983Z"
+  },
+  {
+    "id": "a6f7808a-8ead-44a9-b26f-314160061afd",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:59:15.566Z"
+  },
+  {
+    "id": "d8284e17-096c-4eb8-9930-b720ba5643dc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T16:59:47.372Z"
+  },
+  {
+    "id": "22f35507-2d54-4d9a-9908-d2a1cd9679c6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:00:18.693Z"
+  },
+  {
+    "id": "f8738005-7409-4b75-ae44-f7311eb8bc17",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:00:49.532Z"
+  },
+  {
+    "id": "78f8b5e0-5cfd-4e40-8a53-f6ac2a118b7b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:01:20.407Z"
+  },
+  {
+    "id": "ab4888ad-3086-46b0-9460-46bf35851098",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:01:51.280Z"
+  },
+  {
+    "id": "bbd35158-439b-45dc-956d-cedfb63d62f8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:02:22.352Z"
+  },
+  {
+    "id": "28ac2ca9-d868-4de1-86aa-8410d86947fb",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:02:53.406Z"
+  },
+  {
+    "id": "4d553636-68e5-4944-990b-7656fe7ea986",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:03:29.890Z"
+  },
+  {
+    "id": "9448476e-3128-47af-a677-585dc06ee5ec",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:04:01.293Z"
+  },
+  {
+    "id": "2c66b1af-cc06-401a-baf9-8474c29911b1",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:04:32.912Z"
+  },
+  {
+    "id": "9da95fbe-f237-471d-8c7e-2e44b0b51f93",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:05:04.535Z"
+  },
+  {
+    "id": "ab93321c-45c6-456c-a048-d76c92a7de53",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:05:36.770Z"
+  },
+  {
+    "id": "62a723c9-4502-4901-8b42-bf0be80322e6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:06:07.270Z"
+  },
+  {
+    "id": "d4de9b34-141c-453b-ab03-863d64bbe071",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:06:38.339Z"
+  },
+  {
+    "id": "855706fc-cfc9-48ce-8d03-a4affe67a8e5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:07:09.610Z"
+  },
+  {
+    "id": "183e4ef6-9763-42df-975c-9de02a8d374e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:07:40.676Z"
+  },
+  {
+    "id": "823ed852-a45b-4b31-967c-16af725b34e2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:08:11.271Z"
+  },
+  {
+    "id": "847bed44-4b63-42e2-8f22-141e4201b2a5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:08:45.463Z"
+  },
+  {
+    "id": "7445eb1d-72f9-4d15-bf9c-156496da2049",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:09:16.216Z"
+  },
+  {
+    "id": "09ba9e37-5155-4ebc-ba09-1e81ee896fe5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:09:50.412Z"
+  },
+  {
+    "id": "8c0d56f5-25c7-41e5-91fa-1e64f1bdf79a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:10:21.155Z"
+  },
+  {
+    "id": "0f822096-48c5-4872-8e3a-d8893ae46187",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:10:52.154Z"
+  },
+  {
+    "id": "78122554-3e80-43f4-90a5-53bf9e062fc8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:11:23.388Z"
+  },
+  {
+    "id": "dccecdec-01dc-4b64-9352-077b982d7a83",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:11:54.679Z"
+  },
+  {
+    "id": "69327eaa-5912-47e8-879e-b36e1d6e2ce8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:12:25.476Z"
+  },
+  {
+    "id": "30c60743-33ee-4739-bc71-3e87dcce903d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:12:56.667Z"
+  },
+  {
+    "id": "6aa32317-fe33-4aa6-aa03-4d25df07d73a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:13:27.380Z"
+  },
+  {
+    "id": "46523728-e5c5-4779-bc8c-93336516dd23",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:14:01.393Z"
+  },
+  {
+    "id": "c9f0acaf-5693-4b0b-bbe4-01f40f9b224e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:14:32.314Z"
+  },
+  {
+    "id": "543e211c-e557-4b96-a670-7909874343ed",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:15:03.672Z"
+  },
+  {
+    "id": "e8d55973-fccf-4c98-af30-36f7c281e41c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:15:34.301Z"
+  },
+  {
+    "id": "0979394f-f21c-4b45-86ef-90616e641c19",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:16:05.702Z"
+  },
+  {
+    "id": "b2efdb4e-e170-4e5b-82f6-2d8149f2a06b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:16:36.592Z"
+  },
+  {
+    "id": "42f4b044-d769-41a9-b07c-9d5d576ab649",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:17:07.607Z"
+  },
+  {
+    "id": "5c4ed933-d588-4aa8-9b10-4116e0063ffd",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:17:38.322Z"
+  },
+  {
+    "id": "5173caa4-c016-43f6-b529-f30be59fdf5a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:18:12.279Z"
+  },
+  {
+    "id": "47fa8c2f-6f54-4b6d-858d-f3d45be27702",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:18:49.450Z"
+  },
+  {
+    "id": "084f0fb8-9d79-4b65-ae50-8486689fc59e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:19:20.165Z"
+  },
+  {
+    "id": "ec13cb67-8a2a-41cc-b8a5-4d4186d6f0ae",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:19:51.412Z"
+  },
+  {
+    "id": "da3224b5-cb1f-4eb6-8af7-cca2421dbd7d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:20:24.146Z"
+  },
+  {
+    "id": "ce33b623-ff97-491e-aeac-ece0cba97335",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:20:55.863Z"
+  },
+  {
+    "id": "4b17d7c0-77a0-44bd-a021-a789474cdf2d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:21:26.210Z"
+  },
+  {
+    "id": "6f6e3286-4781-4141-993a-f2e825754790",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:21:57.412Z"
+  },
+  {
+    "id": "d1e0b07b-3df4-4473-9afe-d6e5945b32e2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:22:28.353Z"
+  },
+  {
+    "id": "d6e8f85f-6929-4886-8884-6faece44ef3d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:22:59.894Z"
+  },
+  {
+    "id": "57ac9726-35cd-43f8-ab13-f4070b6cb9c5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:23:31.293Z"
+  },
+  {
+    "id": "29d69d57-a51f-435e-bf90-808d171c4507",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:24:08.532Z"
+  },
+  {
+    "id": "ea64fcf8-b49f-4596-bfdd-b7df8221f387",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:24:39.969Z"
+  },
+  {
+    "id": "f40c4842-c4cc-4ee1-9d8c-c7f9f9988f9d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:25:11.691Z"
+  },
+  {
+    "id": "863f7243-8912-44f7-820f-d92c742092e7",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:25:42.177Z"
+  },
+  {
+    "id": "078b844b-397f-4b7f-9761-9491fa362c44",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:26:13.257Z"
+  },
+  {
+    "id": "b822a186-9327-4406-bdf9-a064832d5b4a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:26:44.199Z"
+  },
+  {
+    "id": "eff44c75-b246-4964-a20f-6b5024278579",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:27:17.277Z"
+  },
+  {
+    "id": "4d1b59e7-c8e5-49ea-b966-69f65253cdd6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:27:48.254Z"
+  },
+  {
+    "id": "b7307b64-383f-483e-9177-5c595cb01c8e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:28:22.750Z"
+  },
+  {
+    "id": "b8649611-f931-4225-b9ed-9ec1865f146a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:28:53.299Z"
+  },
+  {
+    "id": "bf8f93c9-b8fd-4293-a957-c84368b89756",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:29:24.198Z"
+  },
+  {
+    "id": "2de3d8d1-0083-4325-9f49-11d306a7768c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:30:00.148Z"
+  },
+  {
+    "id": "5782678f-585c-4027-b126-4d624f70b714",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:30:31.454Z"
+  },
+  {
+    "id": "a1087862-2159-4e06-aa96-8e25b938047e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:31:02.625Z"
+  },
+  {
+    "id": "00a4c0dd-cd43-4c65-bc62-8b86506b00ad",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:31:33.614Z"
+  },
+  {
+    "id": "30248c11-6d1a-4928-a5ea-ae5df0f9aee8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:32:04.345Z"
+  },
+  {
+    "id": "0fd17745-2384-4720-9987-0e4a7abd366e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:32:43.494Z"
+  },
+  {
+    "id": "cd4c11f8-d590-42a9-8307-887570ac8b35",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:33:14.287Z"
+  },
+  {
+    "id": "859dbae8-9cae-4a4b-979a-b3a5bd2b9503",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:33:45.546Z"
+  },
+  {
+    "id": "7175a5aa-d7b3-43c1-86d4-a1f1cccd6a3b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:34:16.347Z"
+  },
+  {
+    "id": "706b59ba-d646-45e0-9980-cf808d7e7522",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:34:47.252Z"
+  },
+  {
+    "id": "6102cf67-71d5-4f54-8bb3-0f35e946a99f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:35:18.248Z"
+  },
+  {
+    "id": "9e7663d7-9cd0-4460-8e7f-ccf9ebfa337b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-24T17:35:49.328Z"
+  },
+  {
+    "id": "3ddca223-6545-4e52-ad95-e60e6435fecc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:55:35.355Z"
+  },
+  {
+    "id": "89342cb3-181b-46fb-9bed-a8a671af5e2e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:56:20.530Z"
+  },
+  {
+    "id": "24024ff6-e25f-4adf-871c-acb25dceab91",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:57:18.661Z"
+  },
+  {
+    "id": "62490e91-df06-4bf6-adcb-881dffdb3356",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:57:24.086Z"
+  },
+  {
+    "id": "24fbffcf-a059-4d89-8f97-18d09f20f11b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:57:37.955Z"
+  },
+  {
+    "id": "247afb97-b560-44f5-8da9-1f40c815ab30",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:57:54.507Z"
+  },
+  {
+    "id": "0dd8e529-02bc-411d-a374-3dcdfab2f46b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:58:24.922Z"
+  },
+  {
+    "id": "002be99c-7bad-48d4-a375-dabca46cbd63",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:58:33.482Z"
+  },
+  {
+    "id": "23fc6b3b-a98c-4576-973e-baaa33ef3812",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:58:55.180Z"
+  },
+  {
+    "id": "6da7f181-fa9b-4594-9100-89d9f08dc428",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:59:25.652Z"
+  },
+  {
+    "id": "d39d9826-562f-48a2-8e3e-b9a5da44243e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T03:59:56.101Z"
+  },
+  {
+    "id": "c35efa85-d6de-4c9e-836b-a640c8bf2b9d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:00:04.497Z"
+  },
+  {
+    "id": "220b8893-2f78-40c3-b622-f97606906217",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:00:26.488Z"
+  },
+  {
+    "id": "903616cb-143f-441f-8656-67ee565e7755",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:00:56.751Z"
+  },
+  {
+    "id": "a79b066d-1a15-4885-9037-402f97ba3ed4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:01:05.313Z"
+  },
+  {
+    "id": "ea38c497-5a06-4fd0-8c98-91c3c6b74561",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:01:27.028Z"
+  },
+  {
+    "id": "1cafc006-47cd-4bdb-8713-fcb67939a2b4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:02:06.530Z"
+  },
+  {
+    "id": "5c8d737e-1244-475e-b1c9-f429cbd00d2f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:02:20.527Z"
+  },
+  {
+    "id": "a5058775-9933-4de6-a6c8-f7b0d2de6fe0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:09:18.267Z"
+  },
+  {
+    "id": "cf080ab5-4e01-4e4b-9e2e-843d3ed5f870",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:09:19.050Z"
+  },
+  {
+    "id": "d8f48e70-291b-44b9-8f10-3da1b9f62ac9",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:09:23.930Z"
+  },
+  {
+    "id": "fa3093a5-a7e4-4d38-bd46-cd048504c4be",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:10:26.011Z"
+  },
+  {
+    "id": "23118d50-ab52-446f-9640-74b1ac1f0e21",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:10:56.550Z"
+  },
+  {
+    "id": "a7780ceb-3856-4a1a-b4aa-a1fc67872084",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:11:27.014Z"
+  },
+  {
+    "id": "fb654028-7d75-485c-a809-75794468bb83",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:11:57.229Z"
+  },
+  {
+    "id": "76c3eb58-22c9-44b2-ba50-8812df0f2bda",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:12:27.478Z"
+  },
+  {
+    "id": "ecdc74f2-bbbe-4148-b031-0501da7ba163",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:13:14.467Z"
+  },
+  {
+    "id": "f1bb34a2-60ba-49f4-a5e1-07c10441523b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:13:44.896Z"
+  },
+  {
+    "id": "c42e4adc-24e9-4808-b8cf-5af85f20d4c3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:14:15.279Z"
+  },
+  {
+    "id": "c7b8b5e6-8b8f-4d3a-989d-4f6eac0aeb34",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:14:46.480Z"
+  },
+  {
+    "id": "c2461ac0-5c71-4475-814f-1ca8c7209580",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:15:17.290Z"
+  },
+  {
+    "id": "1ab1a838-5324-4234-a66f-264eeb370f6d",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:15:48.376Z"
+  },
+  {
+    "id": "e346bbe2-7aa9-4949-897f-94378eaeef3a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:16:19.506Z"
+  },
+  {
+    "id": "5022376b-05ed-4302-88ab-bb74fee7a0af",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:16:50.311Z"
+  },
+  {
+    "id": "02aa54d4-b80e-45e4-992c-a5852a16bcf0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:17:21.289Z"
+  },
+  {
+    "id": "e7baba60-4a92-42b7-9365-ef2459f7b895",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:17:52.315Z"
+  },
+  {
+    "id": "2f10e30d-6f82-4c4e-8bda-51ea2078239f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:18:23.343Z"
+  },
+  {
+    "id": "60e320b5-21dd-4fc9-8dda-dc241b430a6a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:18:54.276Z"
+  },
+  {
+    "id": "6d91342a-6d4c-4583-b9a2-eeea3d163db6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:19:25.318Z"
+  },
+  {
+    "id": "18d2946c-b14a-4815-aeb7-204d0f8e2b36",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:19:56.451Z"
+  },
+  {
+    "id": "4e233103-fdfc-403e-bb27-22c9d31b98f3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:20:27.326Z"
+  },
+  {
+    "id": "cc24bfc6-9773-4795-b580-0418a120cdaa",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:20:58.354Z"
+  },
+  {
+    "id": "a06b6872-6653-4e8c-b1b7-ba882ea80574",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:21:29.299Z"
+  },
+  {
+    "id": "6ea88180-92c5-4de1-b8c2-b76538315c16",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:22:00.439Z"
+  },
+  {
+    "id": "c77b133f-6d74-438a-899a-eb174904e42e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:22:31.340Z"
+  },
+  {
+    "id": "9dbf5af0-c084-4fff-bf27-2c958add93fc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:23:02.472Z"
+  },
+  {
+    "id": "dc4d63b1-1e6c-4695-a1bb-981ac5b6a31e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:23:33.332Z"
+  },
+  {
+    "id": "2600de0a-0ea7-49ec-b6fd-f53a66dc7f94",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:24:04.444Z"
+  },
+  {
+    "id": "daf16d40-9677-43c5-9417-0bb5511175b4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:24:35.307Z"
+  },
+  {
+    "id": "f3561abc-9d12-408b-b29f-6b18c585abcb",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:25:06.307Z"
+  },
+  {
+    "id": "15f96f5f-422c-4239-bfe3-d4a9c0955ba5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:25:37.446Z"
+  },
+  {
+    "id": "cdad6206-5a2a-493b-9705-8b2599b1e669",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:26:08.341Z"
+  },
+  {
+    "id": "f2361209-5ef2-4016-8939-68b5e0c12c64",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:26:39.287Z"
+  },
+  {
+    "id": "ed691f2b-f0a6-42cd-ad91-88edcf85a3c3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:27:10.335Z"
+  },
+  {
+    "id": "97e362d9-da4a-43c6-9fc7-f68971271ee0",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:27:41.286Z"
+  },
+  {
+    "id": "9ebbcdd9-4ecd-4c66-b5fc-8eb9212e151b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:28:12.476Z"
+  },
+  {
+    "id": "44c38ac4-8183-4655-97b8-0c68db297060",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:28:43.314Z"
+  },
+  {
+    "id": "d53661a3-3bf9-4a33-b557-39f99192762e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:29:14.454Z"
+  },
+  {
+    "id": "372efb1d-fa74-4cee-af2c-b8fb1d70f647",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:29:45.305Z"
+  },
+  {
+    "id": "f14a2fb8-901c-4454-91a2-61423aee9b54",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:30:16.307Z"
+  },
+  {
+    "id": "79689e1f-0e87-460f-8307-d236d2f37309",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:31:18.367Z"
+  },
+  {
+    "id": "0806c6c2-c25f-44db-ac8a-b374f4ba4eb4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:31:49.286Z"
+  },
+  {
+    "id": "7743c3ac-f5a0-4c47-bc27-e713de6d1a48",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:32:20.347Z"
+  },
+  {
+    "id": "970a60bb-1799-4619-bd31-b38789079a0b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:32:51.461Z"
+  },
+  {
+    "id": "8942a87c-6e17-4468-87f6-1d104ed085be",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:33:22.340Z"
+  },
+  {
+    "id": "b1434ad3-63bc-405c-83d4-cced0fad72e2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:33:53.297Z"
+  },
+  {
+    "id": "8e18c534-4194-45fc-8b6e-522eb677c092",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:34:55.391Z"
+  },
+  {
+    "id": "a3761fb9-7618-4fe6-ab22-6dd4f7cd02ce",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:35:26.374Z"
+  },
+  {
+    "id": "83b51a14-6d95-48c7-abbb-1229fd2b6aa6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:35:57.485Z"
+  },
+  {
+    "id": "aa128588-e855-49f5-b738-c4f63eba348f",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:36:28.339Z"
+  },
+  {
+    "id": "73a14819-0b5e-4fe8-9c9f-59339ea28229",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:36:52.544Z"
+  },
+  {
+    "id": "5723ce3d-f88d-4082-8303-cb7d9f93f19a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:37:57.087Z"
+  },
+  {
+    "id": "002fb061-4da9-4627-8163-5c997febf32b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:38:27.485Z"
+  },
+  {
+    "id": "8b2400c4-20f3-44c6-a0fb-3f58f5caab78",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:38:57.956Z"
+  },
+  {
+    "id": "a2a55a92-4d6a-4878-9127-75b3d55765ef",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:39:24.860Z"
+  },
+  {
+    "id": "c0735d08-751b-44b6-b9f5-14e06e8ca76c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:40:08.700Z"
+  },
+  {
+    "id": "d360c56b-c83c-4bad-8af0-37909034cdac",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:40:38.936Z"
+  },
+  {
+    "id": "f28725c1-4ed8-4a2e-8866-67a5aec08e05",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:41:09.383Z"
+  },
+  {
+    "id": "1e572d5c-e5e2-4a9e-869e-44653cd0e824",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:41:39.602Z"
+  },
+  {
+    "id": "a0516d6b-e6e2-45c4-a30b-ca1431db86cd",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:42:09.966Z"
+  },
+  {
+    "id": "ae1878f9-6c57-4606-ad5e-cbb05347cdcd",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:44:53.575Z"
+  },
+  {
+    "id": "fe81e9e1-9316-4a61-a1e5-8ed7d07059ee",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T04:45:53.666Z"
+  },
+  {
+    "id": "f2d946e0-62c0-4ec1-be96-aff586aee1e8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:06:16.414Z"
+  },
+  {
+    "id": "e69e3835-82df-4ac9-8414-e6d81b7c6b2b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:06:59.757Z"
+  },
+  {
+    "id": "d87a339f-2e70-416b-83a1-1d2678b70e2c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:07:30.005Z"
+  },
+  {
+    "id": "aaae14c8-bb98-4a24-9b1d-e724049b14d3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:08:00.305Z"
+  },
+  {
+    "id": "5fd1b12d-72ca-4a6e-b7d2-64bb6eb67de2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:08:30.763Z"
+  },
+  {
+    "id": "878e9bc2-f838-4172-bdff-6b03b40937b9",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:09:01.114Z"
+  },
+  {
+    "id": "de950a24-14ce-41fa-a593-50c436875e94",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:09:31.442Z"
+  },
+  {
+    "id": "ce5d8e96-5d59-4ab3-8987-0b04da665abf",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:10:01.688Z"
+  },
+  {
+    "id": "2b84bf6d-9f5c-4272-8034-d38e9160a66b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:10:32.173Z"
+  },
+  {
+    "id": "ca6b008c-0eb2-4b4a-8e43-8ca8956642e4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:11:02.419Z"
+  },
+  {
+    "id": "81d4817a-14e1-42a8-9c46-1016fc0d86e8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:11:32.733Z"
+  },
+  {
+    "id": "24271993-1c08-4881-9fff-07bbcde35369",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:12:02.994Z"
+  },
+  {
+    "id": "30d0972c-ad94-4910-85c8-3b426b7aa47e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:12:33.217Z"
+  },
+  {
+    "id": "b9795528-80c8-4e23-b215-b64a2f55a416",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:13:03.417Z"
+  },
+  {
+    "id": "758832e7-d3a2-4da7-b75f-0092dff48bd8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:23:07.042Z"
+  },
+  {
+    "id": "debfee7f-2f53-4304-bc2f-4648c8f666ea",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:24:20.558Z"
+  },
+  {
+    "id": "27800eea-884f-47de-8098-d1a9bd079ee8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:24:51.288Z"
+  },
+  {
+    "id": "82682019-5e20-4b7a-8203-931f5b4450f6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:25:22.347Z"
+  },
+  {
+    "id": "ec65581a-85a1-41cf-9de6-028962358990",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:25:27.382Z"
+  },
+  {
+    "id": "36a336bb-eac6-4cd0-8abf-6a4b9725bca6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:25:57.552Z"
+  },
+  {
+    "id": "2a29f63b-04f9-4753-8004-11de80510583",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:26:44.381Z"
+  },
+  {
+    "id": "bd4ad2f8-0c77-4f04-978f-ef7f68ac4c30",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:27:15.311Z"
+  },
+  {
+    "id": "bb4d8c1a-3f1f-4b2a-b38e-725ee492035e",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:27:46.291Z"
+  },
+  {
+    "id": "db7bfc6c-7785-4711-a8d1-cf42ac4385e4",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:28:17.342Z"
+  },
+  {
+    "id": "945990ca-1f6e-458d-98a8-4606dc192a43",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:28:48.288Z"
+  },
+  {
+    "id": "1dfc6d83-003c-44d1-91fc-aa406e8e9002",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:29:19.473Z"
+  },
+  {
+    "id": "05291429-bf5c-4474-8503-99f4a79914b9",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:29:50.307Z"
+  },
+  {
+    "id": "ccf0e9e5-55ee-4a1f-b9b2-b9594c7a9563",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:30:21.292Z"
+  },
+  {
+    "id": "d308e79c-3c90-465e-b9ca-810bf8b64cb6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:30:51.560Z"
+  },
+  {
+    "id": "154e3ace-dc24-4766-8177-1fcb22853a22",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:30:59.969Z"
+  },
+  {
+    "id": "348e78d4-7623-4749-a6c4-8b988d7d4fcc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:32:00.460Z"
+  },
+  {
+    "id": "f51020d1-0594-4d0c-abb3-fe29c48adab3",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:32:30.854Z"
+  },
+  {
+    "id": "fb13184a-67b8-49fd-8268-f3421f043963",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:33:34.952Z"
+  },
+  {
+    "id": "b0d9aeba-0a7f-495b-91cb-2f99e5fd89a2",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:34:05.151Z"
+  },
+  {
+    "id": "53a14c1d-af6c-4f5e-87ea-994bfdf456cc",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:35:52.448Z"
+  },
+  {
+    "id": "a570beec-c298-4ffa-af2b-72c3265ac0f9",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:36:50.922Z"
+  },
+  {
+    "id": "2d35a340-ffe2-4b30-ada0-70fc00e9a37b",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:37:21.144Z"
+  },
+  {
+    "id": "4f4bea46-b43d-42d3-92e0-e55926ff3163",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:37:51.401Z"
+  },
+  {
+    "id": "f7975bdd-f1e8-4fc6-96aa-57adb856c3c8",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T05:38:21.802Z"
+  },
+  {
+    "id": "d61b37fc-6821-4c13-a9e5-3e232f10bc3a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T07:05:50.908Z"
+  },
+  {
+    "id": "f271a5c4-95e9-4724-9dcb-d694676597a6",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T07:06:45.062Z"
+  },
+  {
+    "id": "520a01d7-452b-4783-ba2f-d2e2cebdf9da",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T07:38:12.257Z"
+  },
+  {
+    "id": "a827d85f-9804-4853-9e2e-ea4606785af7",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T07:40:49.052Z"
+  },
+  {
+    "id": "3c445d63-4c00-4b1b-98a1-f5f36aad907c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T07:48:37.051Z"
+  },
+  {
+    "id": "72b0b756-4bbb-4b51-afb9-5564cab449a5",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T09:31:18.064Z"
+  },
+  {
+    "id": "86c96399-09cd-4c83-bc15-d5fb0f180655",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-25T10:11:18.620Z"
+  },
+  {
+    "id": "26bb0af0-1437-4ff8-ab85-48be66203321",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-27T04:12:38.065Z"
+  },
+  {
+    "id": "0e05400c-bd02-4a6a-8d6e-665584286e20",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-27T04:25:36.201Z"
+  },
+  {
+    "id": "71ece34c-a49e-4e3e-8d8f-fc6e3b7ddf1c",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-27T04:54:45.901Z"
+  },
+  {
+    "id": "fecbea45-f7a7-4b1b-8bb3-bc44c4819b2a",
+    "type": "warning",
+    "title": "Connection Lost",
+    "description": "AI diagnostic server unreachable.",
+    "source": "ai",
+    "created_at": "2026-02-27T05:06:00.860Z"
+  }
+]

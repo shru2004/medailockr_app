@@ -1,0 +1,677 @@
+[
+  {
+    "id": "mc-mp-001-1",
+    "postId": "mp-001",
+    "author": {
+      "name": "Dr. Preeti Joshi",
+      "title": "Emergency Medicine Consultant",
+      "image": "https://i.pravatar.cc/150?img=43",
+      "verified": true
+    },
+    "body": "SCAD is chronically under-recognised. We now have a SCAD pathway triggered when any woman <55 without traditional risk factors presents with ACS. Key: avoid thrombolytics. Dual antiplatelet for 12 months — some centres extend to 24 in recurrent SCAD or multivessel disease.",
+    "upvotes": 42,
+    "downvotes": 1,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-001-2",
+    "postId": "mp-001",
+    "author": {
+      "name": "Dr. Sunita Rao",
+      "title": "Senior Cardiologist, Fortis Hospital",
+      "image": "https://i.pravatar.cc/150?img=49",
+      "verified": true
+    },
+    "body": "Great case. The Type 2 imaging pattern (intramural haematoma without intimal tear) is actually the most common SCAD subtype — often missed on routine angio. OCT or IVUS is game-changing for confirming the diagnosis.",
+    "upvotes": 38,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-001-3",
+    "postId": "mp-001",
+    "author": {
+      "name": "Dr. Meera Krishnamurthy",
+      "title": "Pulmonologist & Critical Care",
+      "image": "https://i.pravatar.cc/150?img=45",
+      "verified": true
+    },
+    "body": "Did you screen for connective tissue disease? Fibromuscular dysplasia co-exists in ~50-86% of SCAD cases. Renal artery FMD screening by CTA abdomen is our routine now.",
+    "upvotes": 29,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-001-4",
+    "postId": "mp-001",
+    "author": {
+      "name": "Dr. Deepa Iyer",
+      "title": "Sports Medicine Physician",
+      "image": "https://i.pravatar.cc/150?img=38",
+      "verified": false
+    },
+    "body": "On anti-platelet duration — the SCAD-1 pilot RCT (n=80) is underway but results not expected until 2027. Most expert consensus suggests 12 months DAPT, then aspirin indefinitely in recurrent presenters. Beta-blockers preferred over CCBs per most guidance.",
+    "upvotes": 24,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-001-5",
+    "postId": "mp-001",
+    "author": {
+      "name": "Dr. Nisha Kapoor",
+      "title": "Obstetrician & Maternal-Fetal Medicine",
+      "image": "https://i.pravatar.cc/150?img=46",
+      "verified": true
+    },
+    "body": "Important note: SCAD incidence spikes peripartum — particularly in the first few weeks postpartum. Worth flagging in obstetric units. 1 in 1,000 spontaneous SCDs in peripartum women in published series.",
+    "upvotes": 31,
+    "downvotes": 1,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-003-1",
+    "postId": "mp-003",
+    "author": {
+      "name": "Dr. Pooja Agarwal",
+      "title": "Paediatric Neurologist",
+      "image": "https://i.pravatar.cc/150?img=39",
+      "verified": true
+    },
+    "body": "Plasma p-tau217 (Lumipulse or Lilly assay) is now showing AUC >0.95 for differentiating AD from non-AD dementias in research cohorts. We are running a pilot to use it as a gatekeeper before amyloid PET referral. Reduces PET cost burden significantly.",
+    "upvotes": 55,
+    "downvotes": 2,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-003-2",
+    "postId": "mp-003",
+    "author": {
+      "name": "Dr. Rajesh Kumar",
+      "title": "Senior Neurologist, Bombay Hospital",
+      "image": "https://i.pravatar.cc/150?img=58",
+      "verified": true
+    },
+    "body": "Good discussion. For those who can access CSF, Lumipulse Abeta42/40 ratio + p-tau181 has ~90% concordance with amyloid PET in our small internal series. Cost: ~₹18,000 vs ₹2.4L for PET. Worth validating locally.",
+    "upvotes": 47,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-003-3",
+    "postId": "mp-003",
+    "author": {
+      "name": "Dr. Suresh Menon",
+      "title": "Endocrinologist, Amrita Institute",
+      "image": "https://i.pravatar.cc/150?img=62",
+      "verified": true
+    },
+    "body": "Metabolic comorbidities matter here. Insulin resistance (type 2 DM, obesity) significantly accelerates amyloid accumulation. I am increasingly convinced metabolic management is an underutilised preventive lever — GLP-1 receptor agonist trials in AD are intriguing.",
+    "upvotes": 39,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-003-4",
+    "postId": "mp-003",
+    "author": {
+      "name": "Dr. Ananya Roy",
+      "title": "Consultant Psychiatrist",
+      "image": "https://i.pravatar.cc/150?img=44",
+      "verified": true
+    },
+    "body": "The neuropsychiatric symptom burden (anxiety, agitation, depression) in early AD is often undertreated while awaiting disease-modifying therapy access. Citalopram for agitation, mirtazapine for sleep/appetite in early MCI — do not wait for the expensive drugs to manage QoL.",
+    "upvotes": 33,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-003-5",
+    "postId": "mp-003",
+    "author": {
+      "name": "Dr. Harish Chandra",
+      "title": "Radiologist, Tata Memorial Centre",
+      "image": "https://i.pravatar.cc/150?img=57",
+      "verified": true
+    },
+    "body": "FDG-PET brain has relatively good sensitivity for AD pattern vs frontotemporal dementia differentiation and is more accessible than amyloid PET. For resource-constrained settings, FDG-PET + clinical + structural MRI (hippocampal volumes) can be a reasonable workup.",
+    "upvotes": 28,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-007-1",
+    "postId": "mp-007",
+    "author": {
+      "name": "Dr. Rahul Banerjee",
+      "title": "Nephrology & Transplant, PGIMER",
+      "image": "https://i.pravatar.cc/150?img=63",
+      "verified": true
+    },
+    "body": "Combining esketamine with psychodynamic therapy in 11 patients over the last year. Anecdotally the response duration does seem longer with concurrent therapy vs drug alone — but n is too small for any conclusions. Anyone aware of an ongoing RCT?",
+    "upvotes": 37,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-007-2",
+    "postId": "mp-007",
+    "author": {
+      "name": "Dr. Shalini Gupta",
+      "title": "Rheumatologist, AIIMS Bhopal",
+      "image": "https://i.pravatar.cc/150?img=40",
+      "verified": true
+    },
+    "body": "The REMS programme overhead is genuinely prohibitive in smaller centres. We had to designate a dedicated REMS coordinator (an overworked nurse practitioner). The 2-hour monitoring window per dose adds ~15 hours of nursing time per patient per month. A simplified monitoring pathway for long-term stable patients is needed.",
+    "upvotes": 44,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-007-3",
+    "postId": "mp-007",
+    "author": {
+      "name": "Dr. Divya Menon",
+      "title": "Allergist & Clinical Immunologist",
+      "image": "https://i.pravatar.cc/150?img=42",
+      "verified": true
+    },
+    "body": "For patients who cannot afford esketamine, oral ketamine (off-label, compounded) has some RCT data — ELEKT-D trial (2023) showed 0.5 mg/kg sublingual 3x/week for 4 weeks: response rate ~20% better than placebo at week 4. Not regulatory-approved but manageable at home without REMS burden.",
+    "upvotes": 31,
+    "downvotes": 2,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-007-4",
+    "postId": "mp-007",
+    "author": {
+      "name": "Dr. Rohan Desai",
+      "title": "GI & Hepatologist",
+      "image": "https://i.pravatar.cc/150?img=65",
+      "verified": true
+    },
+    "body": "Hepatotoxicity is worth monitoring with repeated esketamine use. We check LFTs at baseline and every 3 months. One patient with pre-existing MASH had transaminase elevation — reduced frequency to monthly and LFTs normalised.",
+    "upvotes": 26,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-007-5",
+    "postId": "mp-007",
+    "author": {
+      "name": "Dr. Kavita Sharma",
+      "title": "Clinical Pharmacologist",
+      "image": "https://i.pravatar.cc/150?img=36",
+      "verified": true
+    },
+    "body": "Drug interaction point: esketamine + MAOIs is absolutely contraindicated. Serotonin syndrome risk with concurrent strong serotonergic agents. In patients on SNRIs, watch carefully in the 2-hour observation window for tachycardia and agitation — these are early serotonin syndrome flags, not just ketamine side effects.",
+    "upvotes": 41,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-010-1",
+    "postId": "mp-010",
+    "author": {
+      "name": "Dr. Siddharth Rao",
+      "title": "Intensivist & Anaesthesiologist",
+      "image": "https://i.pravatar.cc/150?img=68",
+      "verified": true
+    },
+    "body": "ROX index is genuinely useful but has limitations in obese patients and those with chronic hypercapnia. We now use ROX + serial ABGs (PaO2/FiO2 ratio trend) together. A rising PaCO2 on serial ABG at 1h is our strongest trigger to escalate to NIV despite a reassuring ROX.",
+    "upvotes": 48,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-010-2",
+    "postId": "mp-010",
+    "author": {
+      "name": "Dr. Kavya Reddy",
+      "title": "Neonatologist, Rainbow Children's Hosp",
+      "image": "https://i.pravatar.cc/150?img=41",
+      "verified": true
+    },
+    "body": "Heated humidification is essential for HFNC — unhumidified high-flow causes mucosal drying and ciliary dysfunction within 4 hours, paradoxically worsening secretion clearance. Surprising how many centres are still using cold, dry HFNC.",
+    "upvotes": 35,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-010-3",
+    "postId": "mp-010",
+    "author": {
+      "name": "Dr. Preeti Joshi",
+      "title": "Emergency Medicine Consultant",
+      "image": "https://i.pravatar.cc/150?img=43",
+      "verified": true
+    },
+    "body": "In our ED we found HFNC failed more often in patients with resting RR >34 at initiation — these patients seem to have crossed a fatigue threshold where the physiology of HFNC cannot compensate. We still try, but earlier ICU discussion for RR >34 + SpO2 <92% despite 60L HFNC.",
+    "upvotes": 31,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-010-4",
+    "postId": "mp-010",
+    "author": {
+      "name": "Dr. Ramesh Iyer",
+      "title": "Infectious Disease Specialist",
+      "image": "https://i.pravatar.cc/150?img=70",
+      "verified": true
+    },
+    "body": "Infection control point: HFNC generates aerosol. Earlier COVID data suggested 5-fold increase in viral load dispersal vs standard oxygen. Negative-pressure rooms or at least surgical-grade ventilated isolation bays are important for suspected/confirmed infectious aetiologies.",
+    "upvotes": 28,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-010-5",
+    "postId": "mp-010",
+    "author": {
+      "name": "Dr. Meenakshi Sundaram",
+      "title": "Gynaecologic Oncologist",
+      "image": "https://i.pravatar.cc/150?img=37",
+      "verified": true
+    },
+    "body": "In our oncology HDU, immunosuppressed patients on HFNC have worse outcomes than general ICU patients with similar ROX scores. The immunosuppression masks respiratory drive — patients tolerate worsening hypoxia without perceived dyspnoea. Earlier intubation threshold in neutropenic fever on HFNC.",
+    "upvotes": 22,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-013-1",
+    "postId": "mp-013",
+    "author": {
+      "name": "Dr. Arjun Nair",
+      "title": "Interventional Cardiologist, AIIMS Delhi",
+      "image": "https://i.pravatar.cc/150?img=11",
+      "verified": true
+    },
+    "body": "For exercise restriction, the ESC 2023 guidelines recommend return to competitive sport at 3-6 months with repeat CMR showing no active inflammation (T1/T2 normalisation). Recreational exercise can resume earlier. We use a graded exercise test at 3 months — if no symptoms/arrhythmias on stress echo, allow moderate-intensity activity.",
+    "upvotes": 52,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-013-2",
+    "postId": "mp-013",
+    "author": {
+      "name": "Dr. Vikram Sinha",
+      "title": "Consultant Orthopaedic Surgeon",
+      "image": "https://i.pravatar.cc/150?img=60",
+      "verified": true
+    },
+    "body": "Not cardiology, but increasingly seeing post-COVID myocarditis clearance letters requested before sports physicals in young athletes. Worth developing a standardised return-to-sport certification pathway at your centre.",
+    "upvotes": 18,
+    "downvotes": 2,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-013-3",
+    "postId": "mp-013",
+    "author": {
+      "name": "Dr. Kavya Reddy",
+      "title": "Neonatologist",
+      "image": "https://i.pravatar.cc/150?img=41",
+      "verified": true
+    },
+    "body": "Paediatric post-COVID myocarditis is our concern here. MIS-C overlap spectrum — we are seeing more adolescents with LGE on CMR at 6-month follow-up after initial MIS-C, even those who appeared to recover fully. Routine CMR at 6 months is our current policy for MIS-C.",
+    "upvotes": 29,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-013-4",
+    "postId": "mp-013",
+    "author": {
+      "name": "Dr. Meera Krishnamurthy",
+      "title": "Pulmonologist",
+      "image": "https://i.pravatar.cc/150?img=45",
+      "verified": true
+    },
+    "body": "On de novo AF: we have identified 3 cases of new-onset AF at 3-6 months post-COVID in the 30-45 age group — all had elevated inflammatory markers (CRP >10) at COVID presentation. Worth prospective tracking.",
+    "upvotes": 34,
+    "downvotes": 1,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-013-5",
+    "postId": "mp-013",
+    "author": {
+      "name": "Dr. Rahul Banerjee",
+      "title": "Nephrology & Transplant",
+      "image": "https://i.pravatar.cc/150?img=63",
+      "verified": true
+    },
+    "body": "Colchicine 0.5 mg BD was well-tolerated in our post-COVID myopericarditis patients. Would not omit it in favour of NSAIDs alone — the anti-inflammatory mechanism is distinct and complementary. Duration: 3 months minimum.",
+    "upvotes": 27,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-017-1",
+    "postId": "mp-017",
+    "author": {
+      "name": "Dr. Kavita Sharma",
+      "title": "Clinical Pharmacologist",
+      "image": "https://i.pravatar.cc/150?img=36",
+      "verified": true
+    },
+    "body": "The real value of RUSH is in separating hypovolaemic from cardiogenic shock early. We had a case of apparent septic shock in hypertension — RUSH showed a grossly dilated RV with D-sign and pericardial effusion. Actual diagnosis: massive PE with obstructive shock. Beta-agonists and fluids would have been catastrophic.",
+    "upvotes": 58,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-017-2",
+    "postId": "mp-017",
+    "author": {
+      "name": "Dr. Ramesh Iyer",
+      "title": "Infectious Disease Specialist",
+      "image": "https://i.pravatar.cc/150?img=70",
+      "verified": true
+    },
+    "body": "The BLUE (bedside lung ultrasound in emergency) protocol integrated into RUSH significantly improves respiratory component assessment. The A+B lines protocol is learnable in <3 hours. I trained our ID fellows on it after noticing ARDS vs HCAP was being confused in complex sepsis.",
+    "upvotes": 42,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-017-3",
+    "postId": "mp-017",
+    "author": {
+      "name": "Dr. Arjun Nair",
+      "title": "Interventional Cardiologist",
+      "image": "https://i.pravatar.cc/150?img=11",
+      "verified": true
+    },
+    "body": "VTI (velocity-time integral) as a surrogate for fluid responsiveness is a valuable POCUS add-on. LVOT VTI <18 cm and variation >10% with PLR predicts fluid responsiveness with ~80% accuracy. Has essentially replaced our blind saline challenges.",
+    "upvotes": 36,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-017-4",
+    "postId": "mp-017",
+    "author": {
+      "name": "Dr. Siddharth Rao",
+      "title": "Intensivist",
+      "image": "https://i.pravatar.cc/150?img=68",
+      "verified": true
+    },
+    "body": "Caution: POCUS quality varies massively with practitioner experience. In our ICU, a structured competency-based sign-off system (FUSIC in the UK; iSCUS equivalents) reduced POCUS misinterpretation errors significantly. Self-proclaimed POCUS competence without formal accreditation is a real patient safety issue.",
+    "upvotes": 45,
+    "downvotes": 2,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-017-5",
+    "postId": "mp-017",
+    "author": {
+      "name": "Dr. Meera Krishnamurthy",
+      "title": "Pulmonologist & Critical Care",
+      "image": "https://i.pravatar.cc/150?img=45",
+      "verified": true
+    },
+    "body": "IVC collapsibility index is the most debated POCUS parameter. In spontaneously breathing patients it is more reliable for fluid status. In ventilated patients with low PEEP, use with caution — PEEP itself affects IVC morphology. We use IVC only in conjunction with other RUSH components now, not in isolation.",
+    "upvotes": 39,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-021-1",
+    "postId": "mp-021",
+    "author": {
+      "name": "Dr. Ramesh Iyer",
+      "title": "Infectious Disease Specialist",
+      "image": "https://i.pravatar.cc/150?img=70",
+      "verified": true
+    },
+    "body": "Strong evidence here. Every antibiotic stewardship programme should include penicillin de-labelling. The downstream effects — including reducing 3rd-generation cephalosporin and fluoroquinolone use — are directly measurable on your antibiogram within 12-18 months.",
+    "upvotes": 61,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-021-2",
+    "postId": "mp-021",
+    "author": {
+      "name": "Dr. Kavita Sharma",
+      "title": "Clinical Pharmacologist",
+      "image": "https://i.pravatar.cc/150?img=36",
+      "verified": true
+    },
+    "body": "We piloted rapid allergy de-labelling in our pre-anaesthesia assessment clinic. Graded oral amoxicillin challenge (25mg → 250mg → 500mg at 30-min intervals under observation) takes 2 hours and has an excellent safety profile. 0 anaphylaxis events in 180 challenges in our series.",
+    "upvotes": 52,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-021-3",
+    "postId": "mp-021",
+    "author": {
+      "name": "Dr. Preeti Joshi",
+      "title": "Emergency Medicine Consultant",
+      "image": "https://i.pravatar.cc/150?img=43",
+      "verified": true
+    },
+    "body": "In the ED, penicillin-labelled patients have consistently poorer outcomes for infective endocarditis (forced to use vancomycin vs amoxicillin-gentamicin), group A strep sepsis, and syphilis. The mortality signal from incorrect allergy labelling is actually quite clear in large retrospective analyses.",
+    "upvotes": 44,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-021-4",
+    "postId": "mp-021",
+    "author": {
+      "name": "Dr. Vikram Sinha",
+      "title": "Consultant Orthopaedic Surgeon",
+      "image": "https://i.pravatar.cc/150?img=60",
+      "verified": true
+    },
+    "body": "Co-amoxiclav is vastly superior to cephalosporins for clean orthopaedic surgical prophylaxis. Our infection rates in hip arthroplasty dropped from 1.4% → 0.7% when we moved allergic-labelled patients through a pre-op de-labelling pathway. The clinical value is not abstract — it is directly measurable.",
+    "upvotes": 38,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-021-5",
+    "postId": "mp-021",
+    "author": {
+      "name": "Dr. Divya Menon",
+      "title": "Allergist & Clinical Immunologist",
+      "image": "https://i.pravatar.cc/150?img=42",
+      "verified": true
+    },
+    "body": "Important distinction: penicillin skin testing has a negative predictive value >97% in large series. The old graded-challenge-only approach can skip skin testing for low-risk patients (remote history, mild reaction, no systemic features) — this significantly reduces clinic time without compromising safety.",
+    "upvotes": 33,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-026-1",
+    "postId": "mp-026",
+    "author": {
+      "name": "Dr. Kavya Reddy",
+      "title": "Neonatologist, Rainbow Children's Hosp",
+      "image": "https://i.pravatar.cc/150?img=41",
+      "verified": true
+    },
+    "body": "Driving pressure monitoring is critical. In our NICU, even with \"standard\" low tidal volumes, patients with small compliant lungs can have driving pressures >18 cmH2O leading to injurious ventilation. Closed-loop ventilation (ASV/INTELLiVENT-ASV) automatically titrates to driving pressure targets — worth evaluating.",
+    "upvotes": 44,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-026-2",
+    "postId": "mp-026",
+    "author": {
+      "name": "Dr. Meera Krishnamurthy",
+      "title": "Pulmonologist",
+      "image": "https://i.pravatar.cc/150?img=45",
+      "verified": true
+    },
+    "body": "The resistance from cardiac surgery anaesthesia is real in our institution too. Their concern: low TV increases risk of atelectasis in single ventricle/post-CPB lungs with intrinsically high shunt. A middle ground — 6-8 mL/kg with PEEP titration and recruitment manoeuvre post-CPB — is our current cardiac surgical ICU protocol.",
+    "upvotes": 37,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-026-3",
+    "postId": "mp-026",
+    "author": {
+      "name": "Dr. Siddharth Rao",
+      "title": "Intensivist",
+      "image": "https://i.pravatar.cc/150?img=68",
+      "verified": true
+    },
+    "body": "Mechanical power (a composite of TV, rate, PEEP, driving pressure) is emerging as the most comprehensive single ventilatory injury parameter. Target <17 J/min in non-ARDS, <12 J/min in ARDS. We have added mechanical power calculation to our daily ventilator rounds.",
+    "upvotes": 50,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-026-4",
+    "postId": "mp-026",
+    "author": {
+      "name": "Dr. Ramesh Iyer",
+      "title": "Infectious Disease Specialist",
+      "image": "https://i.pravatar.cc/150?img=70",
+      "verified": true
+    },
+    "body": "In our infectious disease-complicated respiratory failure patients (PCP pneumonia, severe influenza), I have noticed the lung mechanics change rapidly within 24-48 hours — compliance drops precipitously. Daily plateau pressure and driving pressure checks are essential, not just admission assessment.",
+    "upvotes": 28,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-026-5",
+    "postId": "mp-026",
+    "author": {
+      "name": "Dr. Preeti Joshi",
+      "title": "Emergency Medicine Consultant",
+      "image": "https://i.pravatar.cc/150?img=43",
+      "verified": true
+    },
+    "body": "Pre-oxygenation strategy matters enormously for downstream lung-protective ventilation success. High-flow + NIV in the ED during RSI, followed by immediate 6 mL/kg PBW at intubation, dramatically reduces the \"first 30 minutes\" lung injury window that often comes from post-intubation full-volume breaths.",
+    "upvotes": 35,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-030-1",
+    "postId": "mp-030",
+    "author": {
+      "name": "Dr. Siddharth Rao",
+      "title": "Intensivist",
+      "image": "https://i.pravatar.cc/150?img=68",
+      "verified": true
+    },
+    "body": "The single most impactful intervention in our ICU was removing verbal orders entirely for high-alert medications (insulin, heparin, vasopressors, concentrated electrolytes). Every order must be entered in CPOE. Compliance took 6 months to embed culturally but near-eliminated this category of error.",
+    "upvotes": 78,
+    "downvotes": 0,
+    "created_at": "2026-03-05T09:44:22.757Z",
+    "updated_at": "2026-03-05T09:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-030-2",
+    "postId": "mp-030",
+    "author": {
+      "name": "Dr. Kavita Sharma",
+      "title": "Clinical Pharmacologist",
+      "image": "https://i.pravatar.cc/150?img=36",
+      "verified": true
+    },
+    "body": "Smart infusion pumps with a drug library (hard and soft limits) are genuinely life-saving for ICU infusions. Our analysis: 6.2% of programmed infusion orders triggered a soft limit alert, and 0.8% triggered a hard stop. Without the pump library, those 0.8% would have reached the patient.",
+    "upvotes": 62,
+    "downvotes": 0,
+    "created_at": "2026-03-05T10:14:22.757Z",
+    "updated_at": "2026-03-05T10:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-030-3",
+    "postId": "mp-030",
+    "author": {
+      "name": "Dr. Meera Krishnamurthy",
+      "title": "Pulmonologist",
+      "image": "https://i.pravatar.cc/150?img=45",
+      "verified": true
+    },
+    "body": "Pharmacist presence at morning ICU rounds reduced medication errors by 66% in a Mayo Clinic trial. We now have a dedicated clinical pharmacist on daily ICU rounds. The cultural shift was harder than the logistics — intensivists had to genuinely accept pharmacist input as equals on the team.",
+    "upvotes": 55,
+    "downvotes": 1,
+    "created_at": "2026-03-05T10:44:22.757Z",
+    "updated_at": "2026-03-05T10:44:22.757Z"
+  },
+  {
+    "id": "mc-mp-030-4",
+    "postId": "mp-030",
+    "author": {
+      "name": "Dr. Preeti Joshi",
+      "title": "Emergency Medicine Consultant",
+      "image": "https://i.pravatar.cc/150?img=43",
+      "verified": true
+    },
+    "body": "Night-shift fatigue is the most under-addressed systems issue. Study after study shows error rates peak between 2-6am. A no-dose-calculation approach (using pre-printed weight-based dosing charts laminated in each bay) reduced night-shift arithmetic errors in our ED by 40%.",
+    "upvotes": 49,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:14:22.757Z",
+    "updated_at": "2026-03-05T11:14:22.757Z"
+  },
+  {
+    "id": "mc-mp-030-5",
+    "postId": "mp-030",
+    "author": {
+      "name": "Dr. Ramesh Iyer",
+      "title": "Infectious Disease Specialist",
+      "image": "https://i.pravatar.cc/150?img=70",
+      "verified": true
+    },
+    "body": "Antibiotic dosing errors in ICU are particularly dangerous. Renally adjusted antibiotic dosing is wrong in ~30% of prescriptions in published audits when done without pharmacist input. We use AUC-guided vancomycin dosing (not trough alone) with pharmacokinetic software — eliminated vancomycin toxicity in our unit.",
+    "upvotes": 41,
+    "downvotes": 0,
+    "created_at": "2026-03-05T11:44:22.757Z",
+    "updated_at": "2026-03-05T11:44:22.757Z"
+  }
+]

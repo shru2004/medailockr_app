@@ -1,0 +1,1131 @@
+[
+  {
+    "id": "mp-001",
+    "author": {
+      "name": "Dr. Arjun Nair",
+      "title": "Interventional Cardiologist, AIIMS Delhi",
+      "image": "https://i.pravatar.cc/150?img=11",
+      "verified": true
+    },
+    "title": "STEMI in a 34-year-old runner: Spontaneous Coronary Artery Dissection (SCAD)?",
+    "body": "35F, marathon runner, no traditional CV risk factors. Troponin I peaked 18 ng/mL. Coronary angio revealed Type 2 SCAD in LAD — managed conservatively. SCAD accounts for ~25% of MI in women <50 yet remains grossly underdiagnosed. Key teaching: always consider SCAD in young athletic women. What's your institutional approach to anti-platelet therapy duration in SCAD?",
+    "imageUrl": null,
+    "tags": [
+      "#Cardiology",
+      "#SCAD",
+      "#CaseStudy",
+      "#WomensHealth"
+    ],
+    "specialty": "Cardiology",
+    "flair": "Case Study",
+    "upvotes": 312,
+    "downvotes": 8,
+    "comments": 5,
+    "shares": 38,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 5
+      },
+      {
+        "type": "gold",
+        "count": 1
+      }
+    ],
+    "is_pinned": true,
+    "created_at": "2026-03-04T14:14:22.755Z",
+    "updated_at": "2026-03-04T14:14:22.755Z"
+  },
+  {
+    "id": "mp-002",
+    "author": {
+      "name": "Dr. Priya Mehta",
+      "title": "Pediatric Surgeon, KEM Hospital Mumbai",
+      "image": "https://i.pravatar.cc/150?img=54",
+      "verified": true
+    },
+    "title": "ERAS Protocol for Pediatric Colorectal Surgery — 12-Month Outcomes",
+    "body": "After implementing ERAS in our paediatric colorectal unit: mean LOS dropped 8.2→5.6 days, opioid use reduced 41%, readmission rate unchanged at 3.2%. Early enteral feeding (Day 0 post-op) and targeted fluid therapy gave the biggest wins. Key challenge: parental anxiety around early discharge — family education was critical. Anyone running ERAS in paediatric HPB?",
+    "imageUrl": null,
+    "tags": [
+      "#Pediatrics",
+      "#ERAS",
+      "#Perioperative",
+      "#QualityImprovement"
+    ],
+    "specialty": "Pediatrics",
+    "flair": "Protocol",
+    "upvotes": 278,
+    "downvotes": 11,
+    "comments": 5,
+    "shares": 52,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 6
+      },
+      {
+        "type": "insightful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T02:14:22.755Z",
+    "updated_at": "2026-03-04T02:14:22.755Z"
+  },
+  {
+    "id": "mp-003",
+    "author": {
+      "name": "Dr. Rajesh Kumar",
+      "title": "Senior Neurologist, Bombay Hospital",
+      "image": "https://i.pravatar.cc/150?img=58",
+      "verified": true
+    },
+    "title": "Lecanemab vs Donanemab in Early Alzheimer's — Real-World Thoughts?",
+    "body": "Both lecanemab and donanemab have shown statistically significant slowing of decline in Phase 3. But NNTs remain large and ARIA rates are concerning. The amyloid PET prerequisite alone is a massive access barrier in India — costs ₹2.4L+ and is not covered. What are practitioners doing on the ground? Biomarker stratification? CSF? Plasma p-tau217 screening?",
+    "imageUrl": null,
+    "tags": [
+      "#Neurology",
+      "#Alzheimers",
+      "#Immunotherapy",
+      "#Research"
+    ],
+    "specialty": "Neurology",
+    "flair": "Research",
+    "upvotes": 421,
+    "downvotes": 16,
+    "comments": 5,
+    "shares": 89,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 2
+      },
+      {
+        "type": "helpful",
+        "count": 7
+      },
+      {
+        "type": "insightful",
+        "count": 4
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-03T11:14:22.755Z",
+    "updated_at": "2026-03-03T11:14:22.755Z"
+  },
+  {
+    "id": "mp-004",
+    "author": {
+      "name": "Dr. Sneha Patel",
+      "title": "Dermatologist & Skin Cancer Specialist",
+      "image": "https://i.pravatar.cc/150?img=47",
+      "verified": true
+    },
+    "title": "Rapidly Enlarging Nodule on Scalp — Merkel Cell or SCC?",
+    "body": "72M immunosuppressed (renal Tx), 2.8 cm firm violaceous nodule on vertex scalp growing over 6 weeks. Clinically the firmness and rapid growth worry me for Merkel Cell Carcinoma. CK20+/TTF-1− pattern on IHC would confirm. Anyone using 68Ga-DOTATATE PET for MCC staging? Immunotherapy (avelumab vs pembrolizumab) in transplant patients — rejection risk?",
+    "imageUrl": null,
+    "tags": [
+      "#Dermatology",
+      "#MerkelCell",
+      "#SkinCancer",
+      "#Immunosuppression"
+    ],
+    "specialty": "Dermatology",
+    "flair": "Case Study",
+    "upvotes": 183,
+    "downvotes": 6,
+    "comments": 4,
+    "shares": 27,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 4
+      },
+      {
+        "type": "insightful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T09:14:22.755Z",
+    "updated_at": "2026-03-04T09:14:22.755Z"
+  },
+  {
+    "id": "mp-005",
+    "author": {
+      "name": "Dr. Vikram Sinha",
+      "title": "Consultant Orthopaedic Surgeon",
+      "image": "https://i.pravatar.cc/150?img=60",
+      "verified": true
+    },
+    "title": "Robotic-Assisted TKA vs Conventional — Is the Learning Curve Worth It?",
+    "body": "After 200 robotic TKAs (MAKO system): OR time added ~22 min early, now ~8 min extra at 200 cases. Radiographic outlier rate 11%→2.3%. OKS at 12m marginally better. Cost per case increased ~$2,100. Honest take: excellent for complex deformity and training programmes, but for routine primary TKA the benefit is real but incremental.",
+    "imageUrl": null,
+    "tags": [
+      "#Orthopedics",
+      "#TKA",
+      "#RoboticSurgery",
+      "#MAKO"
+    ],
+    "specialty": "Orthopedics",
+    "flair": "Discussion",
+    "upvotes": 247,
+    "downvotes": 22,
+    "comments": 4,
+    "shares": 44,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 5
+      },
+      {
+        "type": "helpful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T21:14:22.755Z",
+    "updated_at": "2026-03-02T21:14:22.755Z"
+  },
+  {
+    "id": "mp-006",
+    "author": {
+      "name": "Dr. Fatima Malik",
+      "title": "Ophthalmologist, LV Prasad Eye Institute",
+      "image": "https://i.pravatar.cc/150?img=48",
+      "verified": true
+    },
+    "title": "Bilateral Uveitis + Hilar Lymphadenopathy — Sarcoid or TB?",
+    "body": "34M bilateral anterior uveitis, bilateral hilar lymphadenopathy on CT, elevated serum ACE 68 U/L, arthralgia. Mantoux negative, IGRA pending. Differential: sarcoidosis vs TB. In India the TB prior probability is substantially higher even with this classic sarcoid picture. At what ACE level do you empirically treat for sarcoid? Do you do bronchoscopic BAL upfront?",
+    "imageUrl": null,
+    "tags": [
+      "#Ophthalmology",
+      "#Uveitis",
+      "#Sarcoidosis",
+      "#TB"
+    ],
+    "specialty": "Ophthalmology",
+    "flair": "Case Study",
+    "upvotes": 174,
+    "downvotes": 9,
+    "comments": 4,
+    "shares": 21,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T16:14:22.755Z",
+    "updated_at": "2026-03-04T16:14:22.755Z"
+  },
+  {
+    "id": "mp-007",
+    "author": {
+      "name": "Dr. Ananya Roy",
+      "title": "Consultant Psychiatrist & Psychopharmacologist",
+      "image": "https://i.pravatar.cc/150?img=44",
+      "verified": true
+    },
+    "title": "Ketamine/Esketamine for Treatment-Resistant Depression — Your Clinical Experience?",
+    "body": "We have treated 28 TRD patients with intranasal esketamine (Spravato) over 18 months. 11/28 showed ≥50% MADRS reduction at week 4. Dissociative side effects were transient. The harder problem: durability. Most responders need maintenance dosing q2-4w indefinitely. Is anyone combining esketamine with intensive psychotherapy to prolong remission?",
+    "imageUrl": null,
+    "tags": [
+      "#Psychiatry",
+      "#Ketamine",
+      "#TRD",
+      "#Psychopharmacology"
+    ],
+    "specialty": "Psychiatry",
+    "flair": "Discussion",
+    "upvotes": 339,
+    "downvotes": 14,
+    "comments": 5,
+    "shares": 68,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 1
+      },
+      {
+        "type": "insightful",
+        "count": 6
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T13:14:22.755Z",
+    "updated_at": "2026-03-02T13:14:22.755Z"
+  },
+  {
+    "id": "mp-008",
+    "author": {
+      "name": "Dr. Suresh Menon",
+      "title": "Endocrinologist, Amrita Institute",
+      "image": "https://i.pravatar.cc/150?img=62",
+      "verified": true
+    },
+    "title": "Tirzepatide in India — Who Are Your Best Responders?",
+    "body": "Mounjaro available privately since late 2025. 34 patients started with T2D + obesity. Mean %TBW loss at 6 months: 11.4% (range 4–18%). HbA1c reduction averaged 1.9%. Best responders: younger patients, shorter DM duration, higher baseline BMI. GI side effects led to 4 discontinuations. Anyone using it as first-line in newly diagnosed T2D+obesity?",
+    "imageUrl": null,
+    "tags": [
+      "#Endocrinology",
+      "#Tirzepatide",
+      "#T2D",
+      "#Obesity",
+      "#GLP1"
+    ],
+    "specialty": "Endocrinology",
+    "flair": "Clinical Experience",
+    "upvotes": 295,
+    "downvotes": 17,
+    "comments": 4,
+    "shares": 56,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 5
+      },
+      {
+        "type": "insightful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T21:14:22.755Z",
+    "updated_at": "2026-03-02T21:14:22.755Z"
+  },
+  {
+    "id": "mp-009",
+    "author": {
+      "name": "Dr. Alan Carter",
+      "title": "Consultant Haematologist",
+      "image": "https://i.pravatar.cc/150?img=52",
+      "verified": false
+    },
+    "title": "CAR-T Toxicity Management — CRS Grade 3 in a 67-year-old DLBCL Patient",
+    "body": "Patient received axicabtagene ciloleucel for R/R DLBCL. Day 7: fever 40.2°C, hypotension requiring 3 vasopressors, ferritin 42,000, CRP 320. Grade 3 CRS. Tocilizumab 8 mg/kg → dexamethasone. Response in 36h. Questions: threshold for concurrent dexamethasone per ASTCT guidance? Siltuximab in tocilizumab-refractory CRS? CRS management in resource-limited settings?",
+    "imageUrl": null,
+    "tags": [
+      "#Oncology",
+      "#CART",
+      "#CRS",
+      "#Haematology",
+      "#DLBCL"
+    ],
+    "specialty": "Oncology",
+    "flair": "Case Study",
+    "upvotes": 201,
+    "downvotes": 5,
+    "comments": 4,
+    "shares": 33,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 4
+      },
+      {
+        "type": "gold",
+        "count": 1
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-03T03:14:22.755Z",
+    "updated_at": "2026-03-03T03:14:22.755Z"
+  },
+  {
+    "id": "mp-010",
+    "author": {
+      "name": "Dr. Meera Krishnamurthy",
+      "title": "Pulmonologist & Critical Care, Manipal Hospital",
+      "image": "https://i.pravatar.cc/150?img=45",
+      "verified": true
+    },
+    "title": "High-Flow Nasal Cannula vs NIV in Hypoxaemic Respiratory Failure — Decision Framework",
+    "body": "We shifted to HFNC-first for acute hypoxaemic RF (SpO2 <90% on 15L NRB) in 2024. ROX index at 2h ≥4.88 predicts success with ~76% sensitivity. Use NIV for concurrent hypercapnia or ROX <4.88 at 2h. Intubation rate dropped 38%→24% over 18 months. Critical caveat: 1:2 ICU nursing is essential for safe HFNC monitoring. Sharing our decision tree — what is your institution's approach?",
+    "imageUrl": null,
+    "tags": [
+      "#Pulmonology",
+      "#CriticalCare",
+      "#HFNC",
+      "#RespiratoryFailure"
+    ],
+    "specialty": "Pulmonology",
+    "flair": "Protocol",
+    "upvotes": 367,
+    "downvotes": 12,
+    "comments": 5,
+    "shares": 74,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 2
+      },
+      {
+        "type": "helpful",
+        "count": 8
+      },
+      {
+        "type": "wholesome",
+        "count": 1
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-01T13:14:22.755Z",
+    "updated_at": "2026-03-01T13:14:22.755Z"
+  },
+  {
+    "id": "mp-011",
+    "author": {
+      "name": "Dr. Kavya Reddy",
+      "title": "Neonatologist, Rainbow Children's Hospital",
+      "image": "https://i.pravatar.cc/150?img=41",
+      "verified": true
+    },
+    "title": "Prophylactic Indomethacin vs Conservative Management for PDA in <28-Week Preterms",
+    "body": "Our unit shifted from routine prophylactic indomethacin to conservative management (IVF restriction + caffeine) for haemodynamically insignificant PDA in <28 weekers in 2023. 18-month data: spontaneous closure in 71% by 36 weeks PMA. IVH rates unchanged. For haemodynamically significant PDA with pulmonary flooding we still treat — oral ibuprofen first line. Who is using catheter-based closure (Piccolo device) in <1000g?",
+    "imageUrl": null,
+    "tags": [
+      "#Neonatology",
+      "#Pediatrics",
+      "#PDA",
+      "#Prematurity"
+    ],
+    "specialty": "Pediatrics",
+    "flair": "Protocol",
+    "upvotes": 189,
+    "downvotes": 14,
+    "comments": 4,
+    "shares": 30,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 4
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-03T03:14:22.755Z",
+    "updated_at": "2026-03-03T03:14:22.755Z"
+  },
+  {
+    "id": "mp-012",
+    "author": {
+      "name": "Dr. Rohan Desai",
+      "title": "GI & Hepatologist, Sir Ganga Ram Hospital",
+      "image": "https://i.pravatar.cc/150?img=65",
+      "verified": true
+    },
+    "title": "MASH Renaming Means More Than Semantics — New Treatment Landscape with Resmetirom",
+    "body": "Resmetirom (Rezdiffra) is now FDA-approved for MASH with moderate-to-advanced fibrosis — first ever approved MASH drug. Phase 3 (MAESTRO-NASH): 26% achieved MASH resolution. Who to screen (FIB-4 +/- elastography), access barriers, and long-term durability data gaps remain key challenges. In India metabolic liver disease burden is enormous but recognition lags. Are we doing enough FIB-4 screening in primary care referrals?",
+    "imageUrl": null,
+    "tags": [
+      "#Hepatology",
+      "#MASH",
+      "#NASH",
+      "#LiverDisease",
+      "#Resmetirom"
+    ],
+    "specialty": "Gastroenterology",
+    "flair": "Research",
+    "upvotes": 253,
+    "downvotes": 8,
+    "comments": 4,
+    "shares": 47,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 5
+      },
+      {
+        "type": "helpful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T21:14:22.755Z",
+    "updated_at": "2026-03-02T21:14:22.755Z"
+  },
+  {
+    "id": "mp-013",
+    "author": {
+      "name": "Dr. Sunita Rao",
+      "title": "Senior Cardiologist, Fortis Hospital",
+      "image": "https://i.pravatar.cc/150?img=49",
+      "verified": true
+    },
+    "title": "Echo Findings After COVID — Myocarditis or Pericarditis Spectrum?",
+    "body": "28M, 6 weeks post-mild COVID, persistent palpitations and exertional dyspnoea. Echo: trivial pericardial effusion, LVEF 55%, mild diffuse wall motion abnormality. CMR: subepicardial LGE, T2 ratio elevated. Managed as myopericarditis. Questions: 1) Duration of exercise restriction — 3, 6 or 12 months? 2) Routine CMR at 6 months? 3) Anyone seeing de novo AF in younger patients post-COVID myocarditis?",
+    "imageUrl": null,
+    "tags": [
+      "#Cardiology",
+      "#PostCOVID",
+      "#Myocarditis",
+      "#CMR"
+    ],
+    "specialty": "Cardiology",
+    "flair": "Case Study",
+    "upvotes": 376,
+    "downvotes": 18,
+    "comments": 5,
+    "shares": 67,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 1
+      },
+      {
+        "type": "insightful",
+        "count": 5
+      },
+      {
+        "type": "helpful",
+        "count": 4
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T01:14:22.755Z",
+    "updated_at": "2026-03-02T01:14:22.755Z"
+  },
+  {
+    "id": "mp-014",
+    "author": {
+      "name": "Dr. Nisha Kapoor",
+      "title": "Obstetrician & Maternal-Fetal Medicine",
+      "image": "https://i.pravatar.cc/150?img=46",
+      "verified": true
+    },
+    "title": "Continuous vs Intermittent EFM in Low-Risk Labour — Cochrane Evidence Revisited",
+    "body": "The 2023 Cochrane review (26 RCTs, >63,000 women) again confirms: cEFM increases C-section rate (RR 1.63) and instrumental delivery without reducing perinatal mortality or CP vs intermittent auscultation. Yet cEFM is de facto standard in Indian private hospitals — primarily medico-legal fear. Who has successfully shifted their unit to IA for low-risk labour? Biggest barrier — nurses, obstetricians, or administration?",
+    "imageUrl": null,
+    "tags": [
+      "#Obstetrics",
+      "#CTG",
+      "#EFM",
+      "#NormalBirth",
+      "#EBM"
+    ],
+    "specialty": "Obstetrics",
+    "flair": "Evidence Review",
+    "upvotes": 228,
+    "downvotes": 31,
+    "comments": 4,
+    "shares": 51,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 4
+      },
+      {
+        "type": "helpful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-03T20:14:22.755Z",
+    "updated_at": "2026-03-03T20:14:22.755Z"
+  },
+  {
+    "id": "mp-015",
+    "author": {
+      "name": "Dr. Harish Chandra",
+      "title": "Radiologist, Tata Memorial Centre",
+      "image": "https://i.pravatar.cc/150?img=57",
+      "verified": true
+    },
+    "title": "AI-Assisted Chest CT in Lung Cancer Screening — Practical Implementation",
+    "body": "We piloted an AI nodule detection tool (Veye Lung Nodules) for 6 months. AI caught 3 subsolid nodules >6mm missed on primary read. False positive rate: 12% — higher than published specs, likely due to high TB-prevalence background. Time to report reduced 18%. The tool works best as a second pair of eyes. Regulatory pathway for AI-CAD in India remains unclear — anyone navigating CDSCO approval?",
+    "imageUrl": null,
+    "tags": [
+      "#Radiology",
+      "#AI",
+      "#LungCancer",
+      "#CTScreening",
+      "#LDCT"
+    ],
+    "specialty": "Radiology",
+    "flair": "Discussion",
+    "upvotes": 219,
+    "downvotes": 13,
+    "comments": 4,
+    "shares": 42,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 4
+      },
+      {
+        "type": "helpful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T10:14:22.755Z",
+    "updated_at": "2026-03-02T10:14:22.755Z"
+  },
+  {
+    "id": "mp-016",
+    "author": {
+      "name": "Dr. Rahul Banerjee",
+      "title": "Nephrology & Transplant, PGIMER Chandigarh",
+      "image": "https://i.pravatar.cc/150?img=63",
+      "verified": true
+    },
+    "title": "SGLT2 Inhibitors Post-Renal Transplant — Safety Data Update 2025",
+    "body": "Four newer cohort studies confirm relative safety of SGLT2i in eGFR >30 post-renal Tx. We have started 18 patients on empagliflozin post-Tx. HbA1c improvement good; UTI incidence marginally higher (22% vs 14% historical). Critical concern: euglycaemic DKA in perioperative setting — hold 7 days pre-surgery. No significant tacrolimus level changes in our cohort. Who else is using SGLT2i post-Tx? What is your eGFR cutoff?",
+    "imageUrl": null,
+    "tags": [
+      "#Nephrology",
+      "#RenalTransplant",
+      "#SGLT2i",
+      "#Empagliflozin"
+    ],
+    "specialty": "Nephrology",
+    "flair": "Clinical Experience",
+    "upvotes": 187,
+    "downvotes": 7,
+    "comments": 4,
+    "shares": 35,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 5
+      },
+      {
+        "type": "insightful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T05:14:22.755Z",
+    "updated_at": "2026-03-04T05:14:22.755Z"
+  },
+  {
+    "id": "mp-017",
+    "author": {
+      "name": "Dr. Preeti Joshi",
+      "title": "Emergency Medicine Consultant",
+      "image": "https://i.pravatar.cc/150?img=43",
+      "verified": true
+    },
+    "title": "POCUS in Undifferentiated Shock — RUSH Exam Changed Diagnosis in 34% of Cases",
+    "body": "Three years after adopting the RUSH protocol for all undifferentiated shock, it changed initial management in 34% of cases. Cardiac tamponade caught clinically unsuspected in 4 cases. PE vs pulmonary oedema differentiation much improved. Training curve: ~20 supervised scans for registrar competence. POCUS now embedded in resuscitation trolley workflow. What POCUS protocols are others using — BLUE? FAST+? CASA?",
+    "imageUrl": null,
+    "tags": [
+      "#EmergencyMedicine",
+      "#POCUS",
+      "#Shock",
+      "#RUSH",
+      "#Ultrasound"
+    ],
+    "specialty": "Emergency Medicine",
+    "flair": "Protocol",
+    "upvotes": 334,
+    "downvotes": 9,
+    "comments": 5,
+    "shares": 76,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 1
+      },
+      {
+        "type": "helpful",
+        "count": 7
+      },
+      {
+        "type": "wholesome",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-02-28T21:14:22.755Z",
+    "updated_at": "2026-02-28T21:14:22.755Z"
+  },
+  {
+    "id": "mp-018",
+    "author": {
+      "name": "Dr. Karthik Anand",
+      "title": "Plastic & Reconstructive Surgeon",
+      "image": "https://i.pravatar.cc/150?img=67",
+      "verified": false
+    },
+    "title": "3D-Printed Titanium Implants for Craniofacial Reconstruction — 2-Year Follow-up",
+    "body": "2-year follow-up on 12 craniofacial cases using patient-specific titanium implants (SLS manufacturing). Infection rate 1/12. Fit quality rated excellent in 10/12. Operative time saved: average 47 min per case vs conventional. Cost ~$800 higher per case. Compelling use case: complex skull base and orbital floor where off-the-shelf sizes do not fit. Anyone using PEEK 3D implants? Comparative fatigue tolerance data?",
+    "imageUrl": null,
+    "tags": [
+      "#PlasticSurgery",
+      "#3DPrinting",
+      "#Reconstruction",
+      "#Craniofacial"
+    ],
+    "specialty": "Surgery",
+    "flair": "Research",
+    "upvotes": 162,
+    "downvotes": 5,
+    "comments": 3,
+    "shares": 23,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T18:14:22.755Z",
+    "updated_at": "2026-03-04T18:14:22.755Z"
+  },
+  {
+    "id": "mp-019",
+    "author": {
+      "name": "Dr. Shalini Gupta",
+      "title": "Rheumatologist, AIIMS Bhopal",
+      "image": "https://i.pravatar.cc/150?img=40",
+      "verified": true
+    },
+    "title": "JAK Inhibitors vs Biologics in RA — Updated Risk-Benefit Framework Post ORAL Surveillance",
+    "body": "Post ORAL Surveillance (baricitinib/tofacitinib MACE and malignancy signals in 50+ with CV risk), my updated approach: JAKi for RA patients <50, no CV risk, non-smokers — still first choice after csDMARD failure. For >50 with any ASCVD risk → biologic preferred. Upadacitinib (selective JAK1) and filgotinib have somewhat better CV signals but class warnings persist. Thoughts?",
+    "imageUrl": null,
+    "tags": [
+      "#Rheumatology",
+      "#JAKinhibitors",
+      "#RA",
+      "#Biologics"
+    ],
+    "specialty": "Rheumatology",
+    "flair": "Clinical Experience",
+    "upvotes": 276,
+    "downvotes": 14,
+    "comments": 4,
+    "shares": 48,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 5
+      },
+      {
+        "type": "helpful",
+        "count": 4
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-03T03:14:22.755Z",
+    "updated_at": "2026-03-03T03:14:22.755Z"
+  },
+  {
+    "id": "mp-020",
+    "author": {
+      "name": "Dr. Mohan Pillai",
+      "title": "Dental & Maxillofacial Surgeon",
+      "image": "https://i.pravatar.cc/150?img=69",
+      "verified": false
+    },
+    "title": "MRONJ Prevention in Oncology Patients — Updated Dental Clearance Protocol",
+    "body": "MRONJ remains under-recognised by oncologists. Our protocol: mandatory dental clearance 4 weeks pre-bisphosphonate initiation; all extractions completed. Drug holiday debate — oral bisphosphonates >4 years: 2-month holiday pre-implant/major surgery. Denosumab: 6-month interval approach. Key gap: oncology teams rarely refer for dental clearance at initiation. Any hospital that has solved this with a shared pathway?",
+    "imageUrl": null,
+    "tags": [
+      "#Dentistry",
+      "#MRONJ",
+      "#Bisphosphonates",
+      "#Oncology"
+    ],
+    "specialty": "Dentistry",
+    "flair": "Protocol",
+    "upvotes": 144,
+    "downvotes": 4,
+    "comments": 3,
+    "shares": 19,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T05:14:22.755Z",
+    "updated_at": "2026-03-04T05:14:22.755Z"
+  },
+  {
+    "id": "mp-021",
+    "author": {
+      "name": "Dr. Divya Menon",
+      "title": "Allergist & Clinical Immunologist",
+      "image": "https://i.pravatar.cc/150?img=42",
+      "verified": true
+    },
+    "title": "Penicillin Allergy De-Labelling — 83% of Referrals Were Tolerant on Challenge",
+    "body": "Of 320 patients referred with penicillin allergy, 83% had confirmed tolerance on graded oral challenge. Incorrect allergy labels cause broader-spectrum antibiotic use, higher C. difficile rates, longer hospital stays. Our protocol: detailed history → skin test (minor/major determinants) → oral challenge. Time per patient: 3-4 hours. We are now embedding this into pre-surgical assessment. Any institution running systematic delabelling for surgical patients?",
+    "imageUrl": null,
+    "tags": [
+      "#Allergy",
+      "#PenicillinAllergy",
+      "#AntibioticStewardship"
+    ],
+    "specialty": "Immunology",
+    "flair": "Research",
+    "upvotes": 308,
+    "downvotes": 11,
+    "comments": 5,
+    "shares": 71,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 1
+      },
+      {
+        "type": "helpful",
+        "count": 6
+      },
+      {
+        "type": "insightful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T01:14:22.755Z",
+    "updated_at": "2026-03-02T01:14:22.755Z"
+  },
+  {
+    "id": "mp-022",
+    "author": {
+      "name": "Dr. Arjun Nair",
+      "title": "Interventional Cardiologist, AIIMS Delhi",
+      "image": "https://i.pravatar.cc/150?img=11",
+      "verified": true
+    },
+    "title": "iFR vs FFR for Intermediate Stenosis — Still Using Adenosine?",
+    "body": "iFR is now our default for angio-intermediate lesions (50-70%). Avoids adenosine side effects, faster cath lab list. DEFINE-FLAIR and iFR-SWEDEHEART trials show non-inferiority to FFR for MACE. My only holdout: ostial left main and diffuse disease — I still prefer FFR pullback. Wire-based co-registration (SyncVision/CoRoute) has been game-changing for multi-vessel PCI planning. What is the current practice at your cath labs?",
+    "imageUrl": null,
+    "tags": [
+      "#Cardiology",
+      "#PCI",
+      "#iFR",
+      "#FFR",
+      "#Coronary"
+    ],
+    "specialty": "Cardiology",
+    "flair": "Discussion",
+    "upvotes": 221,
+    "downvotes": 12,
+    "comments": 4,
+    "shares": 36,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 3
+      },
+      {
+        "type": "helpful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-05T03:14:22.755Z",
+    "updated_at": "2026-03-05T03:14:22.755Z"
+  },
+  {
+    "id": "mp-023",
+    "author": {
+      "name": "Dr. Pooja Agarwal",
+      "title": "Paediatric Neurologist",
+      "image": "https://i.pravatar.cc/150?img=39",
+      "verified": true
+    },
+    "title": "Functional Seizures vs Epilepsy — Clinical Cues That Change Management",
+    "body": "PNES accounts for ~20-30% of refractory epilepsy referrals. Clinical distinguishers: eyes open during event favours epilepsy; ictal stuttering/weeping/gradual onset favours PNES; postictal confusion strongly favours epilepsy; normal EEG during event is near-diagnostic. Video-EEG is gold standard. After diagnosis: immediate AED cessation and rapid CBT referral. Who is doing video-EEG telemetry in community hospitals — feasible outside tertiary centres?",
+    "imageUrl": null,
+    "tags": [
+      "#Neurology",
+      "#PNES",
+      "#Epilepsy",
+      "#Paediatrics",
+      "#EEG"
+    ],
+    "specialty": "Neurology",
+    "flair": "Clinical Experience",
+    "upvotes": 194,
+    "downvotes": 8,
+    "comments": 4,
+    "shares": 37,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 4
+      },
+      {
+        "type": "insightful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-04T05:14:22.755Z",
+    "updated_at": "2026-03-04T05:14:22.755Z"
+  },
+  {
+    "id": "mp-024",
+    "author": {
+      "name": "Dr. Ramesh Iyer",
+      "title": "Infectious Disease Specialist",
+      "image": "https://i.pravatar.cc/150?img=70",
+      "verified": true
+    },
+    "title": "Ceftazidime-Avibactam for KPC-Producing Klebsiella BSI — Real-World Outcomes",
+    "body": "31 patients with confirmed KPC K. pneumoniae BSI treated with CZA. 30-day mortality: 25.8%. 8/31 had concurrent meropenem (heteroresistance concern in high inoculum BSI). Resistance emergence on CZA monotherapy in 3 patients — all had inadequate source control. Critical: CZA is inactive against MBL (NDM, VIM) producers — phenotypic prediction vs genotyping essential. India NDM prevalence makes this particularly relevant.",
+    "imageUrl": null,
+    "tags": [
+      "#InfectiousDisease",
+      "#AMR",
+      "#KPC",
+      "#CZA",
+      "#Klebsiella"
+    ],
+    "specialty": "Infectious Disease",
+    "flair": "Clinical Experience",
+    "upvotes": 267,
+    "downvotes": 6,
+    "comments": 4,
+    "shares": 53,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 1
+      },
+      {
+        "type": "helpful",
+        "count": 5
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T21:14:22.755Z",
+    "updated_at": "2026-03-02T21:14:22.755Z"
+  },
+  {
+    "id": "mp-025",
+    "author": {
+      "name": "Dr. Deepa Iyer",
+      "title": "Sports Medicine Physician",
+      "image": "https://i.pravatar.cc/150?img=38",
+      "verified": false
+    },
+    "title": "Exercise Prescription in HFpEF — How Aggressive Should We Be?",
+    "body": "HFpEF has no disease-modifying pharmacotherapy. Exercise training consistently improves VO2 peak and QoL. Our cardiac rehab programme now accepts HFpEF patients: 3x/week moderate-intensity aerobic + resistance 2x/week. 6-month data: VO2 peak +2.1 mL/kg/min, 6MWT +68m, KCCQ +14 points. AF management during exercise prescription is the main complication. Who is running cardiac rehab for HFpEF?",
+    "imageUrl": null,
+    "tags": [
+      "#Cardiology",
+      "#HFpEF",
+      "#CardiacRehab",
+      "#ExerciseMedicine"
+    ],
+    "specialty": "Cardiology",
+    "flair": "Protocol",
+    "upvotes": 198,
+    "downvotes": 10,
+    "comments": 4,
+    "shares": 34,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 4
+      },
+      {
+        "type": "insightful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-03T03:14:22.755Z",
+    "updated_at": "2026-03-03T03:14:22.755Z"
+  },
+  {
+    "id": "mp-026",
+    "author": {
+      "name": "Dr. Siddharth Rao",
+      "title": "Intensivist & Anaesthesiologist",
+      "image": "https://i.pravatar.cc/150?img=68",
+      "verified": true
+    },
+    "title": "Lung-Protective Ventilation Beyond ARDS — Implementing Universally in ICU?",
+    "body": "PReVENT trial showed low tidal volume (6 mL/kg PBW) matters even in patients WITHOUT ARDS at ICU admission. We implemented universal 6 mL/kg PBW + driving pressure <16 cmH2O for all intubated patients. Compliance: 83%. Most pushback from cardiac surgery teams. Result: new ARDS incidence 14%→8% in general ICU. Barotrauma rate unchanged. Any ICUs implementing driving pressure alarms vs static volume targets?",
+    "imageUrl": null,
+    "tags": [
+      "#CriticalCare",
+      "#Ventilator",
+      "#ARDS",
+      "#LungProtection",
+      "#ICU"
+    ],
+    "specialty": "Pulmonology",
+    "flair": "Protocol",
+    "upvotes": 289,
+    "downvotes": 11,
+    "comments": 5,
+    "shares": 58,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 1
+      },
+      {
+        "type": "helpful",
+        "count": 6
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-02-28T13:14:22.755Z",
+    "updated_at": "2026-02-28T13:14:22.755Z"
+  },
+  {
+    "id": "mp-027",
+    "author": {
+      "name": "Dr. Meenakshi Sundaram",
+      "title": "Gynaecologic Oncologist",
+      "image": "https://i.pravatar.cc/150?img=37",
+      "verified": true
+    },
+    "title": "PARP Inhibitors in BRCA-Wild-Type Ovarian Cancer — Who Benefits?",
+    "body": "Niraparib maintenance now approved regardless of BRCA status in platinum-sensitive ovarian cancer (PRIMA). HRD subgroup benefits most (HR 0.43 vs 0.68 HRD-negative). We do BRCA1/2 germline + somatic AND myChoice HRD score for all high-grade serous OC. HRD-positive non-BRCA patients: strong niraparib indication. HRD-negative: benefit smaller but real. Cost ₹1.8L/month without insurance — how are you navigating access?",
+    "imageUrl": null,
+    "tags": [
+      "#Oncology",
+      "#OvarianCancer",
+      "#PARP",
+      "#BRCA",
+      "#Gynaecology"
+    ],
+    "specialty": "Oncology",
+    "flair": "Research",
+    "upvotes": 214,
+    "downvotes": 7,
+    "comments": 4,
+    "shares": 41,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 4
+      },
+      {
+        "type": "insightful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T01:14:22.755Z",
+    "updated_at": "2026-03-02T01:14:22.755Z"
+  },
+  {
+    "id": "mp-028",
+    "author": {
+      "name": "Dr. Vijay Bhat",
+      "title": "Nuclear Medicine & PET Specialist",
+      "image": "https://i.pravatar.cc/150?img=66",
+      "verified": true
+    },
+    "title": "PSMA PET/CT is Replacing Bone Scan in Prostate Cancer Staging — Should It?",
+    "body": "68Ga-PSMA PET/CT shows superior sensitivity (PR-AUC 0.89 vs 0.23 for bone scan) for nodal and osteoblastic metastases. But PSMA is not expressed in ~10-15% of high-grade PCa — often the most aggressive. Our approach: PSA >1 post-RP → PSMA PET → if negative, consider fluciclovine or choline PET before salvage RT. Any centres offering 177Lu-PSMA in India outside trials?",
+    "imageUrl": null,
+    "tags": [
+      "#NuclearMedicine",
+      "#Radiology",
+      "#ProstateCancer",
+      "#PSMAPET"
+    ],
+    "specialty": "Radiology",
+    "flair": "Discussion",
+    "upvotes": 231,
+    "downvotes": 9,
+    "comments": 4,
+    "shares": 45,
+    "awards": [
+      {
+        "type": "insightful",
+        "count": 4
+      },
+      {
+        "type": "helpful",
+        "count": 3
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-01T13:14:22.755Z",
+    "updated_at": "2026-03-01T13:14:22.755Z"
+  },
+  {
+    "id": "mp-029",
+    "author": {
+      "name": "Dr. Ananya Roy",
+      "title": "Consultant Psychiatrist & Psychopharmacologist",
+      "image": "https://i.pravatar.cc/150?img=44",
+      "verified": true
+    },
+    "title": "Clozapine Monitoring — Are We Over-Monitoring Stable Patients?",
+    "body": "2024 UK and Australian data support de-escalating haematological monitoring to 4-weekly after 12 months, and 12-weekly after 5 years. ANC monitoring yield after 18 months is extremely low (agranulocytosis incidence drops to ~0.007%/year). De-escalation saves ~1,200 unnecessary blood tests/year in our cohort of ~300. Important: metabolic monitoring (lipids, glucose, HbA1c, weight) is WHERE we are under-monitoring. Thoughts on pragmatic schedules?",
+    "imageUrl": null,
+    "tags": [
+      "#Psychiatry",
+      "#Clozapine",
+      "#Schizophrenia",
+      "#TreatmentResistant"
+    ],
+    "specialty": "Psychiatry",
+    "flair": "Discussion",
+    "upvotes": 248,
+    "downvotes": 19,
+    "comments": 4,
+    "shares": 43,
+    "awards": [
+      {
+        "type": "helpful",
+        "count": 5
+      },
+      {
+        "type": "insightful",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-03-02T21:14:22.755Z",
+    "updated_at": "2026-03-02T21:14:22.755Z"
+  },
+  {
+    "id": "mp-030",
+    "author": {
+      "name": "Dr. Kavita Sharma",
+      "title": "Clinical Pharmacologist & Toxicologist",
+      "image": "https://i.pravatar.cc/150?img=36",
+      "verified": true
+    },
+    "title": "Medication Errors in ICU Are a Systems Problem, Not a People Problem",
+    "body": "Our 6-month prospective ICU audit (n=187): 432 medication errors caught, 12 causing temporary harm, 0 permanent harm. Top types: dose errors (41%), wrong timing (28%), omission (19%), wrong route (12%). Electronic prescribing with CPOE + pharmacist review caught 78% before reaching patient. Verbal orders: single biggest risk factor (OR 6.2 for error). What system-level interventions have had the biggest impact at your ICU?",
+    "imageUrl": null,
+    "tags": [
+      "#PatientSafety",
+      "#ICU",
+      "#MedicationError",
+      "#Pharmacology",
+      "#CPOE"
+    ],
+    "specialty": "Pharmacology",
+    "flair": "Research",
+    "upvotes": 357,
+    "downvotes": 8,
+    "comments": 5,
+    "shares": 87,
+    "awards": [
+      {
+        "type": "gold",
+        "count": 2
+      },
+      {
+        "type": "helpful",
+        "count": 7
+      },
+      {
+        "type": "wholesome",
+        "count": 2
+      }
+    ],
+    "is_pinned": false,
+    "created_at": "2026-02-27T14:14:22.755Z",
+    "updated_at": "2026-02-27T14:14:22.755Z"
+  }
+]
