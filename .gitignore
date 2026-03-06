@@ -19,6 +19,15 @@ dist
 dist-ssr
 *.local
 
+# Flutter build output
+flutter_mediqly/build/
+flutter_mediqly/.dart_tool/
+flutter_mediqly/.flutter-plugins
+flutter_mediqly/.flutter-plugins-dependencies
+flutter_mediqly/pubspec.lock
+
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
